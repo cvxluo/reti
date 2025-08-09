@@ -50,3 +50,25 @@ phenotypeRouter.post("/api/phenotype", upload.none(), async (req, res) => {
     return res.status(500).json({ error: "phenotype_failed" });
   }
 });
+
+phenotypeRouter.post(
+  "/api/phenotype/upload-image",
+  upload.single("image"),
+  async (req, res) => {
+    try {
+      if (!req.file) return res.status(400).json({ error: "missing_image" });
+      const b64 = `data:${req.file.mimetype};base64,${req.file.buffer.toString(
+        "base64"
+      )}`;
+
+      const caption = await captionImage(b64); // uses Responses API with input_image
+      const out = await generatePhenotypeFromText(caption); // reuse text pipeline
+      return res.json(out);
+    } catch (err: any) {
+      if (err?.code === "LIMIT_FILE_SIZE")
+        return res.status(413).json({ error: "file_too_large" });
+      console.error("[/api/phenotype/upload-image]", err);
+      return res.status(500).json({ error: "phenotype_failed" });
+    }
+  }
+);
