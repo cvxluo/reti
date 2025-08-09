@@ -8,7 +8,8 @@ export const agentRouter = Router();
 const biomniTool = {
   type: "function" as const,
   name: "biomni",
-  description: "Use Biomni to diagnose the patient",
+  description:
+    "Use Biomni, a subagent that has access to detailed medical databases and research papers, to return an investigation",
   strict: true,
   parameters: {
     type: "object",

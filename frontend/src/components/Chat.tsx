@@ -39,6 +39,7 @@ export default function Chat() {
 
     // 1) render the user bubble immediately
     const uid = crypto.randomUUID();
+    // show user's message immediately
     setMessages((m) => [...m, { id: uid, role: "user", text }]);
     setInput(""); // clear input box
     setBusy(true);
@@ -318,9 +319,9 @@ function MessageBubble({ msg }: { msg: Msg }) {
         {"audioUrl" in msg && msg.audioUrl && (
           <audio className="mt-2 w-56" controls src={msg.audioUrl} />
         )}
-        {"hpo" in msg && msg.hpo?.length > 0 && (
+        {"hpo" in msg && (msg.hpo?.length ?? 0) > 0 && (
           <div className="mt-3 flex flex-wrap gap-2">
-            {msg.hpo.map((t) => (
+            {msg.hpo!.map((t) => (
               <span
                 key={t.id}
                 className="inline-flex items-center rounded-full border border-stone-300 bg-stone-100 px-2 py-1 text-xs text-stone-700"
