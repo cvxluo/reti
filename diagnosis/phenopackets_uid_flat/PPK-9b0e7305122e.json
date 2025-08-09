@@ -1,0 +1,363 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620775",
+        "label": "Neuromuscular disorder, congenital, with dysmorphic facies"
+      }
+    }
+  ],
+  "id": "PMID_36943452_Family_1_individual_III_3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620775",
+          "label": "Neuromuscular disorder, congenital, with dysmorphic facies"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family 1 individual III.3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015687.5:c.463G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.75353705C>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FILIP1",
+                  "valueId": "HGNC:21015"
+                },
+                "id": "var_sHreTzAkIaRJXanKeYtDFnvEy",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "75353705",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family 1 individual III.3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-22T07:40:49.417114019Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Homozygous loss-of-function variants in FILIP1 cause autosomal recessive arthrogryposis multiplex congenita with microcephaly",
+        "id": "PMID:36943452",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36943452"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0034665",
+        "label": "Shoulder contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034391",
+        "label": "Elbow contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001239",
+        "label": "Wrist flexion contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003273",
+        "label": "Hip contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034671",
+        "label": "Knee contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012385",
+        "label": "Camptodactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010648",
+        "label": "Dermal translucency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002996",
+        "label": "Limited elbow movement"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000276",
+        "label": "Long face"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000465",
+        "label": "Webbed neck"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001838",
+        "label": "Rocker bottom foot"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010557",
+        "label": "Overlapping fingers"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001159",
+        "label": "Syndactyly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001558",
+        "label": "Decreased fetal movement"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002808",
+        "label": "Kyphosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000448",
+        "label": "Prominent nose"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000325",
+        "label": "Triangular face"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000470",
+        "label": "Short neck"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000475",
+        "label": "Broad neck"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000193",
+        "label": "Bifid uvula"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000294",
+        "label": "Low anterior hairline"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002000",
+        "label": "Short columella"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-9b0e7305122e",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P5Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

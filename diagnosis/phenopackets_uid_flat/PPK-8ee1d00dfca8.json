@@ -1,0 +1,235 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      },
+      "term": {
+        "id": "OMIM:256810",
+        "label": "Mitochondrial DNA depletion syndrome 6 (hepatocerebral type)"
+      }
+    }
+  ],
+  "id": "PMID_23829229_Patient_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:256810",
+          "label": "Mitochondrial DNA depletion syndrome 6 (hepatocerebral type)"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002437.5:c.191C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.27312768G>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "MPV17",
+                  "valueId": "HGNC:7224"
+                },
+                "id": "var_WuEnKHHpTnDRLZIFuowHLNwlg",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "27312768",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-26T14:10:50.388141155Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Novel c.191C>G (p.Pro64Arg) MPV17 mutation identified in two pairs of unrelated Polish siblings with mitochondrial hepatoencephalopathy",
+        "id": "PMID:23829229",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/23829229"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      },
+      "type": {
+        "id": "HP:0001943",
+        "label": "Hypoglycemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      },
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M3D"
+        }
+      },
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M3D"
+        }
+      },
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M3D"
+        }
+      },
+      "type": {
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M3D"
+        }
+      },
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002490",
+        "label": "Increased CSF lactate"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001541",
+        "label": "Ascites"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001518",
+        "label": "Small for gestational age"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-8ee1d00dfca8",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
+    }
+  }
+}

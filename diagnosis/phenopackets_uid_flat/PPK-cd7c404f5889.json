@@ -1,0 +1,228 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      },
+      "term": {
+        "id": "OMIM:620817",
+        "label": "MHC class II deficiency 4"
+      }
+    }
+  ],
+  "id": "PMID_37584719_P16",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620817",
+          "label": "MHC class II deficiency 4"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P16",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000538.4:c.467del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000013.11:g.36819824del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RFXAP",
+                  "valueId": "HGNC:9988"
+                },
+                "id": "var_xHbZZKumfEdAeVoFqhPXJKXzI",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr13",
+                  "genomeAssembly": "hg38",
+                  "pos": "36819823",
+                  "ref": "CA"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P16",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-25T05:36:37.001682996Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Clinical, Immunological, and Genetic Findings in Iranian Patients with MHC-II Deficiency: Confirmation of c.162delG RFXANK Founder Mutation in the Iranian Population",
+        "id": "PMID:37584719",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37584719"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0033222",
+        "label": "Decreased CD4:CD8 ratio"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004385",
+        "label": "Protracted diarrhea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005407",
+        "label": "Decreased proportion of CD4-positive helper T cells"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001875",
+        "label": "Neutropenia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-cd7c404f5889",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

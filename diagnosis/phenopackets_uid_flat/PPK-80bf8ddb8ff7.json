@@ -1,0 +1,197 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:148820",
+        "label": "Waardenburg syndrome, type 3"
+      }
+    }
+  ],
+  "id": "PMID_7726174_propositus",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:148820",
+          "label": "Waardenburg syndrome, type 3"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "propositus",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_181458.4:c.251C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.222297048G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PAX3",
+                  "valueId": "HGNC:8617"
+                },
+                "id": "var_glyvibsLWJwJucNcxQaSJJoYN",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "222297048",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "propositus",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-19T07:26:06.586970090Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Homozygosity for Waardenburg syndrome",
+        "id": "PMID:7726174",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/7726174"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001060",
+        "label": "Axillary pterygium"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009129",
+        "label": "Upper limb amyotrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012453",
+        "label": "Bilateral wrist flexion contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012785",
+        "label": "Flexion contracture of finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002216",
+        "label": "Premature graying of hair"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002227",
+        "label": "White eyelashes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002226",
+        "label": "White eyebrow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007443",
+        "label": "Partial albinism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012745",
+        "label": "Short palpebral fissure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000506",
+        "label": "Telecanthus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000426",
+        "label": "Prominent nasal bridge"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-80bf8ddb8ff7",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3M"
+      }
+    }
+  }
+}

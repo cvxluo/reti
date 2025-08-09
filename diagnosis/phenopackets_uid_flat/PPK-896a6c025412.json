@@ -1,0 +1,282 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:601674",
+        "label": "EZH1-related neurodevelopmental disorder"
+      }
+    }
+  ],
+  "id": "PMID_37433783_P11",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:601674",
+          "label": "EZH1-related neurodevelopmental disorder"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P11",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001991.5:c.772C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.42718613G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "EZH1",
+                  "valueId": "HGNC:3526"
+                },
+                "id": "var_xpfgrwCjkJrezVcqQvSSCqAwD",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "42718613",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P11",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-27T14:08:08.058930873Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Gain and loss of function variants in EZH1 disrupt neurogenesis and cause dominant and recessive neurodevelopmental disorders",
+        "id": "PMID:37433783",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37433783"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      },
+      {
+        "id": "mondo",
+        "iriPrefix": "http://purl.obolibrary.org/obo/MONDO_",
+        "name": "Mondo Disease Ontology",
+        "namespacePrefix": "MONDO",
+        "url": "http://purl.obolibrary.org/obo/mondo.obo",
+        "version": "2023-09-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000718",
+        "label": "Aggressive behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002172",
+        "label": "Postural instability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008551",
+        "label": "Microtia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010862",
+        "label": "Delayed fine motor development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002136",
+        "label": "Broad-based gait"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005274",
+        "label": "Prominent nasal tip"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012471",
+        "label": "Thick vermilion border"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001310",
+        "label": "Dysmetria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000276",
+        "label": "Long face"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012434",
+        "label": "Delayed early-childhood social milestone development"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001387",
+        "label": "Joint stiffness"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000717",
+        "label": "Autism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100704",
+        "label": "Cerebral visual impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001276",
+        "label": "Hypertonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001332",
+        "label": "Dystonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003202",
+        "label": "Skeletal muscle atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-896a6c025412",
+    "sex": "FEMALE"
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:621004",
+        "label": "Autoimmune disease with susceptibility to mycobacterium tuberculosis"
+      }
+    }
+  ],
+  "id": "PMID_34183838_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621004",
+          "label": "Autoimmune disease with susceptibility to mycobacterium tuberculosis"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005018.3:c.105dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.241852958dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PDCD1",
+                  "valueId": "HGNC:8760"
+                },
+                "id": "var_NUqdzXVtKFzNECIQpYFTvUamC",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "TG",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "241852951",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2025-02-03T10:59:39.525727987Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Inherited PD-1 deficiency underlies tuberculosis and autoimmunity in a child",
+        "id": "PMID:34183838",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/34183838"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-01-16"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0100651",
+        "label": "Type I diabetes mellitus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001369",
+        "label": "Arthritis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002878",
+        "label": "Respiratory failure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      },
+      "type": {
+        "id": "HP:0100592",
+        "label": "Peritoneal abscess"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      },
+      "type": {
+        "id": "HP:6000901",
+        "label": "Positive bloodstream tuberculosis-induced T-cell-based interferon-gamma release assay"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      },
+      "type": {
+        "id": "HP:0025420",
+        "label": "Diffuse alveolar hemorrhage"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      },
+      "type": {
+        "id": "HP:0025179",
+        "label": "Ground-glass opacification"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0032271",
+        "label": "Extrapulmonary tuberculosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0005528",
+        "label": "Bone marrow hypocellularity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0003237",
+        "label": "Increased circulating IgG concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0003261",
+        "label": "Increased circulating IgA concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0034062",
+        "label": "Anti-insulin antibody positivity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002958",
+        "label": "Immune dysregulation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0200043",
+        "label": "Verrucae"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002716",
+        "label": "Lymphadenopathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410243",
+        "label": "Abnormal circulating IgM concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410241",
+        "label": "Abnormal circulating IgE concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0025329",
+        "label": "Anti-glutamic acid decarboxylase antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0034063",
+        "label": "Anti-islet antigen-2 antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0020102",
+        "label": "Pneumocystis jirovecii pneumonia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-8caf63ef9b59",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      }
+    }
+  }
+}

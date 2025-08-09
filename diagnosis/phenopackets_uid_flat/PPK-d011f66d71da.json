@@ -1,0 +1,302 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "term": {
+        "id": "OMIM:256810",
+        "label": "Mitochondrial DNA depletion syndrome 6 (hepatocerebral type)"
+      }
+    }
+  ],
+  "id": "PMID_34035203_case_report",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:256810",
+          "label": "Mitochondrial DNA depletion syndrome 6 (hepatocerebral type)"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "case report",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002437.5:c.451dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.27311913dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "MPV17",
+                  "valueId": "HGNC:7224"
+                },
+                "id": "var_ZNLNCWtznAcyslrJTUVFfllmd",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "AG",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "27311908",
+                  "ref": "A"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "case report",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002437.5:c.293C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.27312576G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "MPV17",
+                  "valueId": "HGNC:7224"
+                },
+                "id": "var_LHoknPfwkFPMPWDhzkZWNXsXo",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "27312576",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "case report",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-26T14:10:50.364684104Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "MPV17-related Hepatocerebral Mitochondrial DNA Depletion Syndrome",
+        "id": "PMID:34035203",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/34035203"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0030890",
+        "label": "Hyperintensity of cerebral white matter on MRI"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0031141",
+        "label": "Increased hepatic echogenicity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0003128",
+        "label": "Lactic acidosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0032653",
+        "label": "Elevated lactate:pyruvate ratio"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0031964",
+        "label": "Elevated circulating alanine aminotransferase concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0031956",
+        "label": "Elevated circulating aspartate aminotransferase concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002908",
+        "label": "Conjugated hyperbilirubinemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0008151",
+        "label": "Prolonged prothrombin time"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-d011f66d71da",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y5M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

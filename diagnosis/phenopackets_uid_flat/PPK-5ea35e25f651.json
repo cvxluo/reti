@@ -1,0 +1,252 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "term": {
+        "id": "OMIM:620938",
+        "label": "Spastic paraplegia 93, autosomal recessive"
+      }
+    }
+  ],
+  "id": "PMID_36256512_F7_II_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620938",
+          "label": "Spastic paraplegia 93, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "F7-II:2 ",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001002755.4:c.295C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.69423589G>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NFU1",
+                  "valueId": "HGNC:16287"
+                },
+                "id": "var_vlWqyyqDTmrdYgizSMhTykUKm",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "69423589",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "F7-II:2 ",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2025-01-08T13:24:32.124588966Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Phenotypic continuum of NFU1-related disorders",
+        "id": "PMID:36256512",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36256512"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "type": {
+        "id": "HP:0010550",
+        "label": "Paraplegia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001276",
+        "label": "Hypertonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001348",
+        "label": "Brisk reflexes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002066",
+        "label": "Gait ataxia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003128",
+        "label": "Lactic acidosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011449",
+        "label": "Knee clonus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0034295",
+        "label": "Reduced cerebral white matter volume"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002079",
+        "label": "Hypoplasia of the corpus callosum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011096",
+        "label": "Peripheral demyelination"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002280",
+        "label": "Enlarged cisterna magna"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001298",
+        "label": "Encephalopathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009830",
+        "label": "Peripheral neuropathy"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-5ea35e25f651",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

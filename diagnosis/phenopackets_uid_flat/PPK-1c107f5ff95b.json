@@ -1,0 +1,192 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "term": {
+        "id": "OMIM:614322",
+        "label": "Spinocerebellar ataxia, autosomal recessive 12"
+      }
+    }
+  ],
+  "id": "PMID_24369382_Family_1_II_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:614322",
+          "label": "Spinocerebellar ataxia, autosomal recessive 12"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family 1 II.2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016373.2:c.139C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.78108454C>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "WWOX",
+                  "valueId": "HGNC:12799"
+                },
+                "id": "var_OBJyleYGKBiPNGljtrHHBvbJZ",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "78108454",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family 1 II.2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2025-01-12T18:26:19.504307985Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "The tumour suppressor gene WWOX is mutated in autosomal recessive cerebellar ataxia with epilepsy and mental retardation",
+        "id": "PMID:24369382",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24369382"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002066",
+        "label": "Gait ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000640",
+        "label": "Gaze-evoked nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002353",
+        "label": "EEG abnormality"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006855",
+        "label": "Cerebellar vermis atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-1c107f5ff95b",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P18Y"
+      }
+    },
+    "vitalStatus": {}
+  }
+}

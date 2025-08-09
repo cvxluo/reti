@@ -1,0 +1,200 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:188400",
+        "label": "DiGeorge syndrome"
+      }
+    }
+  ],
+  "id": "PMID_16684884_V39_02",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:188400",
+          "label": "DiGeorge syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "V39/02",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_080647.1:c.1299_1321del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.19766678_19766700del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TBX1",
+                  "valueId": "HGNC:11592"
+                },
+                "id": "var_wCzuvRfIbPHyPeERXWqzANCRX",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr22",
+                  "genomeAssembly": "hg38",
+                  "pos": "19766671",
+                  "ref": "GCCGGCCGGCGCCCTACCCGCTGC"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "V39/02",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-05T13:48:32.998951911Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Tbx1 haploinsufficiency is linked to behavioral disorders in mice and humans: implications for 22q11 deletion syndrome",
+        "id": "PMID:16684884",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/16684884"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001999",
+        "label": "Abnormal facial shape"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000220",
+        "label": "Velopharyngeal insufficiency"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001636",
+        "label": "Tetralogy of Fallot"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010882",
+        "label": "Pulmonary valve atresia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031834",
+        "label": "Aortopulmonary collateral arteries"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011613",
+        "label": "Interrupted aortic arch type B"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012020",
+        "label": "Right aortic arch"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010442",
+        "label": "Polydactyly"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-dbaa9ec3ba87",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P42Y"
+      }
+    }
+  }
+}

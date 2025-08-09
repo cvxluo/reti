@@ -1,0 +1,180 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:159550",
+        "label": "Ataxia-pancytopenia syndrome"
+      }
+    }
+  ],
+  "id": "PMID_29217778_P4_US2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:159550",
+          "label": "Ataxia-pancytopenia syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P4-US2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152703.5:c.2957G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.93133015C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SAMD9L",
+                  "valueId": "HGNC:1349"
+                },
+                "id": "var_oqspKquiTnoWrCmHLAffOuggG",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "93133015",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P4-US2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-30T17:58:36.851662158Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Constitutional SAMD9L mutations cause familial myelodysplastic syndrome and transient monosomy 7",
+        "id": "PMID:29217778",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29217778"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001876",
+        "label": "Pancytopenia"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005528",
+        "label": "Bone marrow hypocellularity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002863",
+        "label": "Myelodysplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001875",
+        "label": "Neutropenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-d518e9c3afb2",
+    "sex": "MALE",
+    "vitalStatus": {}
+  }
+}

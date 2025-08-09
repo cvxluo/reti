@@ -1,0 +1,131 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:601977",
+        "label": "Thrombocythemia 2"
+      }
+    }
+  ],
+  "id": "PMID_14764528_Pedigree_of_FET",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:601977",
+          "label": "Thrombocythemia 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Pedigree of FET",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005373.3:c.1514G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.43349308G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "MPL",
+                  "valueId": "HGNC:7217"
+                },
+                "id": "var_VpasCrMvHDhfdJJSVntfiLpYO",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "43349308",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Pedigree of FET",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-17T05:49:28.463304042Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Familial essential thrombocythemia associated with a dominant-positive activating mutation of the c-MPL gene, which encodes for the receptor for thrombopoietin",
+        "id": "PMID:14764528",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/14764528"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001894",
+        "label": "Thrombocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005513",
+        "label": "Increased megakaryocyte count"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-0afef393c410"
+  }
+}

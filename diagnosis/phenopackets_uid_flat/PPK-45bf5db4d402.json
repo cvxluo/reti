@@ -1,0 +1,233 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:227645",
+        "label": "Fanconi anemia, complementation group C"
+      }
+    }
+  ],
+  "id": "PMID_22701786_proband",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:227645",
+          "label": "Fanconi anemia, complementation group C"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000136.3:c.67del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.95249227del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FANCC",
+                  "valueId": "HGNC:3584"
+                },
+                "id": "var_YAxpzkeHtRtBOghjUiBzMgjuk",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "95249224",
+                  "ref": "TC"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-19T18:22:47.202912092Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A Dutch Fanconi Anemia FANCC Founder Mutation in Canadian Manitoba Mennonites",
+        "id": "PMID:22701786",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/22701786"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000957",
+        "label": "Cafe-au-lait spot"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0005528",
+        "label": "Bone marrow hypocellularity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000325",
+        "label": "Triangular face"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0030674",
+          "label": "Antenatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003221",
+        "label": "Chromosomal breakage induced by crosslinking agents"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009778",
+        "label": "Short thumb"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009777",
+        "label": "Absent thumb"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009942",
+        "label": "Duplication of thumb phalanx"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003974",
+        "label": "Absent radius"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-45bf5db4d402",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y"
+      }
+    }
+  }
+}

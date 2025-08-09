@@ -1,0 +1,552 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:616975",
+        "label": "Neurodevelopmental disorder with or without anomalies of the brain, eye, or heart"
+      }
+    }
+  ],
+  "id": "PMID_36053530_Case_3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616975",
+          "label": "Neurodevelopmental disorder with or without anomalies of the brain, eye, or heart"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case 3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001042681.2:c.1512dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.8364777dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RERE",
+                  "valueId": "HGNC:9965"
+                },
+                "id": "var_gyefRpsUalsvKGZLqUtXdbaoW",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "AC",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "8364773",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Case 3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-18T11:50:39.422451972Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Phenotypic variability in RERE-related disorders and the first report of an inherited variant",
+        "id": "PMID:36053530",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36053530"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000545",
+        "label": "Myopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007018",
+        "label": "Attention deficit hyperactivity disorder"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000154",
+        "label": "Wide mouth"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410030",
+        "label": "Cleft lip"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000319",
+        "label": "Smooth philtrum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000294",
+        "label": "Low anterior hairline"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000341",
+        "label": "Narrow forehead"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011220",
+        "label": "Prominent forehead"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000414",
+        "label": "Bulbous nose"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001357",
+        "label": "Plagiocephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000325",
+        "label": "Triangular face"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000187",
+        "label": "Broad alveolar ridges"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000581",
+        "label": "Blepharophimosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011229",
+        "label": "Broad eyebrow"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000490",
+        "label": "Deeply set eye"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010747",
+        "label": "Medial flaring of the eyebrow"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011240",
+        "label": "Prominent stem of antihelix"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0008589",
+        "label": "Hypoplastic helices"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004467",
+        "label": "Preauricular pit"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000378",
+        "label": "Cupped ear"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000396",
+        "label": "Overfolded helix"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000391",
+        "label": "Thickened helices"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009908",
+        "label": "Anterior creases of earlobe"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000664",
+        "label": "Synophrys"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000582",
+        "label": "Upslanted palpebral fissure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000601",
+        "label": "Hypotelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0020206",
+        "label": "Simple ear"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000453",
+        "label": "Choanal atresia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000568",
+        "label": "Microphthalmia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000659",
+        "label": "Peters anomaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000589",
+        "label": "Coloboma"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000609",
+        "label": "Optic nerve hypoplasia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000483",
+        "label": "Astigmatism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012803",
+        "label": "Anisometropia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000540",
+        "label": "Hypermetropia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002616",
+        "label": "Aortic root aneurysm"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001344",
+        "label": "Absent speech"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-63f281f6fd36",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P35Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "term": {
+        "id": "OMIM:619375",
+        "label": "Autoinflammatory syndrome, familial, with or without immunodeficiency"
+      }
+    }
+  ],
+  "id": "PMID_36890397_P2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:619375",
+          "label": "Autoinflammatory syndrome, familial, with or without immunodeficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003745.2:c.480_481insGCGGC"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.11255000_11255001insCGCGC"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SOCS1",
+                  "valueId": "HGNC:19383"
+                },
+                "id": "var_kkojFAyGcsgyIzEXPqrFNtFtp",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "TGCCGC",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "11254998",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-25T07:46:46.703386068Z",
+    "createdBy": "ORCID:0000-0001-9969-9517",
+    "externalReferences": [
+      {
+        "description": "Phenotypic Variability of SOCS1 Haploinsufficiency",
+        "id": "PMID:36890397",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36890397"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002960",
+        "label": "Autoimmunity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012115",
+        "label": "Hepatitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002716",
+        "label": "Lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczematoid dermatitis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-e8907ee40040",
+    "sex": "MALE"
+  }
+}

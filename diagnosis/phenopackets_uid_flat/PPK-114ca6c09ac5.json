@@ -1,0 +1,197 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620836",
+        "label": "Immunodeficiency 120"
+      }
+    }
+  ],
+  "id": "PMID_31629014_Patient_P2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620836",
+          "label": "Immunodeficiency 120"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient P2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002691.4:c.3178C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.50417229C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "POLD1",
+                  "valueId": "HGNC:9175"
+                },
+                "id": "var_LfrucjvtuiqwpkRaFWejpwtje",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "50417229",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient P2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-14T10:50:37.717567920Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Combined immunodeficiency caused by a loss-of-function mutation in DNA polymerase delta 1",
+        "id": "PMID:31629014",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31629014"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0005407",
+        "label": "Decreased proportion of CD4-positive helper T cells"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410028",
+        "label": "Recurrent oral herpes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006889",
+        "label": "Intellectual disability, borderline"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410295",
+        "label": "Complete or near-complete absence of specific antibody response to tetanus vaccine"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-114ca6c09ac5",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P5Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

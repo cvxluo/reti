@@ -1,0 +1,203 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:260300",
+        "label": "Parkinson disease 15, autosomal recessive"
+      }
+    }
+  ],
+  "id": "PMID_18513678_individual_5039",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:260300",
+          "label": "Parkinson disease 15, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual 5039",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_012179.4:c.1132C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.32493269C>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FBXO7",
+                  "valueId": "HGNC:13586"
+                },
+                "id": "var_LokuaKAhzkCKCPQRFTpVSIbtw",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr22",
+                  "genomeAssembly": "hg38",
+                  "pos": "32493269",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual 5039",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-08T07:13:06.393434762Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Genome-wide linkage analysis of a Parkinsonian-pyramidal syndrome pedigree by 500 K SNP arrays",
+        "id": "PMID:18513678",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18513678"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0012407",
+        "label": "Scissor gait"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001347",
+        "label": "Hyperreflexia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001300",
+        "label": "Parkinsonism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002067",
+        "label": "Bradykinesia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000338",
+        "label": "Hypomimic face"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002063",
+        "label": "Rigidity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031435",
+        "label": "Monotonic speech"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-e43865bf8c8c",
+    "sex": "MALE"
+  }
+}

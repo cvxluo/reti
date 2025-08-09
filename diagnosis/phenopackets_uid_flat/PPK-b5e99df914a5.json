@@ -1,0 +1,302 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:616364",
+        "label": "White-Sutton syndrome"
+      }
+    }
+  ],
+  "id": "PMID_31136090_case_report",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616364",
+          "label": "White-Sutton syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "case report",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015100.4:c.2711T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.151406324A>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "POGZ",
+                  "valueId": "HGNC:18801"
+                },
+                "id": "var_XykUGjMTUYBTBQQuvvjwEiyYg",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "151406324",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "case report",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-13T07:39:09.554265022Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "POGZ-related epilepsy: Case report and review of the literature",
+        "id": "PMID:31136090",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31136090"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000322",
+        "label": "Short philtrum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000194",
+        "label": "Open mouth"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000158",
+        "label": "Macroglossia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000307",
+        "label": "Pointed chin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002714",
+        "label": "Downturned corners of mouth"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002263",
+        "label": "Exaggerated cupid's bow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000219",
+        "label": "Thin upper lip vermilion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000232",
+        "label": "Everted lower lip vermilion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010803",
+        "label": "Everted upper lip vermilion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030084",
+        "label": "Clinodactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001357",
+        "label": "Plagiocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000455",
+        "label": "Broad nasal tip"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000447",
+        "label": "Pear-shaped nose"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002079",
+        "label": "Hypoplasia of the corpus callosum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-b5e99df914a5",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P5Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

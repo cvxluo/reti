@@ -1,0 +1,275 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:277700",
+        "label": "Werner syndrome"
+      }
+    }
+  ],
+  "id": "PMID_30891318_case",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:277700",
+          "label": "Werner syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "case",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000553.6:c.2581C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.31120375C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "WRN",
+                  "valueId": "HGNC:12791"
+                },
+                "id": "var_RAUGGYUnTBCaHYMSxQUgHNsqr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr8",
+                  "genomeAssembly": "hg38",
+                  "pos": "31120375",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "case",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-03T06:53:14.985836029Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Werner's Syndrome: Understanding the Phenotype of Premature Aging-First Case Described in Colombia",
+        "id": "PMID:30891318",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30891318"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P32Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P35Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001620",
+        "label": "High pitched voice"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P35Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002216",
+        "label": "Premature graying of hair"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P44Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P48Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002863",
+        "label": "Myelodysplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000444",
+        "label": "Convex nasal ridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025441",
+        "label": "Achilles tendon calcification"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005328",
+        "label": "Progeroid facial appearance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007556",
+        "label": "Plantar hyperkeratosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004334",
+        "label": "Dermal atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008404",
+        "label": "Nail dystrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040217",
+        "label": "Elevated hemoglobin A1c"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002155",
+        "label": "Hypertriglyceridemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003074",
+        "label": "Hyperglycemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000546",
+        "label": "Retinal degeneration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002858",
+        "label": "Meningioma"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005177",
+        "label": "Premature arteriosclerosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002669",
+        "label": "Osteosarcoma"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-ac6ff598afd3",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P48Y"
+      }
+    }
+  }
+}

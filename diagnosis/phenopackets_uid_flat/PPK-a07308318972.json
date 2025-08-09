@@ -1,0 +1,207 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P64Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:105400",
+        "label": "Amyotrophic lateral sclerosis 1"
+      }
+    }
+  ],
+  "id": "PMID_30236613_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:105400",
+          "label": "Amyotrophic lateral sclerosis 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000454.5:c.320dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.31667338dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SOD1",
+                  "valueId": "HGNC:11179"
+                },
+                "id": "var_ALgPoirRWfhvPjwSefooPDdsy",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "CT",
+                  "chrom": "chr21",
+                  "genomeAssembly": "hg38",
+                  "pos": "31667337",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-01T05:37:07.770247936Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel p.Ser108LeufsTer15 SOD1 mutation leading to the formation of a premature stop codon in an apparently sporadic ALS patient: insights into the underlying pathomechanisms",
+        "id": "PMID:30236613",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30236613"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P64Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P64Y"
+        }
+      },
+      "type": {
+        "id": "HP:0012473",
+        "label": "Tongue atrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P66Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001283",
+        "label": "Bulbar palsy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P66Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P66Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001348",
+        "label": "Brisk reflexes"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P66Y"
+        }
+      },
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P66Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002273",
+        "label": "Tetraparesis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a07308318972",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P66Y"
+      }
+    }
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:305400",
+        "label": "Aarskog-Scott syndrome"
+      }
+    }
+  ],
+  "id": "PMID_20082460_case_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:305400",
+          "label": "Aarskog-Scott syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "case 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004463.3:c.2026_2028del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.54450295_54450297del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FGD1",
+                  "valueId": "HGNC:3663"
+                },
+                "id": "var_QpMoBUwGStGmBYsHKvTIfCRPO",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chrX",
+                  "genomeAssembly": "hg38",
+                  "pos": "54450288",
+                  "ref": "TCTC"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "case 1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-11T11:08:02.358706951Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Aarskog-Scott syndrome: clinical update and report of nine novel mutations of the FGD1 gene",
+        "id": "PMID:20082460",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/20082460"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000349",
+        "label": "Widow's peak"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001169",
+        "label": "Broad palm"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001769",
+        "label": "Broad foot"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003196",
+        "label": "Short nose"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002055",
+        "label": "Curved linear dimple below the lower lip"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000049",
+        "label": "Shawl scrotum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002750",
+        "label": "Delayed skeletal maturation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012385",
+        "label": "Camptodactyly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004209",
+        "label": "Clinodactyly of the 5th finger"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001187",
+        "label": "Hyperextensibility of the finger joints"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000954",
+        "label": "Single transverse palmar crease"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000689",
+        "label": "Dental malocclusion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000047",
+        "label": "Hypospadias"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000384",
+        "label": "Preauricular skin tag"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001840",
+        "label": "Metatarsus adductus"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-4f420f176fbd",
+    "sex": "MALE",
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

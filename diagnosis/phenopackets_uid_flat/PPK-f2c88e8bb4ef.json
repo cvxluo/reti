@@ -1,0 +1,269 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:616831",
+        "label": "Luscan-Lumish syndrome"
+      }
+    }
+  ],
+  "id": "PMID_31643139_Patient_4",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616831",
+          "label": "Luscan-Lumish syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 4",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014159.7:c.4997A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.47101476T>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SETD2",
+                  "valueId": "HGNC:18420"
+                },
+                "id": "var_uaKRJcwNsGqhHwuvDEDoONPWF",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr3",
+                  "genomeAssembly": "hg38",
+                  "pos": "47101476",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 4",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-02T13:36:50.241423130Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "SETD2 related overgrowth syndrome: Presentation of four new patients and review of the literature",
+        "id": "PMID:31643139",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31643139"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001320",
+        "label": "Cerebellar vermis hypoplasia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000276",
+        "label": "Long face"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000272",
+        "label": "Malar flattening"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001357",
+        "label": "Plagiocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000358",
+        "label": "Posteriorly rotated ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000307",
+        "label": "Pointed chin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002308",
+        "label": "Chiari malformation"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f2c88e8bb4ef",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P10Y9M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

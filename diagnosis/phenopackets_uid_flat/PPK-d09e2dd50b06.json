@@ -1,0 +1,253 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y2M"
+        }
+      },
+      "term": {
+        "id": "OMIM:610042",
+        "label": "Pitt-Hopkins like syndrome 1"
+      }
+    }
+  ],
+  "id": "PMID_30762603_Case_report",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610042",
+          "label": "Pitt-Hopkins like syndrome 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case report",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014141.6:c.985del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.147128738del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CNTNAP2",
+                  "valueId": "HGNC:13830"
+                },
+                "id": "var_MKoMvIrALvCrKsPrWOIGfWtOQ",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "147128737",
+                  "ref": "CA"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Case report",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-19T05:40:21.121029853Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A patient with a novel CNTNAP2 homozygous variant: further delineation of the CASPR2 deficiency syndrome and review of the literature",
+        "id": "PMID:30762603",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30762603"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000733",
+        "label": "Motor stereotypy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002353",
+        "label": "EEG abnormality"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007359",
+        "label": "Focal-onset seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000414",
+        "label": "Bulbous nose"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032046",
+        "label": "Focal cortical dysplasia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006970",
+        "label": "Periventricular leukomalacia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007074",
+        "label": "Thick corpus callosum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030746",
+        "label": "Intraventricular hemorrhage"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0034295",
+        "label": "Reduced cerebral white matter volume"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006855",
+        "label": "Cerebellar vermis atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002019",
+        "label": "Constipation"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-d09e2dd50b06",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y"
+      }
+    },
+    "vitalStatus": {}
+  }
+}

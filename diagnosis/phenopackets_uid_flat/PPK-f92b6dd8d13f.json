@@ -1,0 +1,184 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:617425",
+        "label": "Immunoskeletal dysplasia with neurodevelopmental abnormalitie"
+      }
+    }
+  ],
+  "id": "PMID_28132690_Family_D_III_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:617425",
+          "label": "Immunoskeletal dysplasia with neurodevelopmental abnormalitie"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family D III-2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001440.4:c.1382C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.28717441C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "EXTL3",
+                  "valueId": "HGNC:3518"
+                },
+                "id": "var_TKqhZpEAxudgAtohpqKSppmEe",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr8",
+                  "genomeAssembly": "hg38",
+                  "pos": "28717441",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family D III-2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-05T14:51:27.296858072Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutations in EXTL3 Cause Neuro-immuno-skeletal Dysplasia Syndrome",
+        "id": "PMID:28132690",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28132690"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000926",
+        "label": "Platyspondyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003090",
+        "label": "Hypoplasia of the capital femoral epiphysis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001407",
+        "label": "Hepatic cysts"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001880",
+        "label": "Eosinophilia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005352",
+        "label": "Severe T-cell immunodeficiency"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f92b6dd8d13f",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P38Y"
+      }
+    }
+  }
+}

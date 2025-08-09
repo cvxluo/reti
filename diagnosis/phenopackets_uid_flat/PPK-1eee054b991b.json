@@ -1,0 +1,192 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:105650",
+        "label": "Diamond-Blackfan anemia 1"
+      }
+    }
+  ],
+  "id": "PMID_35923690_50–3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:105650",
+          "label": "Diamond-Blackfan anemia 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "50–3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001022.4:c.185G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.41869043G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RPS19",
+                  "valueId": "HGNC:10402"
+                },
+                "id": "var_aIshtARzUFfphTWtAQetqifyk",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "41869043",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "50–3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-23T08:30:08.758486032Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Variable Clinical Features in a Large Family With Diamond Blackfan Anemia Caused by a Pathogenic Missense Mutation in RPS19",
+        "id": "PMID:35923690",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35923690"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005518",
+        "label": "Increased mean corpuscular volume"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030270",
+        "label": "Elevated red cell adenosine deaminase activity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011904",
+        "label": "Persistence of hemoglobin F"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001245",
+        "label": "Small thenar eminence"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003298",
+        "label": "Spina bifida occulta"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-1eee054b991b",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P28Y"
+      }
+    }
+  }
+}

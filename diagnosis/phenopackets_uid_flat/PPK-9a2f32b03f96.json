@@ -1,0 +1,181 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:615471",
+        "label": "Mitochondrial DNA depletion syndrome 13 (encephalomyopathic type)"
+      }
+    }
+  ],
+  "id": "PMID_31442532_P2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615471",
+          "label": "Mitochondrial DNA depletion syndrome 13 (encephalomyopathic type)"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001278716.2:c.1750T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.98874394A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FBXL4",
+                  "valueId": "HGNC:13601"
+                },
+                "id": "var_twvmbrroMmGicAqRnoHEIeKXF",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "98874394",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-27T04:50:40.284711837Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Characterization of the C584R variant in the mtDNA depletion syndrome gene FBXL4, reveals a novel role for FBXL4 as a regulator of mitochondrial fusion",
+        "id": "PMID:31442532",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31442532"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000126",
+        "label": "Hydronephrosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001321",
+        "label": "Cerebellar hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002126",
+        "label": "Polymicrogyria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003535",
+        "label": "3-Methylglutaconic aciduria"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-9a2f32b03f96",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y10M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P2Y10M"
+        }
+      }
+    }
+  }
+}

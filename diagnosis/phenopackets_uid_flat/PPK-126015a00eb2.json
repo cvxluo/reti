@@ -1,0 +1,282 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "term": {
+        "id": "OMIM:613477",
+        "label": "Developmental and epileptic encephalopathy 5"
+      }
+    }
+  ],
+  "id": "PMID_29050398_Patient_19",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:613477",
+          "label": "Developmental and epileptic encephalopathy 5"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 19",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001130438.3:c.5326C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.128615809C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SPTAN1",
+                  "valueId": "HGNC:11273"
+                },
+                "id": "var_IZhzYvTMyPbLRobwdUTQdvGUL",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "128615809",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 19",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2025-01-19T11:42:38.262849092Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Delineating SPTAN1 associated phenotypes: from isolated epilepsy to encephalopathy with progressive brain atrophy",
+        "id": "PMID:29050398",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29050398"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007359",
+        "label": "Focal-onset seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002521",
+        "label": "Hypsarrhythmia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002121",
+        "label": "Generalized non-motor (absence) seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007366",
+        "label": "Atrophy/Degeneration affecting the brainstem"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001344",
+        "label": "Absent speech"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002510",
+        "label": "Spastic tetraplegia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001347",
+        "label": "Hyperreflexia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000589",
+        "label": "Coloboma"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002421",
+        "label": "Poor head control"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001336",
+        "label": "Myoclonus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-126015a00eb2",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y6M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

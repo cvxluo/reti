@@ -1,0 +1,266 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:133540",
+        "label": "Cockayne syndrome, type B"
+      }
+    }
+  ],
+  "id": "PMID_30113454_index",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:133540",
+          "label": "Cockayne syndrome, type B"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "index",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000124.4:c.2911_2915delinsTGGTGTGCA"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000010.11:g.49472385_49472389delinsTGCACACCA"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ERCC6",
+                  "valueId": "HGNC:3438"
+                },
+                "id": "var_TjAzKRqKMAdgTquIXgoSMngxe",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "TGCACACCA",
+                  "chrom": "chr10",
+                  "genomeAssembly": "hg38",
+                  "pos": "49472385",
+                  "ref": "ATCTT"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "index",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-08T18:38:45.123414039Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Novel frame shift mutation in ERCC6 leads to a severe form of Cockayne syndrome with postnatal growth failure and early death: A case report and brief literature review",
+        "id": "PMID:30113454",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30113454"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001176",
+        "label": "Large hands"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000400",
+        "label": "Macrotia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000444",
+        "label": "Convex nasal ridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002684",
+        "label": "Thickened calvaria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000490",
+        "label": "Deeply set eye"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000568",
+        "label": "Microphthalmia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001321",
+        "label": "Cerebellar hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005671",
+        "label": "Bilateral intracerebral calcifications"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002808",
+        "label": "Kyphosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003510",
+        "label": "Severe short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033454",
+        "label": "Tube feeding"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034392",
+        "label": "Joint contracture"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007814",
+        "label": "Retinal pigment epithelial mottling"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000580",
+        "label": "Pigmentary retinopathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000992",
+        "label": "Cutaneous photosensitivity"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f61bae4861b4",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y"
+      }
+    }
+  }
+}

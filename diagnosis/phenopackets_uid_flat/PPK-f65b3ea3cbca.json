@@ -1,0 +1,194 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "term": {
+        "id": "OMIM:620815",
+        "label": "MHC class II deficiency 2"
+      }
+    }
+  ],
+  "id": "PMID_37584719_Patient_P1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620815",
+          "label": "MHC class II deficiency 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient P1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003721.4:c.163del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.19194109del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RFXANK",
+                  "valueId": "HGNC:9987"
+                },
+                "id": "var_YyoWKVYNiuLlElTFjPgOyTEmh",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "19194107",
+                  "ref": "CG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient P1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-04T13:55:28.472698926Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Clinical, Immunological, and Genetic Findings in Iranian Patients with MHC-II Deficiency: Confirmation of c.162delG RFXANK Founder Mutation in the Iranian Population",
+        "id": "PMID:37584719",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37584719"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033431",
+        "label": "Cytomegalovirus colitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002028",
+        "label": "Chronic diarrhea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001890",
+        "label": "Autoimmune hemolytic anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032230",
+        "label": "Cytoplasmic antineutrophil antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030991",
+        "label": "Sclerosing cholangitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f65b3ea3cbca",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y"
+      }
+    }
+  }
+}

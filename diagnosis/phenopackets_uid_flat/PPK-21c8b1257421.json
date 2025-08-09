@@ -1,0 +1,319 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "term": {
+        "id": "OMIM:615688",
+        "label": "Vasculitis, autoinflammation, immunodeficiency, and hematologic defects syndrome"
+      }
+    }
+  ],
+  "id": "PMID_28830446_Patient_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615688",
+          "label": "Vasculitis, autoinflammation, immunodeficiency, and hematologic defects syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001282225.2:c.139G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.17209539C>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ADA2",
+                  "valueId": "HGNC:1839"
+                },
+                "id": "var_eCGftdTXgdxeDmjWYGDdlNshr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr22",
+                  "genomeAssembly": "hg38",
+                  "pos": "17209539",
+                  "ref": "C"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001282225.2:c.1223G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.17182620C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ADA2",
+                  "valueId": "HGNC:1839"
+                },
+                "id": "var_UYSEmakUKBePxmfKWZAFmGlnB",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr22",
+                  "genomeAssembly": "hg38",
+                  "pos": "17182620",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-04T07:11:59.301683902Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Autoimmune phenotype with type I interferon signature in two brothers with ADA2 deficiency carrying a novel CECR1 mutation",
+        "id": "PMID:28830446",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28830446"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0010702",
+        "label": "Increased circulating antibody level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0002140",
+        "label": "Ischemic stroke"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0025528",
+        "label": "Annular cutaneous lesion"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0002301",
+        "label": "Hemiplegia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0033833",
+        "label": "Elevated circulating soluble CD25 concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0030783",
+        "label": "Increased circulating interleukin 6 concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0001954",
+        "label": "Recurrent fever"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0034056",
+        "label": "Increased fecal calprotectin level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0011107",
+        "label": "Recurrent aphthous stomatitis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0002027",
+        "label": "Abdominal pain"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0030880",
+        "label": "Raynaud phenomenon"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0005197",
+        "label": "Generalized morning stiffness"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0033260",
+        "label": "Livedo racemosa"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-21c8b1257421",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y"
+      }
+    }
+  }
+}

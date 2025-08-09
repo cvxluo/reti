@@ -1,0 +1,350 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2D"
+        }
+      },
+      "term": {
+        "id": "OMIM:620646",
+        "label": "Combined oxidative phosphorylation deficiency 59"
+      }
+    }
+  ],
+  "id": "PMID_37133451_Individual_P2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620646",
+          "label": "Combined oxidative phosphorylation deficiency 59"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Individual P2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017446.4:c.526del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.25599863del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "MRPL39",
+                  "valueId": "HGNC:14027"
+                },
+                "id": "var_WRaOzqXkyooewGgGtnCpqKjWk",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr21",
+                  "genomeAssembly": "hg38",
+                  "pos": "25599860",
+                  "ref": "GA"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Individual P2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017446.4:c.589-924G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.25598338C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "MRPL39",
+                  "valueId": "HGNC:14027"
+                },
+                "id": "var_rPLalWjBKpJpGhkwkFXZcyclJ",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr21",
+                  "genomeAssembly": "hg38",
+                  "pos": "25598338",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Individual P2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-02T05:07:18.256850004Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Multi-omics identifies large mitoribosomal subunit instability caused by pathogenic MRPL39 variants as a cause of pediatric onset mitochondrial disease",
+        "id": "PMID:37133451",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37133451"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2D"
+        }
+      },
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0012707",
+        "label": "Elevated brain lactate level by MRS"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002104",
+        "label": "Apnea"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000546",
+        "label": "Retinal degeneration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001635",
+        "label": "Congestive heart failure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012666",
+        "label": "Severely reduced left ventricular ejection fraction"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000741",
+        "label": "Apathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002076",
+        "label": "Migraine"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012734",
+        "label": "Ketotic hypoglycemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001081",
+        "label": "Cholelithiasis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003348",
+        "label": "Hyperalaninemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003215",
+        "label": "Dicarboxylic aciduria"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012751",
+        "label": "Abnormal basal ganglia MRI signal intensity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007305",
+        "label": "CNS demyelination"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002181",
+        "label": "Cerebral edema"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-2e808ee2455c",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11M"
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "term": {
+        "id": "OMIM:616370",
+        "label": "Multiple mitochondrial dysfunctions syndrome 4"
+      }
+    }
+  ],
+  "id": "PMID_31279336_31279336_P1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616370",
+          "label": "Multiple mitochondrial dysfunctions syndrome 4"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "31279336_P1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_194279.3:c.355G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.74494890G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ISCA2",
+                  "valueId": "HGNC:19857"
+                },
+                "id": "var_TkwfwQWFgnMapuxOuswRPmgNl",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr14",
+                  "genomeAssembly": "hg38",
+                  "pos": "74494890",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "31279336_P1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-24T18:00:48.955012083Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel ISCA2 variant responsible for an early-onset neurodegenerative mitochondrial disorder: a case report of multiple mitochondrial dysfunctions syndrome 4",
+        "id": "PMID:31279336",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31279336"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100785",
+        "label": "Insomnia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000737",
+        "label": "Irritability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002518",
+        "label": "Abnormal periventricular white matter morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033834",
+        "label": "Malaise"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001317",
+        "label": "Abnormal cerebellum morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-25a5543eb9fb",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7M"
+      }
+    }
+  }
+}

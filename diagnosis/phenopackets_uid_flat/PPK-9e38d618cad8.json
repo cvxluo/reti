@@ -1,0 +1,151 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:617146",
+        "label": "Arthrogryposis, distal, with impaired proprioception and touch"
+      }
+    }
+  ],
+  "id": "PMID_27843126_C-I.7",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:617146",
+          "label": "Arthrogryposis, distal, with impaired proprioception and touch"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "C-I.7",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001378183.1:c.1550_1552delinsCGAA"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000018.10:g.10794978_10794980delinsTTCG"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PIEZO2",
+                  "valueId": "HGNC:26270"
+                },
+                "id": "var_PldwywSWTPJndGoaThJObseYK",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "TTCG",
+                  "chrom": "chr18",
+                  "genomeAssembly": "hg38",
+                  "pos": "10794978",
+                  "ref": "AGC"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "C-I.7",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-28T19:06:19.053841829Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Biallelic Loss of Proprioception-Related PIEZO2 Causes Muscular Atrophy with Perinatal Respiratory Distress, Arthrogryposis, and Scoliosis",
+        "id": "PMID:27843126",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27843126"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002058",
+        "label": "Myopathic facies"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-9e38d618cad8",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P26Y"
+      }
+    }
+  }
+}

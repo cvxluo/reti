@@ -1,0 +1,216 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:174300",
+        "label": "Orofaciodigital syndrome V"
+      }
+    }
+  ],
+  "id": "PMID_23972372_family_1_V_13",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:174300",
+          "label": "Orofaciodigital syndrome V"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "family 1 V:13",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001031725.6:c.1100T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.200650639A>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "DDX59",
+                  "valueId": "HGNC:25360"
+                },
+                "id": "var_vnOLQbPnAyWjTAdqrKrHMASat",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "200650639",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "family 1 V:13",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-22T15:11:05.625782012Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutations in DDX59 implicate RNA helicase in the pathogenesis of orofaciodigital syndrome",
+        "id": "PMID:23972372",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/23972372"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0100259",
+        "label": "Postaxial polydactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000180",
+        "label": "Lobulated tongue"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000193",
+        "label": "Bifid uvula"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001274",
+        "label": "Agenesis of corpus callosum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002251",
+        "label": "Aganglionic megacolon"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001636",
+        "label": "Tetralogy of Fallot"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004736",
+        "label": "Crossed fused renal ectopia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-010a5d57733f",
+    "sex": "FEMALE"
+  }
+}

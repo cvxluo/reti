@@ -1,0 +1,217 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:616276",
+        "label": "Coenzyme Q10 deficiency, primary, 7"
+      }
+    }
+  ],
+  "id": "PMID_33215859_COQ4_III2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616276",
+          "label": "Coenzyme Q10 deficiency, primary, 7"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "COQ4-III2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016035.5:c.437T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.128332187T>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "COQ4",
+                  "valueId": "HGNC:19693"
+                },
+                "id": "var_LpDlScogAyeeDIdQddyolPYuN",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "128332187",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "COQ4-III2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-24T09:16:40.371649026Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Clinical spectrum in multiple families with primary COQ10 deficiency",
+        "id": "PMID:33215859",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33215859"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002505",
+        "label": "Loss of ambulation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001268",
+        "label": "Mental deterioration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001271",
+        "label": "Polyneuropathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-ece10502feb3",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

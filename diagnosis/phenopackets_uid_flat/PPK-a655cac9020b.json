@@ -1,0 +1,164 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620715",
+        "label": "Bleeding disorder, vascular-type"
+      }
+    }
+  ],
+  "id": "PMID_35638551_Patient_PM11",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620715",
+          "label": "Bleeding disorder, vascular-type"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient PM11",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_030817.3:c.145_146delinsTA"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.12787050_12787051delinsTA"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "APOLD1",
+                  "valueId": "HGNC:25268"
+                },
+                "id": "var_skLZZNjAWLsVfgDUOFaAdBgxe",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "TA",
+                  "chrom": "chr12",
+                  "genomeAssembly": "hg38",
+                  "pos": "12787050",
+                  "ref": "CG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient PM11",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-24T06:37:05.800272941Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "APOLD1 loss causes endothelial dysfunction involving cell junctions, cytoskeletal architecture, and Weibel-Palade bodies, while disrupting hemostasis",
+        "id": "PMID:35638551",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35638551"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000421",
+        "label": "Epistaxis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006298",
+        "label": "Prolonged bleeding after dental extraction"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0040184",
+        "label": "Oral bleeding"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002239",
+        "label": "Gastrointestinal hemorrhage"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0033505",
+        "label": "Livedo reticularis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a655cac9020b",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P45Y"
+      }
+    }
+  }
+}

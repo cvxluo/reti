@@ -1,0 +1,217 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:616521",
+        "label": "Intellectual developmental disorder, autosomal dominant 39"
+      }
+    }
+  ],
+  "id": "PMID_30055078_index_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616521",
+          "label": "Intellectual developmental disorder, autosomal dominant 39"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "index patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001303052.2:c.2221_2230del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.1892092_1892101del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "MYT1L",
+                  "valueId": "HGNC:7623"
+                },
+                "id": "var_zUxImsofRrULRdJTXyUWWopHX",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "1892089",
+                  "ref": "CGGCAGCGCGT"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "index patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-15T05:11:04.992347955Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel MYT1L mutation in a patient with severe early-onset obesity and intellectual disability",
+        "id": "PMID:30055078",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30055078"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002591",
+        "label": "Polyphagia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007018",
+        "label": "Attention deficit hyperactivity disorder"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000718",
+        "label": "Aggressive behavior"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003118",
+        "label": "Increased circulating cortisol level"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011015",
+        "label": "Abnormal blood glucose concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002353",
+        "label": "EEG abnormality"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-124211d3be42",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P14Y"
+      }
+    }
+  }
+}

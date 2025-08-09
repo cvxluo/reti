@@ -1,0 +1,166 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:309300",
+        "label": "Megalocornea 1, X-linked"
+      }
+    }
+  ],
+  "id": "PMID_24073597_III_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:309300",
+          "label": "Megalocornea 1, X-linked"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001143981.2:c.167del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.110762736del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CHRDL1",
+                  "valueId": "HGNC:29861"
+                },
+                "id": "var_ocYysuhumYuiUKwsSMEjUWtdQ",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chrX",
+                  "genomeAssembly": "hg38",
+                  "pos": "110762734",
+                  "ref": "AG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-17T06:19:33.141356945Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "X-linked Megalocornea Associated with the Novel CHRDL1 Gene Mutation p.(Pro56Leu*8)",
+        "id": "PMID:24073597",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24073597"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000485",
+        "label": "Megalocornea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007765",
+        "label": "Deep anterior chamber"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100689",
+        "label": "Decreased corneal thickness"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012632",
+        "label": "Abnormal intraocular pressure"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a90151d45efb",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y"
+      }
+    }
+  }
+}

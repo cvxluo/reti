@@ -1,0 +1,186 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "term": {
+        "id": "OMIM:620816",
+        "label": "MHC class II deficiency 3"
+      }
+    }
+  ],
+  "id": "PMID_38441205_P4",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620816",
+          "label": "MHC class II deficiency 3"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P4",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001025603.2:c.1239_1240del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.151342800_151342801del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RFX5",
+                  "valueId": "HGNC:9986"
+                },
+                "id": "var_koOsaunAwfQmWKEnASJdUvyGW",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "151342796",
+                  "ref": "TTC"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P4",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-19T08:09:54.404788970Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A large single-center cohort of bare lymphocyte syndrome: Immunological and genetic features in Turkey",
+        "id": "PMID:38441205",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/38441205"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004385",
+        "label": "Protracted diarrhea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031390",
+        "label": "Reduced MHC II surface expression"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002754",
+        "label": "Osteomyelitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003095",
+        "label": "Septic arthritis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009098",
+        "label": "Chronic oral candidiasis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002110",
+        "label": "Bronchiectasis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100806",
+        "label": "Sepsis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-cfa48de9831b",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y10M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

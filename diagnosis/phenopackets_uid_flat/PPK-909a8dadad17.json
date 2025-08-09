@@ -1,0 +1,202 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:615471",
+        "label": "Mitochondrial DNA depletion syndrome 13 (encephalomyopathic type)"
+      }
+    }
+  ],
+  "id": "PMID_32559514_1_year_old_girl",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615471",
+          "label": "Mitochondrial DNA depletion syndrome 13 (encephalomyopathic type)"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "1-year-old girl",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001278716.2:c.993dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.98905539dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FBXL4",
+                  "valueId": "HGNC:13601"
+                },
+                "id": "var_VgzbueMEDLYDiWkHgoxqlOyqM",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "GT",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "98905535",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "1-year-old girl",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-27T04:50:40.283033132Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Novel homozygous mutation in the FBXL4 gene is associated with mitochondria DNA depletion syndrome-13",
+        "id": "PMID:32559514",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/32559514"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002421",
+        "label": "Poor head control"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040155",
+        "label": "Elevated urinary 3-hydroxybutyric acid"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003648",
+        "label": "Lacticaciduria"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001987",
+        "label": "Hyperammonemia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-909a8dadad17",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

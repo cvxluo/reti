@@ -1,0 +1,236 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P56Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:102500",
+        "label": "Hajdu-Cheney syndrome"
+      }
+    }
+  ],
+  "id": "PMID_23566664_nan",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:102500",
+          "label": "Hajdu-Cheney syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "nan",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_024408.4:c.6622C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.119916100G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NOTCH2",
+                  "valueId": "HGNC:7882"
+                },
+                "id": "var_ANlQYVemxFGHvzwzpRKsOPzse",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "119916100",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "nan",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-14T18:24:02.138962030Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A mutation in NOTCH2 gene in a Chinese patient with Hajdu-Cheney syndrome",
+        "id": "PMID:23566664",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/23566664"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000574",
+        "label": "Thick eyebrow"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      },
+      "type": {
+        "id": "HP:0012368",
+        "label": "Flat face"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      },
+      "type": {
+        "id": "HP:0009771",
+        "label": "Osteolytic defects of the phalanges of the hand"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      },
+      "type": {
+        "id": "HP:0005625",
+        "label": "Osteoporosis of vertebrae"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      },
+      "type": {
+        "id": "HP:0009748",
+        "label": "Large earlobe"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P56Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003419",
+        "label": "Low back pain"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P56Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002953",
+        "label": "Vertebral compression fracture"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-eee75ac3bb78",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P57Y"
+      }
+    }
+  }
+}

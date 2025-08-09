@@ -1,0 +1,206 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620744",
+        "label": "Spermatogenic failure 90"
+      }
+    }
+  ],
+  "id": "PMID_35534203_Family_W0031_II_1_P3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620744",
+          "label": "Spermatogenic failure 90"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family W0031/II-1 [P3]",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001286574.2:c.632G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.35747589G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ARMC12",
+                  "valueId": "HGNC:21099"
+                },
+                "id": "var_JmiPgTNFZJWJSryaeGHWJlExC",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "35747589",
+                  "ref": "G"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family W0031/II-1 [P3]",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001286574.2:c.686G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.35747643G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ARMC12",
+                  "valueId": "HGNC:21099"
+                },
+                "id": "var_vBlagrywZRvqufSoNXVikBGnz",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "35747643",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family W0031/II-1 [P3]",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-08T04:18:44.815666913Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Biallelic mutations in ARMC12 cause asthenozoospermia and multiple midpiece defects in humans and mice",
+        "id": "PMID:35534203",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35534203"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0034011",
+        "label": "Reduced progressive sperm motility"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030346",
+        "label": "Abnormal circulating follicle-stimulating hormone concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030345",
+        "label": "Abnormal circulating luteinizing hormone concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000798",
+        "label": "Oligozoospermia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f68cc353870f",
+    "sex": "MALE"
+  }
+}

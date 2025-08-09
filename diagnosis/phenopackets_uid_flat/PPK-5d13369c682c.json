@@ -1,0 +1,226 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:610042",
+        "label": "Pitt-Hopkins like syndrome 1"
+      }
+    }
+  ],
+  "id": "PMID_34778490_sister",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610042",
+          "label": "Pitt-Hopkins like syndrome 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "sister",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014141.6:c.1977_1989del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.147639185_147639197del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CNTNAP2",
+                  "valueId": "HGNC:13830"
+                },
+                "id": "var_brJYaLRCEbxkMmBhlBCUoIvdK",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "147639181",
+                  "ref": "ACTCAGTGACACAG"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "sister",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "geneContext": {
+                  "symbol": "CNTNAP2",
+                  "valueId": "HGNC:13830"
+                },
+                "id": "var_WVflOzCziJmJdNWTsCRFtqqHW",
+                "label": "deletion of exon 4",
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "sister",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-19T05:40:21.119803905Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Pitt Hopkins-Like Syndrome 1 with Novel CNTNAP2 Mutation in Siblings",
+        "id": "PMID:34778490",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/34778490"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y11M"
+        }
+      },
+      "type": {
+        "id": "HP:0032661",
+        "label": "Generalized convulsive status epilepticus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002353",
+        "label": "EEG abnormality"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010819",
+        "label": "Atonic seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032752",
+        "label": "Focal impaired awareness emotional seizure with fear/anxiety/panic"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-5d13369c682c",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

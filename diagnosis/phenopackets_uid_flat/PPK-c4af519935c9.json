@@ -1,0 +1,247 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:240300",
+        "label": "Autoimmune polyendocrinopathy syndrome , type I, with or without reversible metaphyseal dysplasia"
+      }
+    }
+  ],
+  "id": "PMID_18616706_Case_7",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:240300",
+          "label": "Autoimmune polyendocrinopathy syndrome , type I, with or without reversible metaphyseal dysplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case 7",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000383.4:c.769C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.44289773C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "AIRE",
+                  "valueId": "HGNC:360"
+                },
+                "id": "var_AjzuYBBzVKINCRLFoERdVeLKN",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr21",
+                  "genomeAssembly": "hg38",
+                  "pos": "44289773",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Case 7",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-20T10:32:50.497362852Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Evaluation of the autoimmune regulator (AIRE) gene mutations in a cohort of Italian patients with autoimmune-polyendocrinopathy-candidiasis-ectodermal-dystrophy (APECED) and in their relatives",
+        "id": "PMID:18616706",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18616706"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002728",
+        "label": "Chronic mucocutaneous candidiasis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000829",
+        "label": "Hypoparathyroidism"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      },
+      "type": {
+        "id": "HP:0008207",
+        "label": "Primary adrenal insufficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100647",
+        "label": "Graves disease"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008209",
+        "label": "Premature ovarian insufficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000343",
+        "label": "Antiparietal cell antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001596",
+        "label": "Alopecia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001045",
+        "label": "Vitiligo"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001081",
+        "label": "Cholelithiasis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002582",
+        "label": "Atrophic gastritis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002024",
+        "label": "Malabsorption"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000121",
+        "label": "Nephrocalcinosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100651",
+        "label": "Type I diabetes mellitus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001746",
+        "label": "Asplenia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-c4af519935c9",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P33Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

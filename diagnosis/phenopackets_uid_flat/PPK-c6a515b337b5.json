@@ -1,0 +1,169 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:610042",
+        "label": "Pitt-Hopkins like syndrome 1"
+      }
+    }
+  ],
+  "id": "PMID_22031302_Mik5",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610042",
+          "label": "Pitt-Hopkins like syndrome 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Mik5",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "geneContext": {
+                  "symbol": "CNTNAP2",
+                  "valueId": "HGNC:13830"
+                },
+                "id": "var_mVydFtDWPLpWUbNRZFnUEJZhR",
+                "label": "246 kb deletion in 7q35",
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Mik5",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-19T05:40:21.118671894Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Clinically relevant single gene or intragenic deletions encompassing critical neurodevelopmental genes in patients with developmental delay, mental retardation, and/or autism spectrum disorders",
+        "id": "PMID:22031302",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/22031302"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010819",
+        "label": "Atonic seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007334",
+        "label": "Bilateral tonic-clonic seizure with focal onset"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032752",
+        "label": "Focal impaired awareness emotional seizure with fear/anxiety/panic"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-c6a515b337b5",
+    "vitalStatus": {}
+  }
+}

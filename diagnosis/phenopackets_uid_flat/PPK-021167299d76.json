@@ -1,0 +1,226 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:154500",
+        "label": "Treacher Collins syndrome 1"
+      }
+    }
+  ],
+  "id": "PMID_24108658_Family_2_Patient_3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:154500",
+          "label": "Treacher Collins syndrome 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family 2 Patient 3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001371623.1:c.3107dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.150389947dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TCOF1",
+                  "valueId": "HGNC:11654"
+                },
+                "id": "var_SfHzMilLWBsxTcYEfifYSjcni",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "AG",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "150389946",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family 2 Patient 3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-09T09:03:01.620254993Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "The hutterite variant of Treacher Collins syndrome: a 28-year-old story solved",
+        "id": "PMID:24108658",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24108658"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000652",
+        "label": "Lower eyelid coloboma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000561",
+        "label": "Absent eyelashes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000272",
+        "label": "Malar flattening"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000377",
+        "label": "Abnormal pinna morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000405",
+        "label": "Conductive hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000413",
+        "label": "Atresia of the external auditory canal"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009554",
+        "label": "Preauricular hair displacement"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000453",
+        "label": "Choanal atresia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004440",
+        "label": "Coronal craniosynostosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:6000612",
+        "label": "Squamosal suture synostosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004443",
+        "label": "Lambdoidal craniosynostosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-021167299d76",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P17Y"
+      }
+    }
+  }
+}

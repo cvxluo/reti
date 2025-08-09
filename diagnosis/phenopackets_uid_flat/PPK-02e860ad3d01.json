@@ -1,0 +1,215 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:142900",
+        "label": "Holt-Oram syndrome"
+      }
+    }
+  ],
+  "id": "PMID_12818525_A_III_3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:142900",
+          "label": "Holt-Oram syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "A III/3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_181486.4:c.408C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.114398675G>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TBX5",
+                  "valueId": "HGNC:11604"
+                },
+                "id": "var_yNnlUfjgABKIXaxJaUReYlrLv",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr12",
+                  "genomeAssembly": "hg38",
+                  "pos": "114398675",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "A III/3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-20T05:41:00.293101072Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Holt-Oram syndrome: a new mutation in the TBX5 gene in two unrelated families",
+        "id": "PMID:12818525",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/12818525"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009778",
+        "label": "Short thumb"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030241",
+        "label": "Hypoplasia of deltoid muscle"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011623",
+        "label": "Muscular ventricular septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011682",
+        "label": "Perimembranous ventricular septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001674",
+        "label": "Complete atrioventricular canal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001655",
+        "label": "Patent foramen ovale"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009777",
+        "label": "Absent thumb"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001199",
+        "label": "Triphalangeal thumb"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002984",
+        "label": "Hypoplasia of the radius"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009813",
+        "label": "Upper limb phocomelia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009812",
+        "label": "Amelia involving the upper limbs"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011565",
+        "label": "Common atrium"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031297",
+        "label": "Unroofed coronary sinus"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-02e860ad3d01",
+    "sex": "MALE"
+  }
+}

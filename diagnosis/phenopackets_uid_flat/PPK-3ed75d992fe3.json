@@ -1,0 +1,295 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620545",
+        "label": "Arthrogryposis, distal, type 12"
+      }
+    }
+  ],
+  "id": "PMID_35962790_Family_A_Individual_1_(II-1)",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620545",
+          "label": "Arthrogryposis, distal, type 12"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family A Individual 1 (II-1)",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_139055.4:c.123C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.130449096C>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ADAMTS15",
+                  "valueId": "HGNC:16305"
+                },
+                "id": "var_LpGFtEyZofZEvMOOlsChSymHB",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "130449096",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family A Individual 1 (II-1)",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-21T14:05:44.022357940Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Biallelic variants in ADAMTS15 cause a novel form of distal arthrogryposis",
+        "id": "PMID:35962790",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35962790"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-02-27"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0005879",
+        "label": "Congenital finger flexion contractures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001032",
+        "label": "Absent distal interphalangeal creases"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009130",
+        "label": "Hand muscle atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009884",
+        "label": "Tapered distal phalanges of finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004209",
+        "label": "Clinodactyly of the 5th finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033748",
+        "label": "Hypoesthesia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001771",
+        "label": "Achilles tendon contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006466",
+        "label": "Ankle flexion contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006380",
+        "label": "Knee flexion contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031006",
+        "label": "Acroparesthesia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000678",
+        "label": "Dental crowding"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003306",
+        "label": "Spinal rigidity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002942",
+        "label": "Thoracic kyphosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006089",
+        "label": "Palmar hyperhidrosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0200160",
+        "label": "Agenesis of maxillary incisor"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000034",
+        "label": "Hydrocele testis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001634",
+        "label": "Mitral valve prolapse"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-3ed75d992fe3",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P17Y5M"
+      }
+    }
+  }
+}

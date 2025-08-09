@@ -1,0 +1,243 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:607259",
+        "label": "Spastic paraplegia 7, autosomal recessive"
+      }
+    }
+  ],
+  "id": "PMID_17646629_brother_II_4",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:607259",
+          "label": "Spastic paraplegia 7, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "brother II-4",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003119.4:c.2075G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.89553932G>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SPG7",
+                  "valueId": "HGNC:11237"
+                },
+                "id": "var_IrBjcWQjSZFsnyUAwbWifwpRS",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "89553932",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "brother II-4",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-18T06:27:38.593850135Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel form of autosomal recessive hereditary spastic paraplegia caused by a new SPG7 mutation",
+        "id": "PMID:17646629",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/17646629"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002355",
+        "label": "Difficulty walking"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002061",
+        "label": "Lower limb spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002070",
+        "label": "Limb ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002395",
+        "label": "Lower limb hyperreflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000605",
+        "label": "Supranuclear gaze palsy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033051",
+        "label": "Impaired executive functioning"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002354",
+        "label": "Memory impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006986",
+        "label": "Upper limb spasticity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003484",
+        "label": "Upper limb muscle weakness"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007350",
+        "label": "Hyperreflexia in upper limbs"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007377",
+        "label": "Abnormality of somatosensory evoked potentials"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000020",
+        "label": "Urinary incontinence"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-656b2a83a6fa",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P43Y"
+      }
+    }
+  }
+}

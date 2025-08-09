@@ -1,0 +1,330 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:605911",
+        "label": "HMG-CoA synthase-2 deficiency"
+      }
+    }
+  ],
+  "id": "PMID_31597564_Case_presentation",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:605911",
+          "label": "HMG-CoA synthase-2 deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case presentation",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005518.4:c.100C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.119768745G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "HMGCS2",
+                  "valueId": "HGNC:5008"
+                },
+                "id": "var_imJlRSuxpjLIMhlROSPNKfllN",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "119768745",
+                  "ref": "G"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case presentation",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005518.4:c.1465del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.119750864del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "HMGCS2",
+                  "valueId": "HGNC:5008"
+                },
+                "id": "var_wSFRPNaDTnPLYJHLLdNvjbvXx",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "119750863",
+                  "ref": "GT"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Case presentation",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-28T09:25:08.900347948Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Severe clinical manifestation of mitochondrial 3-hydroxy-3-methylglutaryl-CoA synthase deficiency associated with two novel mutations: a case report",
+        "id": "PMID:31597564",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31597564"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0001943",
+        "label": "Hypoglycemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0001942",
+        "label": "Metabolic acidosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0031964",
+        "label": "Elevated circulating alanine aminotransferase concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0040155",
+        "label": "Elevated urinary 3-hydroxybutyric acid"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0033407",
+        "label": "Elevated urine acetoacetic acid level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0003150",
+        "label": "Glutaric aciduria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:6001114",
+        "label": "Elevated urinary adipic acid"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0003219",
+        "label": "Ethylmalonic aciduria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0033213",
+        "label": "Elevated urine suberic acid level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0500252",
+        "label": "Increased urine sebacic acid concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0040301",
+        "label": "Increased urinary glycerol"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0035023",
+        "label": "Elevated circulating acetylcarnitine concentration"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0100806",
+        "label": "Sepsis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001298",
+        "label": "Encephalopathy"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-ee6e311a1e5a",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
+    }
+  }
+}

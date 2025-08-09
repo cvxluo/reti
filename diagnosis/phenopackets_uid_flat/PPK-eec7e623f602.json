@@ -1,0 +1,286 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620775",
+        "label": "Neuromuscular disorder, congenital, with dysmorphic facies"
+      }
+    }
+  ],
+  "id": "PMID_37163662_Family_D_Patient_5",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620775",
+          "label": "Neuromuscular disorder, congenital, with dysmorphic facies"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family D Patient 5",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015687.5:c.1156C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.75314676G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FILIP1",
+                  "valueId": "HGNC:21015"
+                },
+                "id": "var_mEVOazBGFYsFgMdOjpeRNTjAG",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "75314676",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family D Patient 5",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-22T07:40:49.422021150Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Bi-allelic variants of FILIP1 cause congenital myopathy, dysmorphism and neurological defects",
+        "id": "PMID:37163662",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37163662"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000954",
+        "label": "Single transverse palmar crease"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011816",
+        "label": "Parietal encephalocele"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001181",
+        "label": "Adducted thumb"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000160",
+        "label": "Narrow mouth"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410030",
+        "label": "Cleft lip"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001684",
+        "label": "Secundum atrial septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002507",
+        "label": "Semilobar holoprosencephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000505",
+        "label": "Visual impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000054",
+        "label": "Micropenis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000873",
+        "label": "Diabetes insipidus"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-eec7e623f602",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P5Y9M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

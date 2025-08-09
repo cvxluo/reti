@@ -1,0 +1,273 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:240300",
+        "label": "Autoimmune polyendocrinopathy syndrome , type I, with or without reversible metaphyseal dysplasia"
+      }
+    }
+  ],
+  "id": "PMID_19758376_Family_6_individual_II_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:240300",
+          "label": "Autoimmune polyendocrinopathy syndrome , type I, with or without reversible metaphyseal dysplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family 6 individual II-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000383.4:c.845dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.44290034dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "AIRE",
+                  "valueId": "HGNC:360"
+                },
+                "id": "var_kdktiOmEsBWnrhoEwKHZodeXs",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "GC",
+                  "chrom": "chr21",
+                  "genomeAssembly": "hg38",
+                  "pos": "44290030",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family 6 individual II-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-20T10:32:50.486752986Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Novel and recurrent mutations in the AIRE gene of autoimmune polyendocrinopathy syndrome type 1 (APS1) patients",
+        "id": "PMID:19758376",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/19758376"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002728",
+        "label": "Chronic mucocutaneous candidiasis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000829",
+        "label": "Hypoparathyroidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031817",
+        "label": "Decreased circulating parathyroid hormone level"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002289",
+        "label": "Alopecia universalis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001094",
+        "label": "Iridocyclitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012203",
+        "label": "Onychomycosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001096",
+        "label": "Keratoconjunctivitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0008207",
+        "label": "Primary adrenal insufficiency"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000121",
+        "label": "Nephrocalcinosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100651",
+        "label": "Type I diabetes mellitus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002608",
+        "label": "Celiac disease"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002925",
+        "label": "Elevated circulating thyroid-stimulating hormone concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:6000343",
+        "label": "Antiparietal cell antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:5000011",
+        "label": "Anti-GAD65 antibody"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032069",
+        "label": "Anti-thyroglobulin antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0025379",
+        "label": "Anti-thyroid peroxidase antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:4000030",
+        "label": "Anti-reticulin antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0033637",
+        "label": "Anti-endomysial antibody positivity"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-8ec5ca9759f9",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      },
+      "term": {
+        "id": "OMIM:616211",
+        "label": "Developmental and epileptic encephalopathy 28"
+      }
+    }
+  ],
+  "id": "PMID_30094525_Case_report",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616211",
+          "label": "Developmental and epileptic encephalopathy 28"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case report",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016373.4:c.716T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.78424980T>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "WWOX",
+                  "valueId": "HGNC:12799"
+                },
+                "id": "var_yHZvGJxNRelGAgntgEHcVXRhS",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "78424980",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Case report",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2025-01-12T18:25:29.438565969Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "WWOX-associated encephalopathies: identification of the phenotypic spectrum and the resulting genotype-phenotype correlation",
+        "id": "PMID:30094525",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30094525"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      },
+      "type": {
+        "id": "HP:0011097",
+        "label": "Epileptic spasm"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0005484",
+        "label": "Secondary microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034353",
+        "label": "Appendicular spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002353",
+        "label": "EEG abnormality"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a2ca8b4f6735",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:618619",
+        "label": "Weiss-Kruszka syndrome"
+      }
+    }
+  ],
+  "id": "PMID_39069253_individual_30_González_Tarancón_et_al",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:618619",
+          "label": "Weiss-Kruszka syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual 30-González-Tarancón et al. ",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_021224.6:c.3306dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.106927218dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ZNF462",
+                  "valueId": "HGNC:21684"
+                },
+                "id": "var_jNgozIBXTtrGxfTodnasLeRal",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "CA",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "106927217",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual 30-González-Tarancón et al. ",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-29T16:14:34.512439012Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Phenotypic Spectrum in Weiss-Kruszka Syndrome caused by ZNF462 variants: Three New Patients and Literature Review",
+        "id": "PMID:39069253",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/39069253"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002263",
+        "label": "Exaggerated cupid's bow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005487",
+        "label": "Prominent metopic ridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002870",
+        "label": "Obstructive sleep apnea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000289",
+        "label": "Broad philtrum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000414",
+        "label": "Bulbous nose"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001840",
+        "label": "Metatarsus adductus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001669",
+        "label": "Transposition of the great arteries"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001719",
+        "label": "Double outlet right ventricle"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001647",
+        "label": "Bicuspid aortic valve"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-c9f76d64c51b",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y4M"
+      }
+    }
+  }
+}

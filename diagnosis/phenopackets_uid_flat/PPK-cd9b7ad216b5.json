@@ -1,0 +1,230 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:243700",
+        "label": "Hyper-IgE syndrome 2, autosomal recessive, with recurrent infections"
+      }
+    }
+  ],
+  "id": "PMID_19776401_Patient_8-2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:243700",
+          "label": "Hyper-IgE syndrome 2, autosomal recessive, with recurrent infections"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 8-2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_203447.3:c.1418A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.336714A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "DOCK8",
+                  "valueId": "HGNC:19191"
+                },
+                "id": "var_cblkpekucoPHYhstWOBfXIyuN",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "336714",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 8-2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-21T17:48:06.198977947Z",
+    "createdBy": "ORCID:0000-0002-5648-2155",
+    "externalReferences": [
+      {
+        "description": "Combined immunodeficiency associated with DOCK8 mutations",
+        "id": "PMID:19776401",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/19776401"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-02-27"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000491",
+        "label": "Keratitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032163",
+        "label": "Molluscum contagiosum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100658",
+        "label": "Cellulitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410330",
+        "label": "Meat allergen allergy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001047",
+        "label": "Atopic dermatitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410328",
+        "label": "Egg allergy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006335",
+        "label": "Persistence of primary teeth"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410017",
+        "label": "Otitis externa"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410331",
+        "label": "Nut food product allergy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000246",
+        "label": "Sinusitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410327",
+        "label": "Dairy allergy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410323",
+        "label": "Drug allergy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002099",
+        "label": "Asthma"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002664",
+        "label": "Neoplasm"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-cd9b7ad216b5",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P16Y"
+      }
+    }
+  }
+}

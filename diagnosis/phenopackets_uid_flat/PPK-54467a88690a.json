@@ -1,0 +1,296 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:605911",
+        "label": "HMG-CoA synthase-2 deficiency"
+      }
+    }
+  ],
+  "id": "PMID_31392109_Case_presentation",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:605911",
+          "label": "HMG-CoA synthase-2 deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case presentation",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005518.4:c.130dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.119764605dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "HMGCS2",
+                  "valueId": "HGNC:5008"
+                },
+                "id": "var_aVppwbLFowvfNPsnmKgwPbjIG",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "AG",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "119764600",
+                  "ref": "A"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case presentation",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005518.4:c.1156dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.119755460dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "HMGCS2",
+                  "valueId": "HGNC:5008"
+                },
+                "id": "var_PCNhRIRJkaCQQprjOJdAelOXb",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "AG",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "119755457",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Case presentation",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-28T09:25:08.901010036Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A Japanese case of mitochondrial 3-hydroxy-3-methylglutaryl-CoA synthase deficiency who presented with severe metabolic acidosis and fatty liver without hypoglycemia",
+        "id": "PMID:31392109",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31392109"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001397",
+        "label": "Hepatic steatosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001942",
+        "label": "Metabolic acidosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031956",
+        "label": "Elevated circulating aspartate aminotransferase concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031964",
+        "label": "Elevated circulating alanine aminotransferase concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001987",
+        "label": "Hyperammonemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002919",
+        "label": "Ketonuria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001259",
+        "label": "Coma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001298",
+        "label": "Encephalopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040155",
+        "label": "Elevated urinary 3-hydroxybutyric acid"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003215",
+        "label": "Dicarboxylic aciduria"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001943",
+        "label": "Hypoglycemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030781",
+        "label": "Increased circulating free fatty acid level"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-54467a88690a",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

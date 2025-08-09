@@ -1,0 +1,269 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P36Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:617225",
+        "label": "Spastic paraplegia 78, autosomal recessive"
+      }
+    }
+  ],
+  "id": "PMID_38252374_46_year_old_Chinese_woman",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:617225",
+          "label": "Spastic paraplegia 78, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "46-year-old Chinese woman",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_022089.4:c.2780T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.16988217A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ATP13A2",
+                  "valueId": "HGNC:30213"
+                },
+                "id": "var_lPPfCVYHbvAMpzezhvqZNfcsr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "16988217",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "46-year-old Chinese woman",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2025-01-12T10:25:46.653193950Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel ATP13A2 variant causing complicated hereditary spastic paraplegia",
+        "id": "PMID:38252374",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/38252374"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007002",
+        "label": "Motor axonal neuropathy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003390",
+        "label": "Sensory axonal neuropathy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002067",
+        "label": "Bradykinesia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002120",
+        "label": "Cerebral cortical atrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001258",
+        "label": "Spastic paraplegia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001347",
+        "label": "Hyperreflexia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001300",
+        "label": "Parkinsonism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002359",
+        "label": "Frequent falls"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002396",
+        "label": "Cogwheel rigidity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002354",
+        "label": "Memory impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000726",
+        "label": "Dementia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-356c91f9db24",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P46Y"
+      }
+    },
+    "vitalStatus": {}
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620601",
+        "label": "Garg-Mishra progeroid syndrome"
+      }
+    }
+  ],
+  "id": "PMID_36299998_affected_individual",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620601",
+          "label": "Garg-Mishra progeroid syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "affected individual",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_019059.5:c.73T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.22822707A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TOMM7",
+                  "valueId": "HGNC:21648"
+                },
+                "id": "var_fJPEepLwgfJYGBRutwYTAPWoY",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "22822707",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "affected individual",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-27T07:31:21.355920791Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A hypomorphic variant in the translocase of the outer mitochondrial membrane complex subunit TOMM7 causes short stature and developmental delay",
+        "id": "PMID:36299998",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36299998"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000774",
+        "label": "Narrow chest"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001169",
+        "label": "Broad palm"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001792",
+        "label": "Small nail"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025435",
+        "label": "Increased circulating lactate dehydrogenase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004474",
+        "label": "Persistent open anterior fontanelle"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000883",
+        "label": "Thin ribs"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003300",
+        "label": "Ovoid vertebral bodies"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000926",
+        "label": "Platyspondyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003100",
+        "label": "Slender long bone"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002673",
+        "label": "Coxa valga"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006236",
+        "label": "Slender metacarpals"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001414",
+        "label": "Microvesicular hepatic steatosis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-88865b1c5017",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y7M"
+      }
+    }
+  }
+}

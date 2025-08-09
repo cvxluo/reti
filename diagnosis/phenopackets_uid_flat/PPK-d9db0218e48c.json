@@ -1,0 +1,240 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:300868",
+        "label": "Multiple congenital anomalies-hypotonia-seizures syndrome 2"
+      }
+    }
+  ],
+  "id": "PMID_22305531_IV_4",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:300868",
+          "label": "Multiple congenital anomalies-hypotonia-seizures syndrome 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "IV-4",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002641.4:c.1234C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.15321727G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PIGA",
+                  "valueId": "HGNC:8957"
+                },
+                "id": "var_sxerOWvqkFfJvqwMXnuVXOzkw",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chrX",
+                  "genomeAssembly": "hg38",
+                  "pos": "15321727",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "IV-4",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-30T11:53:57.301221847Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "The phenotype of a germline mutation in PIGA: the gene somatically mutated in paroxysmal nocturnal hemoglobinuria",
+        "id": "PMID:22305531",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/22305531"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011461",
+          "label": "Fetal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001561",
+        "label": "Polyhydramnios"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002079",
+        "label": "Hypoplasia of the corpus callosum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002123",
+        "label": "Generalized myoclonic seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001623",
+        "label": "Breech presentation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002878",
+        "label": "Respiratory failure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002139",
+        "label": "Arrhinencephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003155",
+        "label": "Elevated circulating alkaline phosphatase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002705",
+        "label": "High, narrow palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001371",
+        "label": "Flexion contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001321",
+        "label": "Cerebellar hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025116",
+        "label": "Fetal distress"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011330",
+        "label": "Metopic synostosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001414",
+        "label": "Microvesicular hepatic steatosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001348",
+        "label": "Brisk reflexes"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000201",
+        "label": "Pierre-Robin sequence"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-d9db0218e48c",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2M"
+      }
+    }
+  }
+}

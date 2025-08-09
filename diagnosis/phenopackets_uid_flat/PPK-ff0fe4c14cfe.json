@@ -1,0 +1,302 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:108300",
+        "label": "Stickler syndrome, type I"
+      }
+    }
+  ],
+  "id": "PMID_28841907_boy",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:108300",
+          "label": "Stickler syndrome, type I"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "boy",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001844.5:c.1142G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.47987690C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "COL2A1",
+                  "valueId": "HGNC:2200"
+                },
+                "id": "var_BqVMrbszYPxIEHEgfhMDwsALC",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr12",
+                  "genomeAssembly": "hg38",
+                  "pos": "47987690",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "boy",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-25T12:51:15.770906209Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel mutation in the COL2A1 gene in a patient with Stickler syndrome type 1: a case report and review of the literature",
+        "id": "PMID:28841907",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28841907"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002684",
+        "label": "Thickened calvaria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0008829",
+        "label": "Delayed femoral head ossification"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0006376",
+        "label": "Limited elbow flexion"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000555",
+        "label": "Leukocoria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:5201016",
+        "label": "Submucous cleft palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000520",
+        "label": "Proptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000201",
+        "label": "Pierre-Robin sequence"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001634",
+        "label": "Mitral valve prolapse"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002829",
+        "label": "Arthralgia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-ff0fe4c14cfe",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y"
+      }
+    }
+  }
+}

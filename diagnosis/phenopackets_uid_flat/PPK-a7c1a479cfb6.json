@@ -1,0 +1,146 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:609322",
+        "label": "Rhabdoid tumor predisposition syndrome 1"
+      }
+    }
+  ],
+  "id": "PMID_34101994_III_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:609322",
+          "label": "Rhabdoid tumor predisposition syndrome 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III.1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "geneContext": {
+                  "symbol": "SMARCB1",
+                  "valueId": "HGNC:11103"
+                },
+                "id": "var_qXKwkzTlNzfOzdHqpUpnvmjkT",
+                "label": "gain of SMARCB1 exon 6",
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000037",
+                  "label": "chromosomal_duplication"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III.1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-07T06:02:55.685305118Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Evidence for a low-penetrant extended phenotype of rhabdoid tumor predisposition syndrome type 1 from a kindred with gain of SMARCB1 exon 6",
+        "id": "PMID:34101994",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/34101994"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      },
+      "type": {
+        "id": "HP:0034401",
+        "label": "Atypical teratoid/rhabdoid tumor"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001909",
+        "label": "Leukemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002888",
+        "label": "Ependymoma"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a7c1a479cfb6",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P15Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}
