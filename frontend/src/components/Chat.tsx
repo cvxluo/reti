@@ -34,25 +34,48 @@ export default function Chat() {
   }, [messages]);
 
   async function sendText() {
-    setBusy(true);
-    const response = await fetch(`${API_BASE}/api/agent`, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ userRequest: input }),
-    });
-
-    const json = await response.json();
-    setMessages((m) => [...m, { id: crypto.randomUUID(), role: "assistant", text: json.text }]);
-    setBusy(false);
-    
-    /*
     const text = input.trim();
-    if (!text) return;
-    setInput("");
+    if (!text || busy) return;
+
+    // 1) render the user bubble immediately
     const uid = crypto.randomUUID();
     setMessages((m) => [...m, { id: uid, role: "user", text }]);
-    await runPhenotypeFromText(text);
-    */
+    setInput(""); // clear input box
+    setBusy(true);
+
+    try {
+      // 2) call your agent
+      const r = await fetch(`${API_BASE}/api/agent`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ userRequest: text }),
+      });
+
+      // 3) append assistant bubble (even on non-200, show something)
+      let reply = "Sorry — request failed.";
+      if (r.ok) {
+        const json = await r.json().catch(() => ({}));
+        reply = (json?.text ?? json?.message ?? "").toString().trim() || "…";
+      } else {
+        const errText = await r.text().catch(() => "");
+        reply = errText || `${r.status} ${r.statusText}`;
+      }
+      setMessages((m) => [
+        ...m,
+        { id: crypto.randomUUID(), role: "assistant", text: reply },
+      ]);
+    } catch (e: any) {
+      setMessages((m) => [
+        ...m,
+        {
+          id: crypto.randomUUID(),
+          role: "assistant",
+          text: e?.message ?? "Network error",
+        },
+      ]);
+    } finally {
+      setBusy(false);
+    }
   }
 
   async function runPhenotypeFromText(text: string) {
