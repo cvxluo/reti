@@ -27,16 +27,54 @@ def _extract_truth_gene_symbols(phenopacket: dict) -> Set[str]:
 
 
 @mcp.tool
-def check_gene_guess(phenopacket_path: str, guessed_genes: List[str]) -> str:
+def check_gene_guess(phenopacket_uid: str, guessed_genes: List[str]) -> str:
     """Return 'Yes' if any ground-truth gene in the phenopacket is in guessed_genes (case-insensitive), else 'No'.
 
     Args:
-        phenopacket_path: Absolute or relative path to a Phenopacket JSON file.
+        phenopacket_uid: A Phenopacket UID like "PPK-abcdef123456" (with or without .json),
+            or a direct path for backward compatibility.
         guessed_genes: List of gene symbols guessed by the model.
     """
 
-    packet_path = Path(phenopacket_path)
-    if not packet_path.exists():
+    def _resolve_uid_to_path(uid_or_path: str) -> Path | None:
+        # 1) If caller provided a real path, use it
+        candidate_path = Path(uid_or_path)
+        if candidate_path.exists():
+            return candidate_path
+
+        # 2) Construct from UID under phenopackets_uid_flat
+        uid = Path(uid_or_path).stem  # drop optional .json
+        if not uid:
+            return None
+
+        uid_base_dir = (Path(__file__).resolve().parent.parent / "phenopackets_uid_flat").resolve()
+        candidate = uid_base_dir / f"{uid}.json"
+        if candidate.exists():
+            return candidate
+
+        # 3) Optional: try mapping.csv if present
+        mapping_csv = uid_base_dir / "mapping.csv"
+        if mapping_csv.exists():
+            try:
+                import csv  # local import to avoid overhead when unused
+
+                with mapping_csv.open("r", encoding="utf-8") as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        if (row.get("assigned_id") or "").strip() == uid:
+                            dest_path = (row.get("dest_path") or "").strip()
+                            if dest_path:
+                                p = Path(dest_path)
+                                if p.exists():
+                                    return p
+                            break
+            except Exception:
+                pass
+
+        return None
+
+    packet_path = _resolve_uid_to_path(phenopacket_uid)
+    if packet_path is None:
         return "No"
 
     try:

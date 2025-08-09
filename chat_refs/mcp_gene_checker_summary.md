@@ -29,8 +29,8 @@ python /Users/johnyang/Desktop/Projects/reti/diagnosis/mcp/gene_checker_server.p
 ```bash
 source /Users/johnyang/Desktop/Projects/reti/.venv/bin/activate
 python /Users/johnyang/Desktop/Projects/reti/diagnosis/mcp/test_gene_checker.py \
-  --phenopacket /Users/johnyang/Desktop/Projects/reti/diagnosis/phenopackets/AAGAB/PMID_28239884_Family1proband.json \
-  --guesses AAGAB BRCA1
+  --uid PPK-1acf6283c9d7 \
+  --guesses ZMYM3 BRCA1
 # Expected: Tool verdict: Yes
 ```
 
@@ -39,7 +39,7 @@ python /Users/johnyang/Desktop/Projects/reti/diagnosis/mcp/test_gene_checker.py 
 ```bash
 source /Users/johnyang/Desktop/Projects/reti/.venv/bin/activate
 python /Users/johnyang/Desktop/Projects/reti/diagnosis/mcp/test_gene_checker.py \
-  --phenopacket /Users/johnyang/Desktop/Projects/reti/diagnosis/phenopackets/AAGAB/PMID_28239884_Family1proband.json \
+  --uid PPK-1acf6283c9d7 \
   --max-genes 8
 # Example output (varies): Guessed genes: ["WNT10A", "AAGAB", ...] → Tool verdict: Yes
 ```
@@ -51,6 +51,7 @@ python /Users/johnyang/Desktop/Projects/reti/diagnosis/mcp/test_gene_checker.py 
 - Register the server command in your MCP client config:
   - command: `python`
   - args: `["/Users/johnyang/Desktop/Projects/reti/diagnosis/mcp/gene_checker_server.py"]`
+- The tool input is now `phenopacket_uid` (e.g., `PPK-...`). You can still pass a full path if needed.
 - Then GPT-5 can call `check_gene_guess` agentically when prompted, subject to the client’s tool-use policy.
 
 ### Reference

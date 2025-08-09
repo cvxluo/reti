@@ -1,6 +1,6 @@
 ## Gene Guess Checker MCP Server (fastmcp)
 
-This standalone MCP server exposes a single tool, `check_gene_guess`, that reads a Phenopacket JSON file, extracts ground-truth diagnostic gene symbol(s) from `interpretations[].diagnosis.genomicInterpretations[].variantInterpretation.variationDescriptor.geneContext.symbol`, and checks if any are present in a provided list of guessed gene symbols.
+This standalone MCP server exposes a single tool, `check_gene_guess`, that reads a Phenopacket JSON file (resolved via UID), extracts ground-truth diagnostic gene symbol(s) from `interpretations[].diagnosis.genomicInterpretations[].variantInterpretation.variationDescriptor.geneContext.symbol`, and checks if any are present in a provided list of guessed gene symbols.
 
 Returns "Yes" if any match (case-insensitive), otherwise "No".
 
@@ -23,7 +23,8 @@ Configure your MCP client (e.g., Cursor, Claude Desktop) to launch the above com
 ### Tool: `check_gene_guess`
 
 Inputs:
-- `phenopacket_path` (str): Path to a Phenopacket v2 JSON file
+- `phenopacket_uid` (str): Phenopacket UID like `PPK-abcdef123456` stored under `diagnosis/phenopackets_uid_flat/`.
+  - Backward-compatible: you may also pass a direct file path; the server will accept it.
 - `guessed_genes` (list[str]): Model-predicted gene symbols
 
 Output:
@@ -40,7 +41,8 @@ async def main():
         result = await client.call_tool(
             "check_gene_guess",
             {
-                "phenopacket_path": "phenopackets/AAGAB/PMID_28239884_Family1proband.json",
+                # Prefer UID lookup; falls back to path if you pass one
+                "phenopacket_uid": "PPK-1acf6283c9d7",
                 "guessed_genes": ["AAGAB", "BRCA1"],
             },
         )
