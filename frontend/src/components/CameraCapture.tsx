@@ -1,5 +1,5 @@
+// CameraCapture.tsx
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 
 type CameraCaptureProps = {
@@ -7,45 +7,69 @@ type CameraCaptureProps = {
   onClose: () => void;
 };
 
-/**
- * Lightweight camera capture overlay that requests camera access, shows
- * a live preview, and returns a captured JPEG as a File via onCapture.
- */
 export default function CameraCapture({
   onCapture,
   onClose,
 }: CameraCaptureProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [error, setError] = useState<string | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  // stop everything now (used by Cancel and cleanup)
+  async function stopCamera() {
+    try {
+      const v = videoRef.current;
+      const s = streamRef.current;
+      if (s) {
+        s.getTracks().forEach((t) => t.stop());
+        streamRef.current = null;
+      }
+      if (v) {
+        try {
+          v.pause();
+        } catch {}
+        v.srcObject = null;
+        if (v.src) v.src = "";
+      }
+    } catch {}
+  }
 
   useEffect(() => {
     let cancelled = false;
-    async function init() {
+    (async () => {
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
           video: true,
         });
-        if (cancelled) return;
+        if (cancelled) {
+          // if unmounted before permission resolved, stop immediately
+          stream.getTracks().forEach((t) => t.stop());
+          return;
+        }
         streamRef.current = stream;
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
           await videoRef.current.play();
         }
       } catch (e: unknown) {
-        const msg = e instanceof Error ? e.message : "Camera permission denied";
-        setError(msg);
+        if (e instanceof Error) {
+          setError(e.message);
+        } else {
+          setError("Camera permission denied");
+        }
       }
-    }
-    init();
+    })();
+
     return () => {
       cancelled = true;
-      if (streamRef.current) {
-        streamRef.current.getTracks().forEach((t) => t.stop());
-        streamRef.current = null;
-      }
+      stopCamera(); // ensure tracks are stopped on unmount too
     };
   }, []);
+
+  async function handleCancel() {
+    await stopCamera(); // 👈 stop tracks immediately
+    onClose();
+  }
 
   async function capture() {
     const video = videoRef.current;
@@ -67,13 +91,14 @@ export default function CameraCapture({
       "image/jpeg",
       0.92
     );
+    // Optional: close camera after capture
+    // await handleCancel();
   }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
       <div className="w-full max-w-md rounded-2xl bg-white shadow-lg overflow-hidden">
         <div className="relative bg-black">
-          {/* Video preview */}
           <video
             ref={videoRef}
             className="w-full h-72 object-contain bg-black"
@@ -88,7 +113,7 @@ export default function CameraCapture({
         </div>
         <div className="flex items-center gap-2 p-3 border-t">
           <button
-            onClick={onClose}
+            onClick={handleCancel}
             className="rounded-xl border border-stone-300/70 bg-white px-4 py-2 text-sm"
           >
             Cancel
