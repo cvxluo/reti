@@ -23,7 +23,7 @@ function coerceJson(text: string): any {
 
 export async function captionImage(imageUrl: string): Promise<string> {
   const resp = await openai.responses.create({
-    model: "gpt-5",
+    model: "gpt-5-mini",
     input: [
       {
         role: "user",
@@ -47,7 +47,7 @@ export async function generatePhenotypeFromText(
 ): Promise<PhenotypeJSONType> {
   const user = `TEXT:\n${text}\n\nReturn ONLY the JSON.`;
   const resp = await openai.chat.completions.create({
-    model: "gpt-5",
+    model: "gpt-5-mini",
     messages: [
       { role: "system", content: SYSTEM },
       { role: "user", content: user },

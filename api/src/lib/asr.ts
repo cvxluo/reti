@@ -23,7 +23,7 @@ export async function transcribeWithASR(
 
   const r = await openai.audio.transcriptions.create({
     file,
-    model: "gpt-4o-transcribe",
+    model: "gpt-5-mini-transcribe",
   });
 
   return {
