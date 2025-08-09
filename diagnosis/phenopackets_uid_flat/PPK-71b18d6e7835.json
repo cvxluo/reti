@@ -1,0 +1,318 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:616840",
+        "label": "Parkinson disease 23, autosomal recessive, early onset"
+      }
+    }
+  ],
+  "id": "PMID_26942284_II_1_from_Family_C",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616840",
+          "label": "Parkinson disease 23, autosomal recessive, early onset"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "II-1 from Family C",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020821.3:c.4165G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000015.10:g.61958608C>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "VPS13C",
+                  "valueId": "HGNC:23594"
+                },
+                "id": "var_LrbgEVWDFacQjsPvzKzviICFj",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr15",
+                  "genomeAssembly": "hg38",
+                  "pos": "61958608",
+                  "ref": "C"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "II-1 from Family C",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020821.3:c.4777del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000015.10:g.61947294del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "VPS13C",
+                  "valueId": "HGNC:23594"
+                },
+                "id": "var_AUBLhrsaBRirGSMWUypMBhIUn",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr15",
+                  "genomeAssembly": "hg38",
+                  "pos": "61947291",
+                  "ref": "TG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "II-1 from Family C",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-29T05:41:13.017889022Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Loss of VPS13C Function in Autosomal-Recessive Parkinsonism Causes Mitochondrial Dysfunction and Increases PINK1/Parkin-Dependent Mitophagy",
+        "id": "PMID:26942284",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/26942284"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P39Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000726",
+        "label": "Dementia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P39Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001350",
+        "label": "Slurred speech"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002548",
+        "label": "Parkinsonism with favorable response to dopaminergic medication"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002505",
+        "label": "Loss of ambulation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002451",
+        "label": "Limb dystonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001257",
+        "label": "Spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002322",
+        "label": "Resting tremor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002304",
+        "label": "Akinesia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002063",
+        "label": "Rigidity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002120",
+        "label": "Cerebral cortical atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007256",
+        "label": "Abnormal pyramidal sign"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000020",
+        "label": "Urinary incontinence"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000738",
+        "label": "Hallucinations"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002172",
+        "label": "Postural instability"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031825",
+        "label": "Freezing of gait"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002527",
+        "label": "Falls"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000741",
+        "label": "Apathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001289",
+        "label": "Confusion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004326",
+        "label": "Cachexia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000716",
+        "label": "Depression"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-71b18d6e7835",
+    "sex": "FEMALE"
+  }
+}

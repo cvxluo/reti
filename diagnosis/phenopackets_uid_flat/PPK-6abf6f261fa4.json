@@ -1,0 +1,262 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620680",
+        "label": "Lipodystrophy, congenital generalized, type 5"
+      }
+    }
+  ],
+  "id": "PMID_24889630_Proband_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620680",
+          "label": "Lipodystrophy, congenital generalized, type 5"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Proband 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001312673.2:c.838_840del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.196239608_196239610del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PCYT1A",
+                  "valueId": "HGNC:8754"
+                },
+                "id": "var_fztuRlTJmJCWkpAneRwWrFswe",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr3",
+                  "genomeAssembly": "hg38",
+                  "pos": "196239603",
+                  "ref": "TCTC"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Proband 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001312673.2:c.424G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.196247429C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PCYT1A",
+                  "valueId": "HGNC:8754"
+                },
+                "id": "var_dYipgunbsvkzbXCvOqEOAjBpc",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr3",
+                  "genomeAssembly": "hg38",
+                  "pos": "196247429",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Proband 1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-21T08:11:55.796599149Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutations disrupting the Kennedy phosphatidylcholine pathway in humans with congenital lipodystrophy and fatty liver disease",
+        "id": "PMID:24889630",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24889630"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002155",
+        "label": "Hypertriglyceridemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000855",
+        "label": "Insulin resistance"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001397",
+        "label": "Hepatic steatosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0005978",
+        "label": "Type II diabetes mellitus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009125",
+        "label": "Lipodystrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003074",
+        "label": "Hyperglycemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000842",
+        "label": "Hyperinsulinemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003233",
+        "label": "Decreased HDL cholesterol concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030685",
+        "label": "Decreased adiponectin level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0041079",
+        "label": "Decreased body fat percentage"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003635",
+        "label": "Loss of subcutaneous adipose tissue in limbs"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-6abf6f261fa4",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P18Y"
+      }
+    }
+  }
+}

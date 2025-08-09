@@ -1,0 +1,184 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620747",
+        "label": "Neurodevelopmental disorder with early-onset parkinsonism and behavioral abnormalities"
+      }
+    }
+  ],
+  "id": "PMID_30398675_half_aunt_II_3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620747",
+          "label": "Neurodevelopmental disorder with early-onset parkinsonism and behavioral abnormalities"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "half aunt II-3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001013663.2:c.169_196del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.24793187_24793214del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PTRHD1",
+                  "valueId": "HGNC:33782"
+                },
+                "id": "var_uDqWrkPcNarcqPasngiEixZiT",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "24793181",
+                  "ref": "GGGTGGTCGCGGTGAGTGTGCAAGGCCGC"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "half aunt II-3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-21T15:12:31.964267969Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "PTRHD1 Loss-of-function mutation in an african family with juvenile-onset Parkinsonism and intellectual disability",
+        "id": "PMID:30398675",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30398675"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002067",
+        "label": "Bradykinesia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000298",
+        "label": "Mask-like facies"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002396",
+        "label": "Cogwheel rigidity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002174",
+        "label": "Postural tremor"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002322",
+        "label": "Resting tremor"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001347",
+        "label": "Hyperreflexia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-e156d0e8b104",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P44Y"
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "term": {
+        "id": "OMIM:620795",
+        "label": "Autoinflammation with episodic fever and immune dysregulation"
+      }
+    }
+  ],
+  "id": "PMID_38609546_patient_P2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620795",
+          "label": "Autoinflammation with episodic fever and immune dysregulation"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient P2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_030974.4:c.613_614del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.144099748_144099749del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SHARPIN",
+                  "valueId": "HGNC:25321"
+                },
+                "id": "var_MQkGNStdFPSMeokALgFCZPsJV",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr8",
+                  "genomeAssembly": "hg38",
+                  "pos": "144099747",
+                  "ref": "CAG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient P2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-17T17:11:56.688503980Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Biallelic human SHARPIN loss of function induces autoinflammation and immunodeficiency",
+        "id": "PMID:38609546",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/38609546"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0003565",
+        "label": "Elevated erythrocyte sedimentation rate"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001974",
+        "label": "Leukocytosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001954",
+        "label": "Recurrent fever"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002716",
+        "label": "Lymphadenopathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002583",
+        "label": "Colitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002573",
+        "label": "Hematochezia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001369",
+        "label": "Arthritis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011850",
+        "label": "Parotitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006568",
+        "label": "Increased hepatic glycogen content"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000389",
+        "label": "Chronic otitis media"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030057",
+        "label": "Autoimmune antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410295",
+        "label": "Complete or near-complete absence of specific antibody response to tetanus vaccine"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-35774c48436a",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y"
+      }
+    }
+  }
+}

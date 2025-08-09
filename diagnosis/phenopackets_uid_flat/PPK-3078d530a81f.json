@@ -1,0 +1,162 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:612653",
+        "label": "Spherocytosis, type 4"
+      }
+    }
+  ],
+  "id": "PMID_8282779_I/1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:612653",
+          "label": "Spherocytosis, type 4"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "I/1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000342.4:c.2455_2464dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.44251436_44251445dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SLC4A1",
+                  "valueId": "HGNC:11027"
+                },
+                "id": "var_wNBSfgVTwSuKbfKQdqGyFLgld",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "ACATCTGGGTG",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "44251435",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "I/1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-27T15:58:29.570291996Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Duplication of 10 nucleotides in the erythroid band 3 (AE1) gene in a kindred with hereditary spherocytosis and band 3 protein deficiency (band 3PRAGUE)",
+        "id": "PMID:8282779",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/8282779"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001878",
+        "label": "Hemolytic anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004444",
+        "label": "Spherocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001923",
+        "label": "Reticulocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005502",
+        "label": "Increased red cell osmotic fragility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003573",
+        "label": "Increased total bilirubin"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0025066",
+        "label": "Decreased mean corpuscular volume"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-3078d530a81f",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P65Y"
+      }
+    }
+  }
+}

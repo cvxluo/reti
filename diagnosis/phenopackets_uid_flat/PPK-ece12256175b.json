@@ -1,0 +1,259 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y10M"
+        }
+      },
+      "term": {
+        "id": "OMIM:248250",
+        "label": "Hypomagnesemia 3, renal"
+      }
+    }
+  ],
+  "id": "PMID_18816383_index_case",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:248250",
+          "label": "Hypomagnesemia 3, renal"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": " index case",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006580.4:c.574+1G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.190408506G>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CLDN16",
+                  "valueId": "HGNC:2037"
+                },
+                "id": "var_JitHMDgozdQPbygjNmZhfQTLw",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr3",
+                  "genomeAssembly": "hg38",
+                  "pos": "190408506",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": " index case",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-23T14:23:04.754578828Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Familial hypomagnesaemia with hypercalciuria and nephrocalcinosis (FHHNC): compound heterozygous mutation in the claudin 16 (CLDN16) gene",
+        "id": "PMID:18816383",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18816383"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000121",
+        "label": "Nephrocalcinosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002150",
+        "label": "Hypercalciuria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012608",
+        "label": "Hypermagnesiuria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005567",
+        "label": "Renal magnesium wasting"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008341",
+        "label": "Distal renal tubular acidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000010",
+        "label": "Recurrent urinary tract infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000103",
+        "label": "Polyuria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001959",
+        "label": "Polydipsia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002917",
+        "label": "Hypomagnesemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000483",
+        "label": "Astigmatism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000540",
+        "label": "Hypermetropia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000545",
+        "label": "Myopia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002901",
+        "label": "Hypocalcemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-ece12256175b",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P33Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

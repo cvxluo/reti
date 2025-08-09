@@ -1,0 +1,181 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      },
+      "term": {
+        "id": "OMIM:149400",
+        "label": "Hyperekplexia 1"
+      }
+    }
+  ],
+  "id": "PMID_24969041_neonate",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:149400",
+          "label": "Hyperekplexia 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "neonate",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000171.4:c.211A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.151886762T>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "GLRA1",
+                  "valueId": "HGNC:4326"
+                },
+                "id": "var_AweaTugBcBCzIpaTDWXohPZUb",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "151886762",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "neonate",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-27T06:55:48.768207073Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Identification of a novel missense GLRA1 gene mutation in hyperekplexia: a case report",
+        "id": "PMID:24969041",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24969041"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      },
+      "type": {
+        "id": "HP:0002267",
+        "label": "Exaggerated startle response"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      },
+      "type": {
+        "id": "HP:0002108",
+        "label": "Spontaneous pneumothorax"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      },
+      "type": {
+        "id": "HP:0100660",
+        "label": "Dyskinesia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11D"
+        }
+      },
+      "type": {
+        "id": "HP:0001276",
+        "label": "Hypertonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002011",
+        "label": "Morphological central nervous system abnormality"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-30e79d60553b",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11D"
+      }
+    }
+  }
+}

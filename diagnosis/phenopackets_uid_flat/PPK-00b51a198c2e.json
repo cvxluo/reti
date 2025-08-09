@@ -1,0 +1,193 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      },
+      "term": {
+        "id": "OMIM:613826",
+        "label": "Leber congenital amaurosis 6"
+      }
+    }
+  ],
+  "id": "PMID_26047050_Patient_SRF87",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:613826",
+          "label": "Leber congenital amaurosis 6"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient SRF87",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020366.4:c.535del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.21302532del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RPGRIP1",
+                  "valueId": "HGNC:13436"
+                },
+                "id": "var_JRsvyhGbTKVVvagglnXEjDyKi",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr14",
+                  "genomeAssembly": "hg38",
+                  "pos": "21302530",
+                  "ref": "AG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient SRF87",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-02T18:46:58.103707790Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Comprehensive Molecular Diagnosis of a Large Chinese Leber Congenital Amaurosis Cohort",
+        "id": "PMID:26047050",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/26047050"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032122",
+        "label": "Very low visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001483",
+        "label": "Eye poking"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000540",
+        "label": "Hypermetropia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007401",
+        "label": "Macular atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007814",
+        "label": "Retinal pigment epithelial mottling"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007737",
+        "label": "Bone spicule pigmentation of the retina"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000563",
+        "label": "Keratoconus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004327",
+        "label": "Abnormal vitreous humor morphology"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000577",
+        "label": "Exotropia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-00b51a198c2e",
+    "sex": "MALE",
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

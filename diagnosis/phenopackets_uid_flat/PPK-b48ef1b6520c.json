@@ -1,0 +1,249 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0030674",
+          "label": "Antenatal onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:616868",
+        "label": "Diarrhea 8, secretory sodium, congenital"
+      }
+    }
+  ],
+  "id": "PMID_26358773_Patient_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616868",
+          "label": "Diarrhea 8, secretory sodium, congenital"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004174.4:c.932C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.484520G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SLC9A3",
+                  "valueId": "HGNC:11073"
+                },
+                "id": "var_AUQfdCPVUtYoqYYkGMGMeJSDl",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "484520",
+                  "ref": "G"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004174.4:c.350_352del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.491940_491942del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SLC9A3",
+                  "valueId": "HGNC:11073"
+                },
+                "id": "var_GnNmsOndNkJQQEODOFjxXbpTJ",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "491930",
+                  "ref": "TAGA"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-28T06:16:42.858906984Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Reduced sodium/proton exchanger NHE3 activity causes congenital sodium diarrhea",
+        "id": "PMID:26358773",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/26358773"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0005208",
+        "label": "Secretory diarrhea"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0003270",
+        "label": "Abdominal distention"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0030674",
+          "label": "Antenatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001561",
+        "label": "Polyhydramnios"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032484",
+        "label": "Elevated fecal sodium"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034470",
+        "label": "Elevated stool chloride content"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032489",
+        "label": "Elevated fecal pH"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010931",
+        "label": "Abnormal blood sodium concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032024",
+        "label": "Ileal ulcer"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0033994",
+        "label": "Dependency on parenteral nutrition"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-b48ef1b6520c",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P37Y"
+      }
+    }
+  }
+}

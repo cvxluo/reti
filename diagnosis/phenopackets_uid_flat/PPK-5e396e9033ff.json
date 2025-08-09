@@ -1,0 +1,307 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:259440",
+        "label": "Osteogenesis imperfecta, type IX"
+      }
+    }
+  ],
+  "id": "PMID_19781681_Proband_P2_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:259440",
+          "label": "Osteogenesis imperfecta, type IX"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Proband P2-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000942.5:c.451C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000015.10:g.64156802G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PPIB",
+                  "valueId": "HGNC:9255"
+                },
+                "id": "var_DWQeiruozUuLOkUrJVDuThSSX",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr15",
+                  "genomeAssembly": "hg38",
+                  "pos": "64156802",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Proband P2-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-26T04:53:55.424882888Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "PPIB mutations cause severe osteogenesis imperfecta",
+        "id": "PMID:19781681",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/19781681"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0008873",
+        "label": "Disproportionate short-limb short stature"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0002808",
+        "label": "Kyphosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0003023",
+        "label": "Bowing of limbs due to multiple fractures"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000592",
+        "label": "Blue sclerae"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000260",
+        "label": "Wide anterior fontanel"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0045087",
+        "label": "Hip joint hypermobility"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0006094",
+        "label": "Finger joint hypermobility"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0005855",
+        "label": "Multiple prenatal fractures"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000938",
+        "label": "Osteopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002645",
+        "label": "Wormian bones"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002540",
+        "label": "Inability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002757",
+        "label": "Recurrent fractures"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000939",
+        "label": "Osteoporosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000703",
+        "label": "Dentinogenesis imperfecta"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-5e396e9033ff",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y"
+      }
+    }
+  }
+}

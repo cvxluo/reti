@@ -1,0 +1,226 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011461",
+          "label": "Fetal onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:608776",
+        "label": "Congenital disorder of glycosylation, type Il"
+      }
+    }
+  ],
+  "id": "PMID_15945070_7-month-old_girl",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:608776",
+          "label": "Congenital disorder of glycosylation, type Il"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "7-month-old girl",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_024740.2:c.860A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.111853415T>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ALG9",
+                  "valueId": "HGNC:15672"
+                },
+                "id": "var_mINnmJfcpQsQVdhdBZZaWfgav",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "111853415",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "7-month-old girl",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-27T18:25:14.309102058Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "CDG-IL: an infant with a novel mutation in the ALG9 gene and additional phenotypic features",
+        "id": "PMID:15945070",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/15945070"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011461",
+          "label": "Fetal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0025671",
+        "label": "Fetal pericardial effusion"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10M"
+        }
+      },
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y2M"
+        }
+      },
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y2M"
+        }
+      },
+      "type": {
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000565",
+        "label": "Esotropia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000113",
+        "label": "Polycystic kidney dysplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003642",
+        "label": "Type I transferrin isoform profile"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003073",
+        "label": "Hypoalbuminemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001558",
+        "label": "Decreased fetal movement"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001790",
+        "label": "Nonimmune hydrops fetalis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-091b7c38d53c",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7M"
+      }
+    }
+  }
+}

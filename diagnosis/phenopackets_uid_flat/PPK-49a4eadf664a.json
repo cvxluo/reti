@@ -1,0 +1,218 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620707",
+        "label": "Epidermolytic hyperkeratosis 2B, autosomal recessive"
+      }
+    }
+  ],
+  "id": "PMID_16505000_III_1_affected_girl",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620707",
+          "label": "Epidermolytic hyperkeratosis 2B, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III-1 affected girl",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000421.5:c.1300C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.40819590G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "KRT10",
+                  "valueId": "HGNC:6413"
+                },
+                "id": "var_zMFSAwywUbyJbLmIbVzQQRrBP",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "40819590",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III-1 affected girl",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-09T07:04:25.850970983Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A human keratin 10 knockout causes recessive epidermolytic hyperkeratosis",
+        "id": "PMID:16505000",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/16505000"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0005595",
+        "label": "Generalized hyperkeratosis"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0031288",
+        "label": "Cobblestone-like hyperkeratosis"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001019",
+        "label": "Erythroderma"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0007479",
+        "label": "Congenital nonbullous ichthyosiform erythroderma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025092",
+        "label": "Epidermal acanthosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025114",
+        "label": "Hypergranulosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034703",
+        "label": "Keratinocyte vacuolization"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000982",
+        "label": "Palmoplantar keratoderma"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004906",
+        "label": "Hypernatremic dehydration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0008066",
+        "label": "Abnormal blistering of the skin"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-49a4eadf664a",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y"
+      }
+    }
+  }
+}

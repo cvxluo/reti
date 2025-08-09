@@ -1,0 +1,185 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:608194",
+        "label": "Cone-rod dystrophy 13"
+      }
+    }
+  ],
+  "id": "PMID_25943428_MA117",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:608194",
+          "label": "Cone-rod dystrophy 13"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "MA117",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020366.4:c.2656C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.21326119C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RPGRIP1",
+                  "valueId": "HGNC:13436"
+                },
+                "id": "var_DOnYlzrmLhktjjyTDTomHUziy",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr14",
+                  "genomeAssembly": "hg38",
+                  "pos": "21326119",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "MA117",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-02T18:45:13.874888896Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Homozygosity mapping reveals novel and known mutations in Pakistani families with inherited retinal dystrophies",
+        "id": "PMID:25943428",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25943428"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000512",
+        "label": "Abnormal electroretinogram"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030515",
+        "label": "Moderately reduced visual acuity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000662",
+        "label": "Nyctalopia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032037",
+        "label": "Mildly reduced visual acuity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001141",
+        "label": "Severely reduced visual acuity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032122",
+        "label": "Very low visual acuity"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-76badea12e67",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P47Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

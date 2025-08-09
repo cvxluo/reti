@@ -1,0 +1,171 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:621002",
+        "label": "Premature ovarian failure 25"
+      }
+    }
+  ],
+  "id": "PMID_35285020_sister_IV_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621002",
+          "label": "Premature ovarian failure 25"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "sister IV-2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001170698.2:c.400C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.3449079G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SPATA22",
+                  "valueId": "HGNC:30705"
+                },
+                "id": "var_hNMlDzxxGVdPAjMNRZWVvBkNx",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "3449079",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "sister IV-2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-26T08:44:55.619390964Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Bi-allelic SPATA22 variants cause premature ovarian insufficiency and nonobstructive azoospermia due to meiotic arrest",
+        "id": "PMID:35285020",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35285020"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P13Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000858",
+        "label": "Irregular menstruation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008209",
+        "label": "Premature ovarian insufficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008232",
+        "label": "Elevated circulating follicle stimulating hormone level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031103",
+        "label": "Decreased circulating antimullerian hormone circulation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008222",
+        "label": "Female infertility"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002960",
+        "label": "Autoimmunity"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a9931f679b81",
+    "sex": "FEMALE",
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

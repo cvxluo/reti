@@ -1,0 +1,234 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:160800",
+        "label": "Myotonia congenita, dominant"
+      }
+    }
+  ],
+  "id": "PMID_30243293_nan",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:160800",
+          "label": "Myotonia congenita, dominant"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "nan",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000083.3:c.1401+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.143332874G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CLCN1",
+                  "valueId": "HGNC:2019"
+                },
+                "id": "var_ejuqWcXcpgvortPIRFGomlBbm",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "143332874",
+                  "ref": "G"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "nan",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000083.3:c.1657A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.143342003A>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CLCN1",
+                  "valueId": "HGNC:2019"
+                },
+                "id": "var_nGaWmFgckhXZhqrHBDwjhgYil",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "143342003",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "nan",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-24T20:44:24.288210868Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A case report: autosomal recessive Myotonia congenita caused by a novel splice mutation (c.1401 + 1G > A) in CLCN1 gene of a Chinese Han patient",
+        "id": "PMID:30243293",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30243293"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002486",
+        "label": "Myotonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003720",
+        "label": "Generalized muscle hypertrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003236",
+        "label": "Elevated circulating creatine kinase concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003688",
+        "label": "Cytochrome C oxidase-negative muscle fibers"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-29396d97d4ad",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P21Y"
+      }
+    }
+  }
+}

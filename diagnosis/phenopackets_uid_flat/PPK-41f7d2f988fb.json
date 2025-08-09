@@ -1,0 +1,324 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:301109",
+        "label": "Autoinflammatory disease, multisystem, with immune dysregulation, X-linked"
+      }
+    }
+  ],
+  "id": "PMID_37342957_Patient_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301109",
+          "label": "Autoinflammatory disease, multisystem, with immune dysregulation, X-linked"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_144658.4:c.1718+5G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.118584862G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "DOCK11",
+                  "valueId": "HGNC:23483"
+                },
+                "id": "var_WljriASxagxsPTamyoiJJJtqg",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chrX",
+                  "genomeAssembly": "hg38",
+                  "pos": "118584862",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-12T06:11:43.054166078Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Systemic Inflammation and Normocytic Anemia in DOCK11 Deficiency",
+        "id": "PMID:37342957",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37342957"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011461",
+          "label": "Fetal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000474",
+        "label": "Thickened nuchal skin fold"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002837",
+        "label": "Recurrent bronchitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031123",
+        "label": "Recurrent gastroenteritis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011273",
+        "label": "Anisocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001890",
+        "label": "Autoimmune hemolytic anemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007417",
+        "label": "Discoid lupus rash"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002725",
+        "label": "Systemic lupus erythematosus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100280",
+        "label": "Crohn's disease"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100279",
+        "label": "Ulcerative colitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001974",
+        "label": "Leukocytosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0020086",
+        "label": "BCGitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000265",
+        "label": "Mastoiditis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012490",
+        "label": "Panniculitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032230",
+        "label": "Cytoplasmic antineutrophil antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA level"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG level"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0033677",
+        "label": "Acute respiratory distress syndrome"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000100",
+        "label": "Nephrotic syndrome"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-41f7d2f988fb",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y"
+      }
+    }
+  }
+}

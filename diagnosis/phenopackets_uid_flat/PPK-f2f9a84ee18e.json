@@ -1,0 +1,181 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:602875",
+        "label": "Acromesomelic dysplasia 1, Maroteaux type"
+      }
+    }
+  ],
+  "id": "PMID_25959430_individual_IV_2_family_A",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:602875",
+          "label": "Acromesomelic dysplasia 1, Maroteaux type"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual IV-2, family A",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003995.4:c.1801C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.35802593C>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NPR2",
+                  "valueId": "HGNC:7944"
+                },
+                "id": "var_XFZecZiJXOIsHSmZyPkcDdzvi",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "35802593",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual IV-2, family A",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-19T07:28:14.380656957Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Homozygous sequence variants in the NPR2 gene underlying Acromesomelic dysplasia Maroteaux type (AMDM) in consanguineous families",
+        "id": "PMID:25959430",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25959430"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0009381",
+        "label": "Short finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010049",
+        "label": "Short metacarpal"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010055",
+        "label": "Broad hallux"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001831",
+        "label": "Short toe"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006009",
+        "label": "Broad phalanx"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001230",
+        "label": "Broad metacarpals"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003038",
+        "label": "Fibular hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005736",
+        "label": "Short tibia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f2f9a84ee18e",
+    "sex": "MALE"
+  }
+}

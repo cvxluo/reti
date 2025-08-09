@@ -1,0 +1,171 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620813",
+        "label": "MHC class I deficiency 2"
+      }
+    }
+  ],
+  "id": "PMID_10560675_P3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620813",
+          "label": "MHC class I deficiency 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001290043.2:c.979del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.32832791del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TAP2",
+                  "valueId": "HGNC:44"
+                },
+                "id": "var_BalnYmPEsgwOFzldmevJoWsBr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "32832790",
+                  "ref": "CT"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-24T06:58:14.480222940Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Association of a syndrome resembling Wegener's granulomatosis with low surface expression of HLA class-I molecules",
+        "id": "PMID:10560675",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/10560675"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "type": {
+        "id": "HP:0011109",
+        "label": "Chronic sinusitis"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0004469",
+        "label": "Chronic bronchitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002257",
+        "label": "Chronic rhinitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100582",
+        "label": "Nasal polyposis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031691",
+        "label": "Severe viral infection"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-6ce89f315e64",
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

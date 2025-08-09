@@ -1,0 +1,145 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:613721",
+        "label": "Developmental and epileptic encephalopathy 11"
+      }
+    }
+  ],
+  "id": "PMID_33731876_fam387",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:613721",
+          "label": "Developmental and epileptic encephalopathy 11"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "fam387",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001040142.2:c.2960G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.165354232G>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SCN2A",
+                  "valueId": "HGNC:10588"
+                },
+                "id": "var_AUuhUslabrIaaGZDNBnAyhzYk",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "165354232",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "fam387",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-11T07:08:55.753479957Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Computational analysis of 10,860 phenotypic annotations in individuals with SCN2A-related disorders",
+        "id": "PMID:33731876",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33731876"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      },
+      {
+        "id": "mondo",
+        "iriPrefix": "http://purl.obolibrary.org/obo/MONDO_",
+        "name": "Mondo Disease Ontology",
+        "namespacePrefix": "MONDO",
+        "url": "http://purl.obolibrary.org/obo/mondo.obo",
+        "version": "2023-09-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002131",
+        "label": "Episodic ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002321",
+        "label": "Vertigo"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-bafbf5a62787"
+  }
+}
