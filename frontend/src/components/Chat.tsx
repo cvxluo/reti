@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import CameraCapture from "./CameraCapture";
 
 type HPO = { id: string; label: string; confidence: number };
 type PhenotypeResp = { phenotype_text: string; hpo: HPO[] };
@@ -22,10 +23,7 @@ export default function Chat() {
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
-  const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(
-    null
-  );
-  const [isRecording, setIsRecording] = useState(false);
+  const [showCamera, setShowCamera] = useState(false);
 
   useEffect(() => {
     listRef.current?.lastElementChild?.scrollIntoView({ behavior: "smooth" });
@@ -50,7 +48,7 @@ export default function Chat() {
       });
       const json = (await r.json()) as PhenotypeResp;
       addAssistant(json);
-    } catch (e: unknown) {
+    } catch (e: any) {
       addAssistant({ phenotype_text: "Sorry—text analysis failed.", hpo: [] });
     } finally {
       setBusy(false);
@@ -93,15 +91,16 @@ export default function Chat() {
     }
   }
 
-  async function recordAudio() {
-    // If already recording → stop
-    if (isRecording && mediaRecorder) {
-      try {
-        mediaRecorder.stop();
-      } catch {}
-      return;
-    }
+  function openCamera() {
+    setShowCamera(true);
+  }
 
+  function closeCamera() {
+    setShowCamera(false);
+  }
+
+  // Simple inline audio capture -> transcribe -> phenotype
+  async function recordAudio() {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const mime = "audio/webm;codecs=opus";
@@ -109,26 +108,15 @@ export default function Chat() {
         mimeType: MediaRecorder.isTypeSupported(mime) ? mime : "audio/webm",
       });
       const chunks: BlobPart[] = [];
-
-      mr.ondataavailable = (e) => {
-        if (e.data && e.data.size > 0) chunks.push(e.data);
-      };
-
+      mr.ondataavailable = (e) => e.data && chunks.push(e.data);
       mr.onstop = async () => {
-        // cleanup mic
         stream.getTracks().forEach((t) => t.stop());
-        setIsRecording(false);
-        setMediaRecorder(null);
-
-        // assemble blob
-        const blob = new Blob(chunks, { type: mr.mimeType });
+        const blob = new Blob(chunks, { type: mime });
         const url = URL.createObjectURL(blob);
         setMessages((m) => [
           ...m,
           { id: crypto.randomUUID(), role: "user", audioUrl: url },
         ]);
-
-        // transcribe → phenotype
         setBusy(true);
         try {
           const fd = new FormData();
@@ -159,10 +147,9 @@ export default function Chat() {
           setTimeout(() => URL.revokeObjectURL(url), 30000);
         }
       };
-
-      mr.start(); // begin recording
-      setMediaRecorder(mr);
-      setIsRecording(true);
+      mr.start();
+      setBusy(true);
+      setTimeout(() => mr.stop(), 6000); // record ~6s then stop (or provide a UI toggle if you like)
     } catch {
       alert("Microphone permission denied");
     }
@@ -203,17 +190,17 @@ export default function Chat() {
           </button>
           <button
             onClick={recordAudio}
-            className={`rounded-xl border border-stone-300/70 text-sm px-3 py-2 disabled:opacity-50 ${
-              isRecording ? "bg-red-500 text-white" : "bg-white"
-            }`}
-            title={isRecording ? "Stop recording" : "Record brief audio"}
+            className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 disabled:opacity-50"
+            title="Record brief audio"
             disabled={busy}
           >
-            {isRecording ? "⏹" : "🎙️"}
+            🎤
           </button>
-
-          <label className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 cursor-pointer disabled:opacity-50">
-            📷
+          <label
+            className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 cursor-pointer disabled:opacity-50"
+            title="Pick from gallery"
+          >
+            🖼️
             <input
               type="file"
               accept="image/*"
@@ -225,8 +212,25 @@ export default function Chat() {
               disabled={busy}
             />
           </label>
+          <button
+            onClick={openCamera}
+            className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 disabled:opacity-50"
+            title="Open camera"
+            disabled={busy}
+          >
+            📸
+          </button>
         </div>
       </div>
+      {showCamera && (
+        <CameraCapture
+          onCapture={(file) => {
+            onPickImage(file);
+            closeCamera();
+          }}
+          onClose={closeCamera}
+        />
+      )}
     </div>
   );
 }
@@ -245,14 +249,14 @@ function MessageBubble({ msg }: { msg: Msg }) {
         {msg.text && (
           <p className="whitespace-pre-wrap leading-relaxed">{msg.text}</p>
         )}
-        {msg.imageUrl && (
+        {"imageUrl" in msg && msg.imageUrl && (
           <img
             src={msg.imageUrl}
             alt="uploaded"
             className="mt-1 rounded-lg border w-48 h-36 object-cover"
           />
         )}
-        {msg.audioUrl && (
+        {"audioUrl" in msg && msg.audioUrl && (
           <audio className="mt-2 w-56" controls src={msg.audioUrl} />
         )}
         {"hpo" in msg && msg.hpo?.length > 0 && (
