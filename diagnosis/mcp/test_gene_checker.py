@@ -124,8 +124,11 @@ def _result_to_text(result: object) -> str:
     return str(result)
 
 
-async def run_check(phenopacket_path: Path, guesses: List[str]) -> str:
-    """Start the MCP server and call the tool with provided guesses."""
+async def run_check(phenopacket_uid: str, guesses: List[str]) -> str:
+    """Start the MCP server and call the tool with provided guesses.
+
+    phenopacket_uid may be a UID like "PPK-..." or a direct path (backward-compatible).
+    """
     from fastmcp import Client  # imported lazily so script runs without deps until needed
 
     server_script = str(Path(__file__).parent / "gene_checker_server.py")
@@ -134,19 +137,66 @@ async def run_check(phenopacket_path: Path, guesses: List[str]) -> str:
         result = await client.call_tool(
             "check_gene_guess",
             {
-                "phenopacket_path": str(phenopacket_path),
+                "phenopacket_uid": str(phenopacket_uid),
                 "guessed_genes": guesses,
             },
         )
         return _result_to_text(result)
 
 
+def _resolve_uid_to_path(uid_or_path: str) -> Path | None:
+    """Resolve a UID (PPK-*) to its JSON file under phenopackets_uid_flat.
+
+    Falls back to treating the input as a direct path if it exists.
+    Tries mapping.csv as a last resort.
+    """
+    # 1) Direct path
+    candidate_path = Path(uid_or_path)
+    if candidate_path.exists():
+        return candidate_path
+
+    # 2) phenopackets_uid_flat/<uid>.json
+    uid = Path(uid_or_path).stem
+    if not uid:
+        return None
+
+    base_dir = (Path(__file__).resolve().parent.parent / "phenopackets_uid_flat").resolve()
+    j = base_dir / f"{uid}.json"
+    if j.exists():
+        return j
+
+    # 3) mapping.csv lookup
+    mapping_csv = base_dir / "mapping.csv"
+    if mapping_csv.exists():
+        try:
+            import csv
+
+            with mapping_csv.open("r", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    if (row.get("assigned_id") or "").strip() == uid:
+                        dest_path = (row.get("dest_path") or "").strip()
+                        if dest_path:
+                            p = Path(dest_path)
+                            if p.exists():
+                                return p
+                        break
+        except Exception:
+            pass
+
+    return None
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Test GeneGuessChecker MCP server")
-    parser.add_argument(
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument(
+        "--uid",
+        help="Phenopacket UID (e.g., PPK-abcdef123456). Also accepts a direct path.",
+    )
+    group.add_argument(
         "--phenopacket",
-        required=True,
-        help="Path to Phenopacket JSON (e.g., phenopackets/AAGAB/PMID_*.json)",
+        help="Path to Phenopacket JSON (backward-compatible)",
     )
     parser.add_argument(
         "--max-genes",
@@ -161,9 +211,17 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    phenopacket_path = Path(args.phenopacket)
-    if not phenopacket_path.exists():
-        raise SystemExit(f"Phenopacket not found: {phenopacket_path}")
+    if args.uid:
+        resolved_path = _resolve_uid_to_path(args.uid)
+        if resolved_path is None:
+            raise SystemExit(f"Could not resolve UID to file: {args.uid}")
+        phenopacket_path = resolved_path
+        phenopacket_uid_to_pass = args.uid
+    else:
+        phenopacket_path = Path(args.phenopacket)
+        if not phenopacket_path.exists():
+            raise SystemExit(f"Phenopacket not found: {phenopacket_path}")
+        phenopacket_uid_to_pass = str(phenopacket_path)
 
     packet = json.loads(phenopacket_path.read_text())
     phenotype_text = extract_phenotype_summary(packet)
@@ -178,7 +236,7 @@ def main() -> None:
 
     import asyncio
 
-    verdict = asyncio.run(run_check(phenopacket_path, guesses))
+    verdict = asyncio.run(run_check(phenopacket_uid_to_pass, guesses))
     print(f"Tool verdict: {verdict}")
 
 
