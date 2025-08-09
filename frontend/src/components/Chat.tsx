@@ -22,6 +22,10 @@ export default function Chat() {
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
+  const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(
+    null
+  );
+  const [isRecording, setIsRecording] = useState(false);
 
   useEffect(() => {
     listRef.current?.lastElementChild?.scrollIntoView({ behavior: "smooth" });
@@ -46,7 +50,7 @@ export default function Chat() {
       });
       const json = (await r.json()) as PhenotypeResp;
       addAssistant(json);
-    } catch (e: any) {
+    } catch (e: unknown) {
       addAssistant({ phenotype_text: "Sorry—text analysis failed.", hpo: [] });
     } finally {
       setBusy(false);
@@ -89,8 +93,15 @@ export default function Chat() {
     }
   }
 
-  // Simple inline audio capture -> transcribe -> phenotype
   async function recordAudio() {
+    // If already recording → stop
+    if (isRecording && mediaRecorder) {
+      try {
+        mediaRecorder.stop();
+      } catch {}
+      return;
+    }
+
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const mime = "audio/webm;codecs=opus";
@@ -98,15 +109,26 @@ export default function Chat() {
         mimeType: MediaRecorder.isTypeSupported(mime) ? mime : "audio/webm",
       });
       const chunks: BlobPart[] = [];
-      mr.ondataavailable = (e) => e.data && chunks.push(e.data);
+
+      mr.ondataavailable = (e) => {
+        if (e.data && e.data.size > 0) chunks.push(e.data);
+      };
+
       mr.onstop = async () => {
+        // cleanup mic
         stream.getTracks().forEach((t) => t.stop());
-        const blob = new Blob(chunks, { type: mime });
+        setIsRecording(false);
+        setMediaRecorder(null);
+
+        // assemble blob
+        const blob = new Blob(chunks, { type: mr.mimeType });
         const url = URL.createObjectURL(blob);
         setMessages((m) => [
           ...m,
           { id: crypto.randomUUID(), role: "user", audioUrl: url },
         ]);
+
+        // transcribe → phenotype
         setBusy(true);
         try {
           const fd = new FormData();
@@ -137,9 +159,10 @@ export default function Chat() {
           setTimeout(() => URL.revokeObjectURL(url), 30000);
         }
       };
-      mr.start();
-      setBusy(true);
-      setTimeout(() => mr.stop(), 6000); // record ~6s then stop (or provide a UI toggle if you like)
+
+      mr.start(); // begin recording
+      setMediaRecorder(mr);
+      setIsRecording(true);
     } catch {
       alert("Microphone permission denied");
     }
@@ -180,12 +203,15 @@ export default function Chat() {
           </button>
           <button
             onClick={recordAudio}
-            className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 disabled:opacity-50"
-            title="Record brief audio"
+            className={`rounded-xl border border-stone-300/70 text-sm px-3 py-2 disabled:opacity-50 ${
+              isRecording ? "bg-red-500 text-white" : "bg-white"
+            }`}
+            title={isRecording ? "Stop recording" : "Record brief audio"}
             disabled={busy}
           >
-            🎙️
+            {isRecording ? "⏹" : "🎙️"}
           </button>
+
           <label className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 cursor-pointer disabled:opacity-50">
             📷
             <input
