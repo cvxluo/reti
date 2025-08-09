@@ -242,14 +242,6 @@ export default function Chat() {
           >
             📸
           </button>
-          <button
-            onClick={openCamera}
-            className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 disabled:opacity-50"
-            title="Open camera"
-            disabled={busy}
-          >
-            📸
-          </button>
         </div>
       </div>
 
