@@ -10,6 +10,7 @@ export const PhenotypeParams = z.object({
 export type PhenotypeParams = z.infer<typeof PhenotypeParams>;
 
 export async function phenotypeAnalyze(args: PhenotypeParams) {
+  console.log("phenotype analyze");
   const parsed = PhenotypeParams.parse(args);
 
   if (parsed.mode === "text") {

@@ -4,7 +4,6 @@ import { phenotypeAnalyze, PhenotypeParams } from "../lib/phenotype_tool.js";
 
 export const agentRouter = Router();
 
-// (Optional) keep Biomni stubbed for now; not executed below
 const biomniTool = {
   type: "function" as const,
   name: "biomni",
@@ -14,7 +13,10 @@ const biomniTool = {
   parameters: {
     type: "object",
     properties: {
-      prompt: { type: "string", description: "The prompt to send to Biomni" },
+      prompt: {
+        type: "string",
+        description: "The prompt to send to Biomni",
+      },
     },
     required: ["prompt"],
     additionalProperties: false,
@@ -52,77 +54,70 @@ const phenotypeTool = {
 agentRouter.post("/api/agent", async (req, res) => {
   try {
     const { userRequest } = req.body ?? {};
-    if (!userRequest)
-      return res.status(400).json({ error: "missing_userRequest" });
+    console.log("received request", userRequest);
 
-    const SYSTEM = `You are an expert clinical assistant. Use tools when helpful.
-- If the user provides symptoms or asks to analyze text, call phenotype_analyze with mode="text" and the text.
-- If the user gives an image URL, call phenotype_analyze with mode="image" and image_url.
-- When the tool returns JSON { phenotype_text, hpo }, write a concise summary and include structured values.`;
+    const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
+You have access to the following tools:
+- use Biomni, a subagent that has access to detailed medical databases and research papers, to get a detailed investigation
+- use phenotype_analyze to generate a phenotype narrative and HPO array from provided text or image`;
 
-    // 1) Ask GPT‑5 (same model name as your first function)
-    const first = await openai.responses.create({
+    const completion = await openai.responses.create({
       model: "gpt-5-2025-08-07",
-      instructions: SYSTEM,
+      instructions: systemMessage,
       input: [
-        { role: "user", content: [{ type: "input_text", text: userRequest }] },
+        {
+          role: "user",
+          content: [{ type: "input_text", text: userRequest }],
+        },
       ],
-      tools: [phenotypeTool, biomniTool], // both available; we only implement phenotype_analyze here
+      tools: [biomniTool, phenotypeTool],
       tool_choice: "auto",
       parallel_tool_calls: false,
     });
 
-    let finalText = (first as any).output_text ?? "";
-    let hpo:
-      | Array<{ id: string; label: string; confidence: number }>
-      | undefined;
+    for (const tool_call of completion.output) {
+      if (tool_call.type !== "function_call") continue;
 
-    // 2) Handle any tool calls
-    const toolCalls = ((first as any).output ?? []).filter(
-      (p: any) => p.type === "function_call"
-    );
-    if (toolCalls.length > 0) {
-      const tool_outputs: Array<{ tool_call_id: string; output: string }> = [];
+      console.log("tool call id", tool_call.id);
+      console.log("tool call name", tool_call.name);
+      console.log("tool call arguments", tool_call.arguments);
 
-      for (const call of toolCalls) {
-        const name = call.name as string;
+      if (tool_call.name === "biomni") {
         const args =
-          typeof call.arguments === "string"
-            ? JSON.parse(call.arguments)
-            : call.arguments;
+          typeof tool_call.arguments === "string"
+            ? JSON.parse(tool_call.arguments)
+            : tool_call.arguments;
+        const response = await fetch(`http://127.0.0.1:5000/go`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ prompt: args.prompt }),
+        });
 
-        if (name === "phenotype_analyze") {
-          const raw = await phenotypeAnalyze(args as PhenotypeParams); // returns JSON string
-          tool_outputs.push({ tool_call_id: call.id, output: raw });
-
-          // capture for UI convenience
-          try {
-            const parsed = JSON.parse(raw);
-            if (parsed?.phenotype_text) finalText = parsed.phenotype_text;
-            if (parsed?.hpo) hpo = parsed.hpo;
-          } catch {}
-        }
-
-        // If you want to actually call Biomni later, add a handler here:
-        // if (name === "biomni") { ... }
+        console.log("biomni raw response", response.status);
+        const data = await response.json();
+        console.log("biomni response", data);
       }
 
-      // 3) Let the model finish with tool_outputs (Responses API continuation)
-      const second = await openai.responses.create({
-        model: "gpt-5-2025-08-07",
-        tool_outputs,
-        tools: [phenotypeTool, biomniTool],
-      });
-
-      const finishing = (second as any).output_text?.trim();
-      if (finishing) finalText = finishing;
+      if (tool_call.name === "phenotype_analyze") {
+        const args =
+          typeof tool_call.arguments === "string"
+            ? JSON.parse(tool_call.arguments)
+            : tool_call.arguments;
+        const raw = await phenotypeAnalyze(args as PhenotypeParams);
+        console.log("phenotype_analyze raw output", raw);
+        try {
+          const parsed = JSON.parse(raw);
+          console.log("phenotype_analyze parsed output", parsed);
+        } catch {
+          console.warn("phenotype_analyze output was not valid JSON");
+        }
+      }
     }
 
-    return res.json({ text: finalText, hpo });
+    const text = (completion as any).output_text ?? "";
+    res.json({ text });
   } catch (err: any) {
     console.error("[/api/agent]", err);
-    return res
-      .status(500)
-      .json({ error: "agent_failed", message: err?.message });
+    res.status(500).json({ error: "agent_failed", message: err?.message });
   }
 });
