@@ -1,0 +1,251 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:105120",
+        "label": "Amyloidosis, Finnish type"
+      }
+    }
+  ],
+  "id": "PMID_26915616_case_report",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:105120",
+          "label": "Amyloidosis, Finnish type"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "case report",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_198252.3:c.487G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.121310819G>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "GSN",
+                  "valueId": "HGNC:4620"
+                },
+                "id": "var_xAwtaoxOTRvPxuiJbwgOsNIlR",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "121310819",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "case report",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-23T12:44:47.807589054Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "The First Korean Family With Hereditary Gelsolin Amyloidosis Caused by p.D214Y Mutation in the GSN Gene",
+        "id": "PMID:26915616",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/26915616"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000973",
+        "label": "Cutis laxa"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007209",
+        "label": "Facial paralysis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007089",
+        "label": "Facial-lingual fasciculations"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000221",
+        "label": "Furrowed tongue"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0033660",
+        "label": "Hand paresthesia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003394",
+        "label": "Muscle spasm"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000966",
+        "label": "Hypohidrosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0012507",
+        "label": "Weakness of orbicularis oculi muscle"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      },
+      "type": {
+        "id": "HP:0033383",
+        "label": "Decreased compound muscle action potential amplitude"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007230",
+        "label": "Decreased distal sensory nerve action potential"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003431",
+        "label": "Decreased motor nerve conduction velocity"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-69575cd83157",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P58Y"
+      }
+    }
+  }
+}

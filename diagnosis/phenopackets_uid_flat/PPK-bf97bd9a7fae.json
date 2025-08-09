@@ -1,0 +1,158 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P6D"
+        }
+      },
+      "term": {
+        "id": "OMIM:620698",
+        "label": "Maple syrup urine disease, type Ib"
+      }
+    }
+  ],
+  "id": "PMID_2022752_proband_EK",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620698",
+          "label": "Maple syrup urine disease, type Ib"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband EK",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_183050.4:c.93_103del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.80106786_80106796del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "BCKDHB",
+                  "valueId": "HGNC:987"
+                },
+                "id": "var_suRgANjqGPqDCsncOENmRlgQj",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "80106772",
+                  "ref": "CCTGGCGCGGGG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband EK",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-31T06:24:30.742825031Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Maple syrup urine disease. Complete defect of the E1 beta subunit of the branched chain alpha-ketoacid dehydrogenase complex due to a deletion of an 11-bp repeat sequence which encodes a mitochondrial targeting leader peptide in a family with the disease",
+        "id": "PMID:2022752",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/2022752"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P6D"
+        }
+      },
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10D"
+        }
+      },
+      "type": {
+        "id": "HP:0010911",
+        "label": "Hyperleucinemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P26D"
+        }
+      },
+      "type": {
+        "id": "HP:0002179",
+        "label": "Opisthotonus"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-bf97bd9a7fae",
+    "sex": "FEMALE"
+  }
+}

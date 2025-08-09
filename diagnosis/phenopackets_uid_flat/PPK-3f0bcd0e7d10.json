@@ -1,0 +1,221 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:120970",
+        "label": "Cone-rod retinal dystrophy-2"
+      }
+    }
+  ],
+  "id": "PMID_30095615_proband",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:120970",
+          "label": "Cone-rod retinal dystrophy-2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000554.6:c.538dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.47839605dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CRX",
+                  "valueId": "HGNC:2383"
+                },
+                "id": "var_iebMHgKcdjfkfqlcCnWnujTIU",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "TG",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "47839603",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-21T12:07:49.478520154Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel CRX frameshift mutation causing cone-rod dystrophy in a Chinese family: A case report",
+        "id": "PMID:30095615",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30095615"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007994",
+        "label": "Peripheral visual field loss"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000548",
+        "label": "Cone/cone-rod dystrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007722",
+        "label": "Retinal pigment epithelial atrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      },
+      "type": {
+        "id": "HP:0030515",
+        "label": "Moderately reduced visual acuity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007843",
+        "label": "Attenuation of retinal blood vessels"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000572",
+        "label": "Visual loss"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000662",
+        "label": "Nyctalopia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-3f0bcd0e7d10",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

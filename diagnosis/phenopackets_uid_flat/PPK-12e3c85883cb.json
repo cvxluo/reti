@@ -1,0 +1,351 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0030674",
+          "label": "Antenatal onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:231050",
+        "label": "Geleophysic dysplasia 1"
+      }
+    }
+  ],
+  "id": "PMID_27057656_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:231050",
+          "label": "Geleophysic dysplasia 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014694.4:c.2533G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.133570448G>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ADAMTSL2",
+                  "valueId": "HGNC:14631"
+                },
+                "id": "var_EqgSGDGMFLkYXTcTnygJErYWG",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "133570448",
+                  "ref": "G"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014694.4:c.799G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.133547073G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ADAMTSL2",
+                  "valueId": "HGNC:14631"
+                },
+                "id": "var_wCZsXBOMgZvvXBsdtJsukiphC",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr9",
+                  "genomeAssembly": "hg38",
+                  "pos": "133547073",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-28T17:23:50.751026868Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Novel ADAMTSL2-mutations in a patient with geleophysic dysplasia type I",
+        "id": "PMID:27057656",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27057656"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0030674",
+          "label": "Antenatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001561",
+        "label": "Polyhydramnios"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002205",
+        "label": "Recurrent respiratory infections"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0003066",
+        "label": "Limited knee extension"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0001377",
+        "label": "Limited elbow extension"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0001488",
+        "label": "Bilateral ptosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0000233",
+        "label": "Thin vermilion border"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0003097",
+        "label": "Short femur"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0003022",
+        "label": "Hypoplasia of the ulna"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0005792",
+        "label": "Short humerus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0002750",
+        "label": "Delayed skeletal maturation"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0009803",
+        "label": "Short phalanx of finger"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0010049",
+        "label": "Short metacarpal"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      },
+      "type": {
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000240",
+        "label": "Abnormality of skull size"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-12e3c85883cb",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y3M"
+      }
+    }
+  }
+}

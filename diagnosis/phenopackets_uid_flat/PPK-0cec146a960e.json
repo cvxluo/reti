@@ -1,0 +1,209 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:606889",
+        "label": "Alzheimer disease-4"
+      }
+    }
+  ],
+  "id": "PMID_30104866_Patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:606889",
+          "label": "Alzheimer disease-4"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000447.3:c.505C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.226888097C>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PSEN2",
+                  "valueId": "HGNC:9509"
+                },
+                "id": "var_yNHoUSLQMCIGOKovFcfZZKYBH",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "226888097",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-18T05:55:25.929409980Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A pathogenic PSEN2 p.His169Asn mutation associated with early-onset Alzheimer’s disease",
+        "id": "PMID:30104866",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30104866"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002511",
+        "label": "Alzheimer disease"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000726",
+        "label": "Dementia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000718",
+        "label": "Aggressive behavior"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000741",
+        "label": "Apathy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031058",
+        "label": "Impairment of activities of daily living"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P56Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002354",
+        "label": "Memory impairment"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007112",
+        "label": "Temporal cortical atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002197",
+        "label": "Generalized-onset seizure"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-0cec146a960e",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P58Y"
+      }
+    }
+  }
+}

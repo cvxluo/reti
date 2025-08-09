@@ -1,0 +1,253 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620558",
+        "label": "Craniometadiaphyseal osteosclerosis with hip dysplasia"
+      }
+    }
+  ],
+  "id": "PMID_37582359_F2-III-2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620558",
+          "label": "Craniometadiaphyseal osteosclerosis with hip dysplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "F2-III-2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003502.4:c.2167C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.293507G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "AXIN1",
+                  "valueId": "HGNC:903"
+                },
+                "id": "var_DphJbnboWtuhplpqYLosNfhJi",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "293507",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "F2-III-2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-21T14:32:35.944440126Z",
+    "createdBy": "0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "AXIN1 bi-allelic variants disrupting the C-terminal DIX domain cause craniometadiaphyseal osteosclerosis with hip dysplasia",
+        "id": "PMID:37582359",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37582359"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-02-27"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004618",
+        "label": "Sandwich appearance of vertebral bodies"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100670",
+        "label": "Coarse metaphyseal trabecularization"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002079",
+        "label": "Hypoplasia of the corpus callosum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012731",
+        "label": "Ectopic anterior pituitary gland"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011001",
+        "label": "Increased bone mineral density"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001385",
+        "label": "Hip dysplasia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001302",
+        "label": "Pachygyria"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012541",
+        "label": "Cephalohematoma"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100702",
+        "label": "Arachnoid cyst"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012444",
+        "label": "Brain atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:5200001",
+        "label": "Selective mutism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000452",
+        "label": "Choanal stenosis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-13da82c1a621",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y1M"
+      }
+    }
+  }
+}

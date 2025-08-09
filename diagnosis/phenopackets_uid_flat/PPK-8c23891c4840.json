@@ -1,0 +1,290 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:162000",
+        "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
+      }
+    }
+  ],
+  "id": "PMID_37487849_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:162000",
+          "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003361.4:c.584G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.20348717C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "UMOD",
+                  "valueId": "HGNC:12559"
+                },
+                "id": "var_AGQuocIlPSgqllBoPpocitlkS",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "20348717",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-08T05:49:17.077697992Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "UMOD-related autosomal dominant tubulointerstitial kidney disease: an unfavourable novel mutation",
+        "id": "PMID:37487849",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37487849"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003259",
+        "label": "Elevated circulating creatinine concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0012626",
+        "label": "Stage 4 chronic kidney disease"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000092",
+        "label": "Renal tubular atrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0032948",
+        "label": "Renal interstitial fibrosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0005565",
+        "label": "Reduced renal corticomedullary differentiation"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004719",
+        "label": "Hyperechogenic kidneys"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002149",
+        "label": "Hyperuricemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0011935",
+        "label": "Decreased urinary urate"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001942",
+        "label": "Metabolic acidosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003165",
+        "label": "Elevated circulating parathyroid hormone level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003158",
+        "label": "Hyposthenuria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000108",
+        "label": "Renal corticomedullary cysts"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000794",
+        "label": "IgA deposition in the glomerulus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001997",
+        "label": "Gout"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-8c23891c4840",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P12Y"
+      }
+    }
+  }
+}

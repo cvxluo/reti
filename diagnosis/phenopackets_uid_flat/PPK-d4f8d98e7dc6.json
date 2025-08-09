@@ -1,0 +1,319 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:618000",
+        "label": "Ehlers-Danlos syndrome, classic-like, 2"
+      }
+    }
+  ],
+  "id": "PMID_30759870_LOVD_ID_AN_006205",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:618000",
+          "label": "Ehlers-Danlos syndrome, classic-like, 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "LOVD ID AN_006205",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001129.5:c.1925T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.44111938T>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "AEBP1",
+                  "valueId": "HGNC:303"
+                },
+                "id": "var_lhjvOeZvgwObInEgsEWrkpVBq",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "44111938",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "LOVD ID AN_006205",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-04T16:04:32.385322093Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Expanding the Clinical and Mutational Spectrum of Recessive AEBP1-Related Classical-Like Ehlers-Danlos Syndrome",
+        "id": "PMID:30759870",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30759870"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002643",
+        "label": "Neonatal respiratory distress"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002943",
+        "label": "Thoracic scoliosis"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000704",
+        "label": "Periodontitis"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0005001",
+        "label": "Recurrent patellar dislocation"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      },
+      "type": {
+        "id": "HP:0012432",
+        "label": "Chronic fatigue"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000993",
+        "label": "Molluscoid pseudotumors"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031158",
+        "label": "Widened atrophic scar"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001822",
+        "label": "Hallux valgus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000938",
+        "label": "Osteopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001582",
+        "label": "Redundant skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000974",
+        "label": "Hyperextensible skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000978",
+        "label": "Bruising susceptibility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010810",
+        "label": "Long uvula"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001763",
+        "label": "Pes planus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001058",
+        "label": "Poor wound healing"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002619",
+        "label": "Varicose veins"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003419",
+        "label": "Low back pain"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001027",
+        "label": "Soft, doughy skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004417",
+        "label": "Intermittent claudication"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004419",
+        "label": "Recurrent thrombophlebitis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-d4f8d98e7dc6",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P53Y"
+      }
+    }
+  }
+}

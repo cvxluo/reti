@@ -1,0 +1,385 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:216550",
+        "label": "Cohen syndrome"
+      }
+    }
+  ],
+  "id": "PMID_29149870_proposita",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:216550",
+          "label": "Cohen syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proposita",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152564.5:c.3582del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.99467550del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "VPS13B",
+                  "valueId": "HGNC:2183"
+                },
+                "id": "var_ClxXjhXAZmnZsThprLGDwfUzL",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr8",
+                  "genomeAssembly": "hg38",
+                  "pos": "99467549",
+                  "ref": "CT"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proposita",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152564.5:c.6295_6296del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.99699773_99699774del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "VPS13B",
+                  "valueId": "HGNC:2183"
+                },
+                "id": "var_vDYUifxkpmupQBiMEjeEdiQzo",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr8",
+                  "genomeAssembly": "hg38",
+                  "pos": "99699772",
+                  "ref": "CAT"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proposita",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-10T06:18:07.197432041Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "First case report of Cohen syndrome in the Tunisian population caused by VPS13B mutations",
+        "id": "PMID:29149870",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29149870"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001956",
+        "label": "Truncal obesity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000574",
+        "label": "Thick eyebrow"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0011231",
+        "label": "Prominent eyelashes"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0012471",
+        "label": "Thick vermilion border"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000322",
+        "label": "Short philtrum"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007074",
+        "label": "Thick corpus callosum"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004283",
+        "label": "Narrow palm"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001182",
+        "label": "Tapered finger"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001875",
+        "label": "Neutropenia"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000580",
+        "label": "Pigmentary retinopathy"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002033",
+        "label": "Poor suck"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-c8eaaa60f1f5",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P12Y"
+      }
+    }
+  }
+}

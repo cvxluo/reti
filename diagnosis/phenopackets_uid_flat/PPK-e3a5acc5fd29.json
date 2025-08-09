@@ -1,0 +1,294 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:257220",
+        "label": "Niemann-Pick disease, type C1"
+      }
+    }
+  ],
+  "id": "PMID_27900365_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:257220",
+          "label": "Niemann-Pick disease, type C1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000271.5:c.3467A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000018.10:g.23535479T>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NPC1",
+                  "valueId": "HGNC:7897"
+                },
+                "id": "var_ciLyARNbblDNRTBXhdJqZZovT",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr18",
+                  "genomeAssembly": "hg38",
+                  "pos": "23535479",
+                  "ref": "T"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000271.5:c.2848G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000018.10:g.23539418C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NPC1",
+                  "valueId": "HGNC:7897"
+                },
+                "id": "var_yFzIFKVADjlLnEDwfIEYChBYI",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr18",
+                  "genomeAssembly": "hg38",
+                  "pos": "23539418",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-26T06:41:08.373859167Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Genome sequencing in a case of Niemann-Pick type C",
+        "id": "PMID:27900365",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27900365"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007017",
+        "label": "Progressive forgetfulness"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031987",
+        "label": "Diminished ability to concentrate"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002527",
+        "label": "Falls"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003596",
+          "label": "Middle age onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001268",
+        "label": "Mental deterioration"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003596",
+          "label": "Middle age onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003651",
+        "label": "Foam cells"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031833",
+        "label": "Hypometric upward saccades"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003349",
+        "label": "Low cholesterol esterification rate"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006579",
+        "label": "Prolonged neonatal jaundice"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-e3a5acc5fd29",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P54Y"
+      }
+    }
+  }
+}
