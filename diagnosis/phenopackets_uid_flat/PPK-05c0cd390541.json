@@ -1,0 +1,256 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:616873",
+        "label": "Immunodeficiency, common variable, 13"
+      }
+    }
+  ],
+  "id": "PMID_35479066_index",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616873",
+          "label": "Immunodeficiency, common variable, 13"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "index",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006060.6:c.1401C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.50400468C>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "IKZF1",
+                  "valueId": "HGNC:13176"
+                },
+                "id": "var_HlHdNgTzXTsYdWaWCgFGCNzQD",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "50400468",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "index",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-10T10:44:47.746117830Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Case Report: A Highly Variable Clinical and Immunological Presentation of IKAROS Deficiency in a Single Family",
+        "id": "PMID:35479066",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35479066"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0410297",
+        "label": "Partial absence of specific antibody response to tetanus vaccine"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0410299",
+        "label": "Decreased specific antibody response to polysaccharide vaccine"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0010976",
+        "label": "B lymphocytopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      },
+      "type": {
+        "id": "HP:0033222",
+        "label": "Decreased CD4:CD8 ratio"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004812",
+        "label": "B Acute Lymphoblastic Leukemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006727",
+        "label": "T-cell acute lymphoblastic leukemias"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032218",
+        "label": "Decreased proportion of CD4-positive T cells"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0040218",
+        "label": "Reduced natural killer cell count"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-05c0cd390541",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P15Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

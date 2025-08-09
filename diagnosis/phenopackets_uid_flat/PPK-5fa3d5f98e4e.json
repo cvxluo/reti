@@ -1,0 +1,301 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:147920",
+        "label": "Kabuki Syndrome 1"
+      }
+    }
+  ],
+  "id": "PMID_29914387_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:147920",
+          "label": "Kabuki Syndrome 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003482.3:c.8200C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.49039464G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "KMT2D",
+                  "valueId": "HGNC:7133"
+                },
+                "id": "var_awQOVZjqfnnLdXwDcRQYzblNi",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr12",
+                  "genomeAssembly": "hg38",
+                  "pos": "49039464",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2025-01-12T12:01:49.134053230Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A de novo KMT2D mutation in a girl with Kabuki syndrome associated with endocrine symptoms: a case report",
+        "id": "PMID:29914387",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29914387"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001363",
+        "label": "Craniosynostosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0000179",
+        "label": "Thick lower lip vermilion"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0000219",
+        "label": "Thin upper lip vermilion"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0000637",
+        "label": "Long palpebral fissure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0000824",
+        "label": "Decreased response to growth hormone stimulation test"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0000400",
+        "label": "Macrotia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y7M"
+        }
+      },
+      "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      },
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-5fa3d5f98e4e",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y7M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

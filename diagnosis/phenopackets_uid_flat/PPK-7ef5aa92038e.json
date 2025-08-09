@@ -1,0 +1,139 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:601869",
+        "label": "Deafness, autosomal recessive 15"
+      }
+    }
+  ],
+  "id": "PMID_21660509_DEM4197b",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:601869",
+          "label": "Deafness, autosomal recessive 15"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "DEM4197b",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_133261.3:c.565C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.3586967C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "GIPC3",
+                  "valueId": "HGNC:18183"
+                },
+                "id": "var_VtJIdTFGhOqrXxNdpeAjrWskU",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "3586967",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "DEM4197b",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-06T04:45:31.242176055Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutations of GIPC3 cause nonsyndromic hearing loss DFNB72 but not DFNB81 that also maps to chromosome 19p",
+        "id": "PMID:21660509",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/21660509"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001751",
+        "label": "Abnormal vestibular function"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000505",
+        "label": "Visual impairment"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-7ef5aa92038e"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:162000",
+        "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
+      }
+    }
+  ],
+  "id": "PMID_32847529_Family_FGIT_individual_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:162000",
+          "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family FGIT individual 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003361.4:c.605G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.20348696C>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "UMOD",
+                  "valueId": "HGNC:12559"
+                },
+                "id": "var_QUFANLWHaJlsKRKUPFsGCWecL",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "20348696",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family FGIT individual 1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-08T05:49:17.122224092Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel likely pathogenic variant in the UMOD gene in a family with autosomal dominant tubulointerstitial kidney disease: a case report",
+        "id": "PMID:32847529",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/32847529"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000790",
+        "label": "Hematuria"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000093",
+        "label": "Proteinuria"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a3bd13aa6d06",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P45Y"
+      }
+    }
+  }
+}

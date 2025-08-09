@@ -1,0 +1,167 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P40Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620657",
+        "label": "Amyloidosis, hereditary systemic 3"
+      }
+    }
+  ],
+  "id": "PMID_8675681_male_proband",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620657",
+          "label": "Amyloidosis, hereditary systemic 3"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "male proband",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000039.3:c.250_284delinsGTCAC"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.116836328_116836362delinsGTGAC"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "APOA1",
+                  "valueId": "HGNC:600"
+                },
+                "id": "var_VvjhjoQmpQhRRYUZDTarlkiOc",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "GTGAC",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "116836328",
+                  "ref": "AACTCCTGGGTCACAGGGCCGAGCTGTTCGCGCAG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "male proband",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-14T14:13:38.365955114Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Hereditary hepatic and systemic amyloidosis caused by a new deletion/insertion mutation in the apolipoprotein AI gene",
+        "id": "PMID:8675681",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/8675681"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P61Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012280",
+        "label": "Hepatic amyloidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001917",
+        "label": "Renal amyloidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030843",
+        "label": "Cardiac amyloidosis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-37b8b87f17c5",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P61Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P61Y"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:600920",
+        "label": "Van den Ende-Gupta syndrome"
+      }
+    }
+  ],
+  "id": "PMID_20887961_Patient_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:600920",
+          "label": "Van den Ende-Gupta syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_182895.5:c.773G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.20431099C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SCARF2",
+                  "valueId": "HGNC:19869"
+                },
+                "id": "var_YUfFhWXXGyafkeEXKgvixYpMl",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr22",
+                  "genomeAssembly": "hg38",
+                  "pos": "20431099",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-19T09:04:22.841969966Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutations in SCARF2 are responsible for Van Den Ende-Gupta syndrome",
+        "id": "PMID:20887961",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/20887961"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012385",
+        "label": "Camptodactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001182",
+        "label": "Tapered finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034391",
+        "label": "Elbow contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000506",
+        "label": "Radioulnar subluxation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001847",
+        "label": "Long hallux"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000581",
+        "label": "Blepharophimosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000444",
+        "label": "Convex nasal ridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000327",
+        "label": "Hypoplasia of the maxilla"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000358",
+        "label": "Posteriorly rotated ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000396",
+        "label": "Overfolded helix"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000160",
+        "label": "Narrow mouth"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030799",
+        "label": "Scaphocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000232",
+        "label": "Everted lower lip vermilion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000960",
+        "label": "Sacral dimple"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000882",
+        "label": "Hypoplastic scapulae"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000894",
+        "label": "Short clavicles"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000773",
+        "label": "Short ribs"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-0d360a5fa88a",
+    "sex": "MALE"
+  }
+}

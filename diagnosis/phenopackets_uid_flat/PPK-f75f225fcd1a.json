@@ -1,0 +1,214 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P28Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620840",
+        "label": "Premature ovarian failure 24"
+      }
+    }
+  ],
+  "id": "PMID_32303603_family_P0001_IV_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620840",
+          "label": "Premature ovarian failure 24"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "family P0001 IV-2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001040274.3:c.154_155del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.10893942_10893943del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SYCP2L",
+                  "valueId": "HGNC:21537"
+                },
+                "id": "var_qOsGLvTjeIjVHcnzjlwSWMicb",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "10893937",
+                  "ref": "AAG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "family P0001 IV-2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-01T05:10:05.740770101Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Homozygous variants in SYCP2L cause premature ovarian insufficiency",
+        "id": "PMID:32303603",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/32303603"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P30Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000869",
+        "label": "Secondary amenorrhea"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P28Y"
+        }
+      },
+      "type": {
+        "id": "HP:0008222",
+        "label": "Female infertility"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      },
+      "type": {
+        "id": "HP:0008232",
+        "label": "Elevated circulating follicle stimulating hormone level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      },
+      "type": {
+        "id": "HP:0011969",
+        "label": "Elevated circulating luteinizing hormone level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031103",
+        "label": "Decreased cirrculating antimullerian hormone circulation"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      },
+      "type": {
+        "id": "HP:0008214",
+        "label": "Decreased serum estradiol"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      },
+      "type": {
+        "id": "HP:0033085",
+        "label": "Reduced antral follicle count"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000876",
+        "label": "Oligomenorrhea"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f75f225fcd1a",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P31Y"
+      }
+    }
+  }
+}

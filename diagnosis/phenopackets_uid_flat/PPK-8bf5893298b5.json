@@ -1,0 +1,234 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P13D"
+        }
+      },
+      "term": {
+        "id": "OMIM:620776",
+        "label": "Thrombocytopenia 13, syndromic"
+      }
+    }
+  ],
+  "id": "PMID_34159722_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620776",
+          "label": "Thrombocytopenia 13, syndromic"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001008216.2:c.449C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.23797774G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "GALE",
+                  "valueId": "HGNC:4116"
+                },
+                "id": "var_bSHkQnLFPkfpwsqovfEObrexG",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "23797774",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-21T13:35:10.092101812Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Expansion of the clinical phenotype of GALE deficiency",
+        "id": "PMID:34159722",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/34159722"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0040185",
+        "label": "Macrothrombocytopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001882",
+        "label": "Leukopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P13D"
+        }
+      },
+      "type": {
+        "id": "HP:0012024",
+        "label": "Hypergalactosemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031689",
+        "label": "Megakaryocyte dysplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000421",
+        "label": "Epistaxis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000225",
+        "label": "Gingival bleeding"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:4000208",
+        "label": "Reduced erythrocyte galactose-1-phosphate uridylyltransferase activity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-8bf5893298b5",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

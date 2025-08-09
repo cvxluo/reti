@@ -1,0 +1,361 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:610042",
+        "label": "Pitt-Hopkins like syndrome 1"
+      }
+    }
+  ],
+  "id": "PMID_19302947_girl",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610042",
+          "label": "Pitt-Hopkins like syndrome 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "girl",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014141.6:c.3709del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.148383882del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CNTNAP2",
+                  "valueId": "HGNC:13830"
+                },
+                "id": "var_SuheSxrILxquPZpjoLFlvSBPr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "148383880",
+                  "ref": "TG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "girl",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-19T05:40:21.117499828Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Gene associated with seizures, autism, and hepatomegaly in an Amish girl",
+        "id": "PMID:19302947",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/19302947"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002353",
+        "label": "EEG abnormality"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006970",
+        "label": "Periventricular leukomalacia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000280",
+        "label": "Coarse facial features"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000303",
+        "label": "Mandibular prognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000687",
+        "label": "Widely spaced teeth"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000294",
+        "label": "Low anterior hairline"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000664",
+        "label": "Synophrys"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009748",
+        "label": "Large earlobe"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000691",
+        "label": "Microdontia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010808",
+        "label": "Protruding tongue"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009765",
+        "label": "Low hanging columella"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000527",
+        "label": "Long eyelashes"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000219",
+        "label": "Thin upper lip vermilion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000337",
+        "label": "Broad forehead"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000400",
+        "label": "Macrotia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000319",
+        "label": "Smooth philtrum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000322",
+        "label": "Short philtrum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000414",
+        "label": "Bulbous nose"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000154",
+        "label": "Wide mouth"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002000",
+        "label": "Short columella"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000582",
+        "label": "Upslanted palpebral fissure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011220",
+        "label": "Prominent forehead"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010804",
+        "label": "Tented upper lip vermilion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0045075",
+        "label": "Sparse eyebrow"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003196",
+        "label": "Short nose"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000341",
+        "label": "Narrow forehead"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-351f66fb2e9e",
+    "sex": "FEMALE",
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

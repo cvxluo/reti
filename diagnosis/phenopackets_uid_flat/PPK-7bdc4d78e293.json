@@ -1,0 +1,329 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:176670",
+        "label": "Hutchinson-Gilford progeria"
+      }
+    }
+  ],
+  "id": "PMID_18256394_Patient_9",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:176670",
+          "label": "Hutchinson-Gilford progeria"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 9",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_170707.4:c.1824C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.156138613C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "LMNA",
+                  "valueId": "HGNC:6636"
+                },
+                "id": "var_qbmmmobRChaEmvpPUddauUPBP",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "156138613",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 9",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-08T03:58:00.543071985Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Phenotype and course of Hutchinson-Gilford progeria syndrome",
+        "id": "PMID:18256394",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18256394"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000520",
+        "label": "Proptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000540",
+        "label": "Hypermetropia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009125",
+        "label": "Lipodystrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000668",
+        "label": "Hypodontia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000684",
+        "label": "Delayed eruption of teeth"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032556",
+        "label": "Circumoral cyanosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001596",
+        "label": "Alopecia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001070",
+        "label": "Mottled pigmentation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003758",
+        "label": "Reduced subcutaneous adipose tissue"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007394",
+        "label": "Prominent superficial blood vessels"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004349",
+        "label": "Reduced bone mineral density"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100546",
+        "label": "Carotid artery stenosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005117",
+        "label": "Elevated diastolic blood pressure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012632",
+        "label": "Abnormal intraocular pressure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004421",
+        "label": "Elevated systolic blood pressure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001658",
+        "label": "Myocardial infarction"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001657",
+        "label": "Prolonged QT interval"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005165",
+        "label": "Shortened PR interval"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002326",
+        "label": "Transient ischemic attack"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:4000168",
+        "label": "Shark teeth"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010296",
+        "label": "Ankyloglossia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0034314",
+        "label": "Abnormal left ventricular ejection fraction"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0040217",
+        "label": "Elevated hemoglobin A1c"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032436",
+        "label": "Abnormal circulating C-reactive protein concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031956",
+        "label": "Elevated circulating aspartate aminotransferase concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0040081",
+        "label": "Abnormal circulating creatine kinase concentration"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-7bdc4d78e293",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y3M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

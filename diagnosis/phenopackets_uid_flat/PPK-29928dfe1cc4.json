@@ -1,0 +1,325 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      },
+      "term": {
+        "id": "OMIM:123000",
+        "label": "Craniometaphyseal dysplasia"
+      }
+    }
+  ],
+  "id": "PMID_22150416_Patient_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:123000",
+          "label": "Craniometaphyseal dysplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_054027.6:c.854_871del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.14745915_14745932del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ANKH",
+                  "valueId": "HGNC:15492"
+                },
+                "id": "var_hSXlzeSZWtAjFzZhTfPdfrIVc",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "14745913",
+                  "ref": "CCGTATGGCATGTGACCCA"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-05T13:19:37.456639051Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Two novel large ANKH deletion mutations in sporadic cases with craniometaphyseal dysplasia",
+        "id": "PMID:22150416",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/22150416"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      },
+      "type": {
+        "id": "HP:0002148",
+        "label": "Hypophosphatemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      },
+      "type": {
+        "id": "HP:0002694",
+        "label": "Sclerosis of skull base"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      },
+      "type": {
+        "id": "HP:0003072",
+        "label": "Hypercalcemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      },
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10M"
+        }
+      },
+      "type": {
+        "id": "HP:0000577",
+        "label": "Exotropia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10M"
+        }
+      },
+      "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10M"
+        }
+      },
+      "type": {
+        "id": "HP:0025405",
+        "label": "Visual fixation instability"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0003155",
+        "label": "Elevated circulating alkaline phosphatase concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0010628",
+        "label": "Facial palsy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0003015",
+        "label": "Flared metaphysis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0000212",
+        "label": "Gingival overgrowth"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004437",
+        "label": "Cranial hyperostosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002677",
+        "label": "Small foramen magnum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005017",
+        "label": "Polyarticular chondrocalcinosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000867",
+        "label": "Secondary hyperparathyroidism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005645",
+        "label": "Intervertebral disk calcification"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-29928dfe1cc4",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y5M"
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:256300",
+        "label": "Nephrotic syndrome, type 1"
+      }
+    }
+  ],
+  "id": "PMID_28392951_Patient_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:256300",
+          "label": "Nephrotic syndrome, type 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004646.4:c.928G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.35849060C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NPHS1",
+                  "valueId": "HGNC:7908"
+                },
+                "id": "var_UnWJMWjtmjCynNYcYnPSjrnsL",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "35849060",
+                  "ref": "C"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004646.4:c.3250dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.35831685dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NPHS1",
+                  "valueId": "HGNC:7908"
+                },
+                "id": "var_EYHVLRQKjEPfXvIUFkhCAZKJq",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "AC",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "35831678",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-02T08:34:09.419922828Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Three Novel Mutations in the NPHS1 Gene in Vietnamese Patients with Congenital Nephrotic Syndrome",
+        "id": "PMID:28392951",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28392951"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M9D"
+        }
+      },
+      "type": {
+        "id": "HP:0000093",
+        "label": "Proteinuria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M9D"
+        }
+      },
+      "type": {
+        "id": "HP:0012050",
+        "label": "Anasarca"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M9D"
+        }
+      },
+      "type": {
+        "id": "HP:0003124",
+        "label": "Hypercholesterolemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M9D"
+        }
+      },
+      "type": {
+        "id": "HP:0003075",
+        "label": "Hypoproteinemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M9D"
+        }
+      },
+      "type": {
+        "id": "HP:0003073",
+        "label": "Hypoalbuminemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M9D"
+        }
+      },
+      "type": {
+        "id": "HP:0000100",
+        "label": "Nephrotic syndrome"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-b67b414ad93e",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1M9D"
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:275400",
+        "label": "Oliver-McFarlane syndrome"
+      }
+    }
+  ],
+  "id": "PMID_25480986_individual_A_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:275400",
+          "label": "Oliver-McFarlane syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual A:1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001166114.2:c.3409C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.7558861C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PNPLA6",
+                  "valueId": "HGNC:16268"
+                },
+                "id": "var_uoslJvDwFIvACxBnkdvZezndS",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "7558861",
+                  "ref": "C"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual A:1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001166114.2:c.3496G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.7558948G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PNPLA6",
+                  "valueId": "HGNC:16268"
+                },
+                "id": "var_yRYByFupJfJxRlclHGqITHHCC",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "7558948",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual A:1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-19T05:31:28.232882022Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Neuropathy target esterase impairments cause Oliver-McFarlane and Laurence-Moon syndromes",
+        "id": "PMID:25480986",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25480986"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000533",
+        "label": "Chorioretinal atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010627",
+        "label": "Anterior pituitary hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000527",
+        "label": "Long eyelashes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034323",
+        "label": "Reduced circulating growth hormone concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002750",
+        "label": "Delayed skeletal maturation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001596",
+        "label": "Alopecia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003477",
+        "label": "Peripheral axonal neuropathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001258",
+        "label": "Spastic paraplegia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010442",
+        "label": "Polydactyly"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a53c42100135",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y8M"
+      }
+    }
+  }
+}

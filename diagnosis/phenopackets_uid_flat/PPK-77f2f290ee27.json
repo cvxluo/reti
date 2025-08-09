@@ -1,0 +1,203 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "term": {
+        "id": "OMIM:273900",
+        "label": "Thrombocytopenia 3"
+      }
+    }
+  ],
+  "id": "PMID_25876182_Patient_VI_2",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:273900",
+          "label": "Thrombocytopenia 3"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient VI-2",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001465.6:c.393G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.39202568C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FYB1",
+                  "valueId": "HGNC:4036"
+                },
+                "id": "var_DnxGhzzazcEcNPGKqdtoOxJqX",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "39202568",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient VI-2",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-02T16:35:15.456688165Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Deleterious mutation in the FYB gene is associated with congenital autosomal recessive small-platelet thrombocytopenia",
+        "id": "PMID:25876182",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25876182"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0005537",
+        "label": "Decreased mean platelet volume"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0007420",
+        "label": "Spontaneous hematomas"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000132",
+        "label": "Menorrhagia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003010",
+        "label": "Prolonged bleeding time"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000421",
+        "label": "Epistaxis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000967",
+        "label": "Petechiae"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000225",
+        "label": "Gingival bleeding"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-77f2f290ee27",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P13Y"
+      }
+    }
+  }
+}

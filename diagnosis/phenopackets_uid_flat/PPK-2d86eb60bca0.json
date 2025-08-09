@@ -1,0 +1,304 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:606324",
+        "label": "Parkinson disease 7, autosomal recessive early-onset"
+      }
+    }
+  ],
+  "id": "PMID_27460976_proband",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:606324",
+          "label": "Parkinson disease 7, autosomal recessive early-onset"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_007262.5:c.461C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.7984945C>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PARK7",
+                  "valueId": "HGNC:16369"
+                },
+                "id": "var_QphjmZMFhBUkyZWcoPPiDNIXh",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "7984945",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-09T05:34:35.635982990Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "DJ-1 modulates mitochondrial response to oxidative stress: clues from a novel diagnosis of PARK7",
+        "id": "PMID:27460976",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27460976"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P47Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002067",
+        "label": "Bradykinesia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P47Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002063",
+        "label": "Rigidity"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0007351",
+        "label": "Upper limb postural tremor"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002355",
+        "label": "Difficulty walking"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001761",
+        "label": "Pes cavus"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001765",
+        "label": "Hammertoe"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004673",
+        "label": "Decreased facial expression"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003693",
+        "label": "Distal amyotrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002460",
+        "label": "Distal muscle weakness"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001300",
+        "label": "Parkinsonism"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0100291",
+        "label": "Delayed somatosensory central conduction time"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007819",
+        "label": "Presenile cataracts"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003200",
+        "label": "Ragged-red muscle fibers"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003688",
+        "label": "Cytochrome C oxidase-negative muscle fibers"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-2d86eb60bca0",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P43Y"
+      }
+    }
+  }
+}

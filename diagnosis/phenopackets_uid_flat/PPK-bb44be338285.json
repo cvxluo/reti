@@ -1,0 +1,283 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:188400",
+        "label": "DiGeorge syndrome"
+      }
+    }
+  ],
+  "id": "PMID_30083032_individual",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:188400",
+          "label": "DiGeorge syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_080647.1:c.967_977dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.19765960_19765970dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TBX1",
+                  "valueId": "HGNC:11592"
+                },
+                "id": "var_ReMEVaFAzpRbTMkgwhcNwGELP",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "GAACCCCGTGGC",
+                  "chrom": "chr22",
+                  "genomeAssembly": "hg38",
+                  "pos": "19765959",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-05T13:48:33.003859996Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Hasegawa K, Tanaka H, Higuchi Y, Hayashi Y, Kobayashi K, Tsukahara H. Novel heterozygous mutation in TBX1 in an infant with hypocalcemic seizures. Clinical Pediatric Endocrinology 2018;27:159–64.",
+        "id": "PMID:30083032",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30083032"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000829",
+        "label": "Hypoparathyroidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010515",
+        "label": "Aplasia/Hypoplasia of the thymus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010442",
+        "label": "Polydactyly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000581",
+        "label": "Blepharophimosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000460",
+        "label": "Narrow nose"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001999",
+        "label": "Abnormal facial shape"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000220",
+        "label": "Velopharyngeal insufficiency"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001636",
+        "label": "Tetralogy of Fallot"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010882",
+        "label": "Pulmonary valve atresia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031834",
+        "label": "Aortopulmonary collateral arteries"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011613",
+        "label": "Interrupted aortic arch type B"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012020",
+        "label": "Right aortic arch"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001159",
+        "label": "Syndactyly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100647",
+        "label": "Graves disease"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-bb44be338285",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    }
+  }
+}

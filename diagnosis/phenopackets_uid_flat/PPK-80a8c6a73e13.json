@@ -1,0 +1,176 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:609622",
+        "label": "Short QT syndrome 3"
+      }
+    }
+  ],
+  "id": "PMID_15761194_III_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:609622",
+          "label": "Short QT syndrome 3"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000891.3:c.514G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.70175553G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "KCNJ2",
+                  "valueId": "HGNC:6263"
+                },
+                "id": "var_APNFnxizAsMKkXNEXdLNrwCgE",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "70175553",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-29T08:50:26.691447019Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel form of short QT syndrome (SQT3) is caused by a mutation in the KCNJ2 gene",
+        "id": "PMID:15761194",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/15761194"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0012232",
+        "label": "Shortened QT interval"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004757",
+        "label": "Paroxysmal atrial fibrillation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001962",
+        "label": "Palpitations"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031972",
+        "label": "Presyncope"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012663",
+        "label": "Mildly reduced left ventricular ejection fraction"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001645",
+        "label": "Sudden cardiac death"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-80a8c6a73e13",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P5Y"
+      }
+    }
+  }
+}

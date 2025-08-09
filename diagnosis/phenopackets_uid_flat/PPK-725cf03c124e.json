@@ -1,0 +1,371 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:616457",
+        "label": "Developmental and epileptic encephalopathy 50"
+      }
+    }
+  ],
+  "id": "PMID_25678555_UDP4003",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616457",
+          "label": "Developmental and epileptic encephalopathy 50"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "UDP4003",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004341.5:c.1843-1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.27226130G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CAD",
+                  "valueId": "HGNC:1424"
+                },
+                "id": "var_qEhykLJKpULLTmlfvcrJtzulF",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "27226130",
+                  "ref": "G"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "UDP4003",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004341.5:c.6071G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.27242098G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CAD",
+                  "valueId": "HGNC:1424"
+                },
+                "id": "var_knFlqYKJuFAbNdZBmblXqSETv",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "27242098",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "UDP4003",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-15T06:53:00.691498994Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Biallelic mutations in CAD, impair de novo pyrimidine biosynthesis and decrease glycosylation precursors",
+        "id": "PMID:25678555",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25678555"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0004823",
+        "label": "Anisopoikilocytosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001927",
+        "label": "Acanthocytosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001981",
+        "label": "Schistocytosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0012134",
+        "label": "Dysplastic erythropoesis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001987",
+        "label": "Hyperammonemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002136",
+        "label": "Broad-based gait"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0010862",
+        "label": "Delayed fine motor development"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002474",
+        "label": "Expressive language delay"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001947",
+        "label": "Renal tubular acidosis"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012444",
+        "label": "Brain atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002133",
+        "label": "Status epilepticus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003112",
+        "label": "Abnormal circulating amino acid concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012071",
+        "label": "Abnormal circulating acylcarnitine concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-725cf03c124e",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y5M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

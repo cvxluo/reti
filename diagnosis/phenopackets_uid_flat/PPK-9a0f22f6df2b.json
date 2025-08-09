@@ -1,0 +1,246 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:123000",
+        "label": "Craniometaphyseal dysplasia"
+      }
+    }
+  ],
+  "id": "PMID_20358596_Patient_A",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:123000",
+          "label": "Craniometaphyseal dysplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient A",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_054027.6:c.1015T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.14716832A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ANKH",
+                  "valueId": "HGNC:15492"
+                },
+                "id": "var_XrjJwmkwzBFwgoKHiCFbvXxWn",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "14716832",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient A",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-05T13:19:37.458885192Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Three novel mutations in the ANK membrane protein cause craniometaphyseal dysplasia with variable conductive hearing loss",
+        "id": "PMID:20358596",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/20358596"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      },
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004437",
+        "label": "Cranial hyperostosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031428",
+        "label": "Increased circulating osteocalcin level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003155",
+        "label": "Elevated circulating alkaline phosphatase concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0010628",
+        "label": "Facial palsy"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      },
+      "type": {
+        "id": "HP:0009085",
+        "label": "Alveolar ridge overgrowth"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000689",
+        "label": "Dental malocclusion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000678",
+        "label": "Dental crowding"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000452",
+        "label": "Choanal stenosis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-9a0f22f6df2b",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P12Y"
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620718",
+        "label": "Orofaciodigital syndrome XX"
+      }
+    }
+  ],
+  "id": "PMID_37619988_nan",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620718",
+          "label": "Orofaciodigital syndrome XX"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "nan",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_031934.6:c.254T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.28715860A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RAB34",
+                  "valueId": "HGNC:16519"
+                },
+                "id": "var_hAdfHWjAVqTqCxbgfDNdFobRm",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "28715860",
+                  "ref": "A"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "nan",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_031934.6:c.691C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.28714814G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RAB34",
+                  "valueId": "HGNC:16519"
+                },
+                "id": "var_nZgMelrnEgCqYsWTTaaLZVIkB",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "28714814",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "nan",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-30T11:43:20.706807136Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Compound heterozygous variants in RAB34 in a rare skeletal ciliopathy syndrome",
+        "id": "PMID:37619988",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37619988"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0010880",
+        "label": "Increased nuchal translucency"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001162",
+        "label": "Postaxial hand polydactyly"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001830",
+        "label": "Postaxial foot polydactyly"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0410030",
+        "label": "Cleft lip"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0006695",
+        "label": "Atrioventricular canal defect"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a2c44c7ed3f2"
+  }
+}

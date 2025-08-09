@@ -1,0 +1,335 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      },
+      "term": {
+        "id": "OMIM:201910",
+        "label": "Adrenal hyperplasia, congenital, due to 21-hydroxylase deficiency"
+      }
+    }
+  ],
+  "id": "PMID_30968594_individual_6",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:201910",
+          "label": "Adrenal hyperplasia, congenital, due to 21-hydroxylase deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual 6",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000500.9:c.955C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.32040421C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CYP21A2",
+                  "valueId": "HGNC:2600"
+                },
+                "id": "var_MXqLtUjBkKNafWWADHeILYipZ",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "32040421",
+                  "ref": "C"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual 6",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000500.9:c.1069C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.32040535C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CYP21A2",
+                  "valueId": "HGNC:2600"
+                },
+                "id": "var_YcDbzOARorHoscVzPpARevYQr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "32040535",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual 6",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "measurements": [
+    {
+      "assay": {
+        "id": "LOINC:2986-8",
+        "label": "Testosterone[Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "referenceRange": {
+            "high": 1000.0,
+            "low": 300.0,
+            "unit": {
+              "id": "UCUM:ng/dL",
+              "label": "nanogram per deciliter"
+            }
+          },
+          "unit": {
+            "id": "UCUM:ng/dL",
+            "label": "nanogram per deciliter"
+          },
+          "value": 67.0
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2141-0",
+        "label": "Corticotropin (P) [Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "referenceRange": {
+            "high": 60.0,
+            "low": 10.0,
+            "unit": {
+              "id": "UCUM:pg/L",
+              "label": "picogram per liter"
+            }
+          },
+          "unit": {
+            "id": "UCUM:pg/L",
+            "label": "picogram per liter"
+          },
+          "value": 365.4
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2143-6",
+        "label": "Cortisol [Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "referenceRange": {
+            "high": 690.0,
+            "low": 140.0,
+            "unit": {
+              "id": "UCUM:nmol/L",
+              "label": "nanomole per liter"
+            }
+          },
+          "unit": {
+            "id": "UCUM:nmol/L",
+            "label": "nanomole per liter"
+          },
+          "value": 117.9
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2842-3",
+        "label": "Prolactin [Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "referenceRange": {
+            "high": 15.0,
+            "low": 2.0,
+            "unit": {
+              "id": "UCUM:ng/mL",
+              "label": "nanogram per milliliter"
+            }
+          },
+          "unit": {
+            "id": "UCUM:ng/mL",
+            "label": "nanogram per milliliter"
+          },
+          "value": 19.03
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2243-4",
+        "label": "Estradiol (E2) [Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "referenceRange": {
+            "high": 50.0,
+            "low": 10.0,
+            "unit": {
+              "id": "UCUM:pg/mL",
+              "label": "picogram per milliliter"
+            }
+          },
+          "unit": {
+            "id": "UCUM:pg/mL",
+            "label": "picogram per milliliter"
+          },
+          "value": 0.01
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-13T04:37:53.000309500Z",
+    "createdBy": "ORCID:0000-0002-5648-2155",
+    "externalReferences": [
+      {
+        "description": "Genotype-phenotype correlation study and mutational and hormonal analysis in a Chinese cohort with 21-hydroxylase deficiency",
+        "id": "PMID:30968594",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30968594"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "resources": [
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      },
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "August 1, 2024"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "loinc",
+        "iriPrefix": "http://purl.bioontology.org/ontology/LOINC_",
+        "name": "Logical Observation Identifier Names and Codes",
+        "namespacePrefix": "LOINC",
+        "url": "https://loinc.org/",
+        "version": "2.78"
+      },
+      {
+        "id": "ucum",
+        "iriPrefix": "https://ucum.org/UCUM_",
+        "name": "Unified Code for Units of Measure",
+        "namespacePrefix": "UCUM",
+        "url": "https://ucum.org/",
+        "version": "1.7"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0500011",
+        "label": "Moon facies"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040171",
+        "label": "Decreased serum testosterone concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003154",
+        "label": "Increased circulating ACTH level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008163",
+        "label": "Decreased circulating cortisol level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000870",
+        "label": "Increased circulating prolactin concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008214",
+        "label": "Decreased serum estradiol"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f07bb84fb487",
+    "sex": "MALE"
+  }
+}

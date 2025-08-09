@@ -1,0 +1,195 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:146000",
+        "label": "Hypochondroplasia"
+      }
+    }
+  ],
+  "id": "PMID_30681580_proband",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:146000",
+          "label": "Hypochondroplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000142.5:c.1052C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.1803813C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FGFR3",
+                  "valueId": "HGNC:3690"
+                },
+                "id": "var_LmXowblMRNiVRZvCTJytvRKDr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr4",
+                  "genomeAssembly": "hg38",
+                  "pos": "1803813",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-24T17:25:38.068237066Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Identification of a novel mutation of FGFR3 gene in a large Chinese pedigree with hypochondroplasia by next-generation sequencing: A case report and brief literature review",
+        "id": "PMID:30681580",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30681580"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002970",
+        "label": "Genu varum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100864",
+        "label": "Short femoral neck"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008450",
+        "label": "Narrow vertebral interpedicular distance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100866",
+        "label": "Short iliac bones"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008873",
+        "label": "Disproportionate short-limb short stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004060",
+        "label": "Trident hand"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004379",
+        "label": "Abnormality of alkaline phosphatase level"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031508",
+        "label": "Abnormal circulating thyroid hormone concentration"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-42e2f37b1749",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y8M"
+      }
+    }
+  }
+}

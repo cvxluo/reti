@@ -1,0 +1,304 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3W"
+        }
+      },
+      "term": {
+        "id": "OMIM:604377",
+        "label": "Mitochondrial complex IV deficiency, nuclear type 2"
+      }
+    }
+  ],
+  "id": "PMID_20159436_Clinical_Report",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:604377",
+          "label": "Mitochondrial complex IV deficiency, nuclear type 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Clinical Report",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005138.3:c.418G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.50523994C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SCO2",
+                  "valueId": "HGNC:10604"
+                },
+                "id": "var_jjtQvsYwVsohqBqryACcUOBlD",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr22",
+                  "genomeAssembly": "hg38",
+                  "pos": "50523994",
+                  "ref": "C"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Clinical Report",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005138.3:c.16_17insAGCATGCAGCAGTGACTCA"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.50524395_50524396insTGAGTCACTGCTGCATGCT"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SCO2",
+                  "valueId": "HGNC:10604"
+                },
+                "id": "var_OkmTexBleUhKqEAJSlOboSujM",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "CTGAGTCACTGCTGCATGCT",
+                  "chrom": "chr22",
+                  "genomeAssembly": "hg38",
+                  "pos": "50524395",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Clinical Report",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-31T15:53:51.133524894Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel mutation in the SCO2 gene in a neonate with early-onset cardioencephalomyopathy",
+        "id": "PMID:20159436",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/20159436"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      },
+      "type": {
+        "id": "HP:0000952",
+        "label": "Jaundice"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      },
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      },
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      },
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      },
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      },
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      },
+      "type": {
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002683",
+        "label": "Abnormal calvaria morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004887",
+        "label": "Respiratory failure requiring assisted ventilation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000741",
+        "label": "Apathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003128",
+        "label": "Lactic acidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000308",
+        "label": "Microretrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012747",
+        "label": "Abnormal brainstem MRI signal intensity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007183",
+        "label": "Focal T2 hyperintense basal ganglia lesion"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-704d50fb8663",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      }
+    }
+  }
+}

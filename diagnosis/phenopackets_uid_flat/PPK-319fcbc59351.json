@@ -1,0 +1,188 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P37Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620657",
+        "label": "Amyloidosis, hereditary systemic 3"
+      }
+    }
+  ],
+  "id": "PMID_10198255_proband_father",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620657",
+          "label": "Amyloidosis, hereditary systemic 3"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband father",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000039.3:c.518G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.116836094C>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "APOA1",
+                  "valueId": "HGNC:600"
+                },
+                "id": "var_FKcyzsYFSZFGzJJHWrrSAnmoB",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "116836094",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband father",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-14T14:13:38.370702028Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel apolipoprotein A-1 variant, Arg173Pro, associated with cardiac and cutaneous amyloidosis",
+        "id": "PMID:10198255",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/10198255"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001638",
+        "label": "Cardiomyopathy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001635",
+        "label": "Congestive heart failure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P37Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004944",
+        "label": "Dilatation of the cerebral artery"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003216",
+        "label": "Generalized amyloid deposition"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-319fcbc59351",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P63Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    }
+  }
+}

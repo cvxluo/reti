@@ -1,0 +1,188 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:614321",
+        "label": "Myopathy, distal, Tateyama type"
+      }
+    }
+  ],
+  "id": "PMID_18930476_individual_III3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:614321",
+          "label": "Myopathy, distal, Tateyama type"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual III3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_033337.3:c.80G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.8733956G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CAV3",
+                  "valueId": "HGNC:1529"
+                },
+                "id": "var_ZNLVkamAKQbdjuWcvbAJmoara",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr3",
+                  "genomeAssembly": "hg38",
+                  "pos": "8733956",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual III3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-06T07:02:20.734706878Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Phenotypic variability in a Spanish family with a Caveolin-3 mutation",
+        "id": "PMID:18930476",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18930476"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003236",
+        "label": "Elevated circulating creatine kinase concentration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001761",
+        "label": "Pes cavus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003326",
+        "label": "Myalgia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0008981",
+        "label": "Calf muscle hypertrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003760",
+        "label": "Percussion-induced rapid rolling muscle contractions"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-437f2207ab21",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P23Y"
+      }
+    }
+  }
+}

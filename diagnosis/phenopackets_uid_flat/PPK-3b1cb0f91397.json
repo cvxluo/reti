@@ -1,0 +1,180 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P47Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620734",
+        "label": "Cardiomyopathy, familial hypertrophic, 30, atrial"
+      }
+    }
+  ],
+  "id": "PMID_37913506_II-6",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620734",
+          "label": "Cardiomyopathy, familial hypertrophic, 30, atrial"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "II-6",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006587.4:c.684dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.47744520dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CORIN",
+                  "valueId": "HGNC:19012"
+                },
+                "id": "var_KLqkqLVVhtokhNJVSFnQCYCpt",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "TC",
+                  "chrom": "chr4",
+                  "genomeAssembly": "hg38",
+                  "pos": "47744516",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "II-6",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-04T06:06:15.055917024Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Corin and Left Atrial Cardiomyopathy, Hypertension, Arrhythmia, and Fibrosis",
+        "id": "PMID:37913506",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37913506"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-03"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005110",
+        "label": "Atrial fibrillation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031295",
+        "label": "Left atrial enlargement"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033534",
+        "label": "Increased circulating brain natriuretic peptide concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000693",
+        "label": "Reduced circulating NT-proANP concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000691",
+        "label": "Left atrial fibrosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004749",
+        "label": "Atrial flutter"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012664",
+        "label": "Reduced left ventricular ejection fraction"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-3b1cb0f91397",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P48Y"
+      }
+    }
+  }
+}

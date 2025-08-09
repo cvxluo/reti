@@ -1,0 +1,189 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620849",
+        "label": "Spermatogenic failure 93"
+      }
+    }
+  ],
+  "id": "PMID_34155512_III_3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620849",
+          "label": "Spermatogenic failure 93"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III:3 ",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001352389.2:c.1235del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.8413604del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "STK33",
+                  "valueId": "HGNC:14568"
+                },
+                "id": "var_PUDtQQBffCeNkwnvgJbdxMbgg",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "8413603",
+                  "ref": "TG"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III:3 ",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-14T20:49:13.104483127Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Novel frameshift mutation in STK33 is associated with asthenozoospermia and multiple morphological abnormalities of the flagella",
+        "id": "PMID:34155512",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/34155512"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034011",
+        "label": "Reduced progressive sperm motility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012207",
+        "label": "Reduced sperm motility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032560",
+        "label": "Coiled sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034811",
+        "label": "Bent sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032559",
+        "label": "Short sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032558",
+        "label": "Absent sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033393",
+        "label": "Irregularly shaped sperm tail"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000798",
+        "label": "Oligozoospermia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-4741b26878eb",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P36Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

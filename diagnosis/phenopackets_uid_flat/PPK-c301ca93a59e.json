@@ -1,0 +1,319 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:616873",
+        "label": "Immunodeficiency, common variable, 13"
+      }
+    }
+  ],
+  "id": "PMID_33855675_girl",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616873",
+          "label": "Immunodeficiency, common variable, 13"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "girl",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006060.6:c.546C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.50382664C>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "IKZF1",
+                  "valueId": "HGNC:13176"
+                },
+                "id": "var_QcnqsltIQoxUYSlSjNadMHGQZ",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "50382664",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "girl",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-10T10:44:47.735781908Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Abnormal SCID Newborn Screening and Spontaneous Recovery Associated with a Novel Haploinsufficiency IKZF1 Mutation",
+        "id": "PMID:33855675",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33855675"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P10D"
+        }
+      },
+      "type": {
+        "id": "HP:0010976",
+        "label": "B lymphocytopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M7D"
+        }
+      },
+      "type": {
+        "id": "HP:0030388",
+        "label": "Decreased proportion of class-switched memory B cells"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y5M"
+        }
+      },
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0031545",
+        "label": "Abnormally low T cell receptor excision circle level"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004812",
+        "label": "B Acute Lymphoblastic Leukemia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006727",
+        "label": "T-cell acute lymphoblastic leukemias"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002837",
+        "label": "Recurrent bronchitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011108",
+        "label": "Recurrent sinusitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410028",
+        "label": "Recurrent oral herpes"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005406",
+        "label": "Recurrent bacterial skin infections"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006946",
+        "label": "Recurrent meningitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100806",
+        "label": "Sepsis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0020103",
+        "label": "Invasive pulmonary aspergillosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0020102",
+        "label": "Pneumocystis jirovecii pneumonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0025044",
+        "label": "Lung abscess"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009098",
+        "label": "Chronic oral candidiasis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002028",
+        "label": "Chronic diarrhea"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0033222",
+        "label": "Decreased CD4:CD8 ratio"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001876",
+        "label": "Pancytopenia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001875",
+        "label": "Neutropenia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031381",
+        "label": "Decreased lymphocyte proliferation in response to mitogen"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-c301ca93a59e",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3M7D"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}
