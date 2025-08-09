@@ -80,25 +80,18 @@ export default function AudioRecorder() {
     <div className="w-full max-w-xl">
       <div className="flex items-center gap-3">
         {!recording ? (
-          <button
-            onClick={startRecording}
-            className="rounded bg-black text-white px-4 py-2"
-          >
+          <button onClick={startRecording} className="btn btn-primary">
             Record
           </button>
         ) : (
-          <button
-            onClick={stopRecording}
-            className="rounded bg-red-600 text-white px-4 py-2"
-          >
+          <button onClick={stopRecording} className="btn btn-danger">
             Stop
           </button>
         )}
-        <span className="text-sm text-gray-600">{seconds}s</span>
-        <button
-          onClick={reset}
-          className="ml-auto text-sm text-gray-500 underline"
-        >
+        <span className="text-sm text-gray-600 dark:text-gray-300">
+          {seconds}s
+        </span>
+        <button onClick={reset} className="ml-auto btn btn-link">
           Re-record
         </button>
       </div>
