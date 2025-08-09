@@ -6,7 +6,7 @@ export const agentRouter = Router();
 const biomniTool = {
   type: "function" as const,
   name: "biomni",
-  description: "Use Biomni to diagnose the patient",
+  description: "Use Biomni, a subagent that has access to detailed medical databases and research papers, to return an investigation",
   strict: true,
   parameters: {
     type: "object",
@@ -27,9 +27,9 @@ agentRouter.post("/api/agent", async (req, res) => {
 
     console.log("recieved request", userRequest);
 
-    const systemMessage = `You are an expert medical assistant. You are attempting to diagnose a patient based on their phenotype.
+    const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fufill their request.
     You have access to the following tools:
-    - use Biomni to diagnose the patient`
+    - use Biomni, a subagent that has access to detailed medical databases and research papers, to get an detailed investigation`
 
     const completion = await openai.responses.create({
         model: 'gpt-5-2025-08-07',
@@ -56,6 +56,22 @@ agentRouter.post("/api/agent", async (req, res) => {
         console.log("tool call id", toolCallId);
         console.log("tool call arguments", toolCallArguments);
 
+
+        if (tool_call.name === "biomni") {
+            const response = await fetch(`http://127.0.0.1:5000/go`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    prompt: JSON.parse(toolCallArguments).prompt
+                })
+            });
+
+            console.log("response", response);
+            const data = await response.json();
+            console.log("biomni response", data);
+        }
       }
 
       const text = (completion as any).output_text ?? '';

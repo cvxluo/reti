@@ -41,6 +41,7 @@ def health() -> Any:
 
 @app.post("/go")
 def go() -> Any:
+    print("recieved request", request)
     try:
         payload: dict[str, Any] = request.get_json(force=True)
         prompt = payload.get("prompt")
