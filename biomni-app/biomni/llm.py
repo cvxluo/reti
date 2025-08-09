@@ -66,7 +66,7 @@ def get_llm(
 
     # Create appropriate model based on source
     if source == "OpenAI":
-        return ChatOpenAI(model=model, temperature=temperature, stop_sequences=stop_sequences)
+        return ChatOpenAI(model=model, temperature=temperature)
     elif source == "AzureOpenAI":
         API_VERSION = "2024-12-01-preview"
         model = model.replace("azure-", "")
