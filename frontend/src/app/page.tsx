@@ -18,22 +18,7 @@ export default function Home() {
                 className="flex items-center gap-1 rounded px-1.5 py-0.5 hover:bg-stone-200/60"
                 aria-haspopup="menu"
                 aria-expanded={isMenuOpen}
-              >
-                <span className="text-xs text-stone-800">Converse</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="h-3 w-3 text-stone-600"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.104l3.71-3.874a.75.75 0 111.08 1.04l-4.24 4.43a.75.75 0 01-1.08 0l-4.24-4.43a.75.75 0 01.02-1.06z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
+              ></button>
               {isMenuOpen ? (
                 <div
                   role="menu"

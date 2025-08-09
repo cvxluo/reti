@@ -242,8 +242,26 @@ export default function Chat() {
           >
             📸
           </button>
+          <button
+            onClick={openCamera}
+            className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 disabled:opacity-50"
+            title="Open camera"
+            disabled={busy}
+          >
+            📸
+          </button>
         </div>
       </div>
+
+      {showCamera && (
+        <CameraCapture
+          onCapture={(file) => {
+            onPickImage(file);
+            closeCamera();
+          }}
+          onClose={closeCamera}
+        />
+      )}
     </div>
   );
 }
@@ -262,14 +280,14 @@ function MessageBubble({ msg }: { msg: Msg }) {
         {msg.text && (
           <p className="whitespace-pre-wrap leading-relaxed">{msg.text}</p>
         )}
-        {msg.imageUrl && (
+        {"imageUrl" in msg && msg.imageUrl && (
           <img
             src={msg.imageUrl}
             alt="uploaded"
             className="mt-1 rounded-lg border w-48 h-36 object-cover"
           />
         )}
-        {msg.audioUrl && (
+        {"audioUrl" in msg && msg.audioUrl && (
           <audio className="mt-2 w-56" controls src={msg.audioUrl} />
         )}
         {"hpo" in msg && msg.hpo?.length > 0 && (
