@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import CameraCapture from "./CameraCapture";
 
 type HPO = { id: string; label: string; confidence: number };
 type PhenotypeResp = { phenotype_text: string; hpo: HPO[] };
@@ -26,6 +27,7 @@ export default function Chat() {
     null
   );
   const [isRecording, setIsRecording] = useState(false);
+  const [showCamera, setShowCamera] = useState(false);
 
   useEffect(() => {
     listRef.current?.lastElementChild?.scrollIntoView({ behavior: "smooth" });
@@ -167,6 +169,13 @@ export default function Chat() {
       alert("Microphone permission denied");
     }
   }
+  function openCamera() {
+    setShowCamera(true);
+  }
+
+  function closeCamera() {
+    setShowCamera(false);
+  }
 
   return (
     <div className="mx-auto max-w-5xl h-[calc(100vh-120px)] rounded-2xl border border-stone-300/70 bg-stone-50 shadow-sm flex flex-col">
@@ -213,7 +222,7 @@ export default function Chat() {
           </button>
 
           <label className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 cursor-pointer disabled:opacity-50">
-            📷
+            🖼️
             <input
               type="file"
               accept="image/*"
@@ -225,8 +234,26 @@ export default function Chat() {
               disabled={busy}
             />
           </label>
+          <button
+            onClick={openCamera}
+            className="rounded-xl border border-stone-300/70 bg-white text-sm px-3 py-2 disabled:opacity-50"
+            title="Open camera"
+            disabled={busy}
+          >
+            📸
+          </button>
         </div>
       </div>
+
+      {showCamera && (
+        <CameraCapture
+          onCapture={(file) => {
+            onPickImage(file);
+            closeCamera();
+          }}
+          onClose={closeCamera}
+        />
+      )}
     </div>
   );
 }
@@ -245,14 +272,14 @@ function MessageBubble({ msg }: { msg: Msg }) {
         {msg.text && (
           <p className="whitespace-pre-wrap leading-relaxed">{msg.text}</p>
         )}
-        {msg.imageUrl && (
+        {"imageUrl" in msg && msg.imageUrl && (
           <img
             src={msg.imageUrl}
             alt="uploaded"
             className="mt-1 rounded-lg border w-48 h-36 object-cover"
           />
         )}
-        {msg.audioUrl && (
+        {"audioUrl" in msg && msg.audioUrl && (
           <audio className="mt-2 w-56" controls src={msg.audioUrl} />
         )}
         {"hpo" in msg && msg.hpo?.length > 0 && (
