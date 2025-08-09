@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import CameraCapture from "./CameraCapture";
 
 type HPO = { id: string; label: string; confidence: number };
-type PhenotypeResp = { phenotype_text: string; hpo: HPO[] };
+type PhenotypeResp = { phenotype_text: string; hpo?: HPO[] };
 
 type Msg =
   | {
@@ -14,7 +14,7 @@ type Msg =
       imageUrl?: string;
       audioUrl?: string;
     }
-  | { id: string; role: "assistant"; text: string; hpo: HPO[] };
+  | { id: string; role: "assistant"; text: string; hpo?: HPO[] };
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:4001";
 
@@ -34,12 +34,25 @@ export default function Chat() {
   }, [messages]);
 
   async function sendText() {
+    setBusy(true);
+    const response = await fetch(`${API_BASE}/api/agent`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ userRequest: input }),
+    });
+
+    const json = await response.json();
+    setMessages((m) => [...m, { id: crypto.randomUUID(), role: "assistant", text: json.text }]);
+    setBusy(false);
+    
+    /*
     const text = input.trim();
     if (!text) return;
     setInput("");
     const uid = crypto.randomUUID();
     setMessages((m) => [...m, { id: uid, role: "user", text }]);
     await runPhenotypeFromText(text);
+    */
   }
 
   async function runPhenotypeFromText(text: string) {
