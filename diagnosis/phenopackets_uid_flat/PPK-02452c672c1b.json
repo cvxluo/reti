@@ -1,0 +1,246 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:311200",
+        "label": "Orofaciodigital syndrome I"
+      }
+    }
+  ],
+  "id": "PMID_27957444_Patient_1_III_VII",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:311200",
+          "label": "Orofaciodigital syndrome I"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 1 III-VII",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003611.3:c.1965_1966del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.13760425_13760426del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "OFD1",
+                  "valueId": "HGNC:2567"
+                },
+                "id": "var_qYUNTToDAnDaHSNcsrCBNJOAr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chrX",
+                  "genomeAssembly": "hg38",
+                  "pos": "13760421",
+                  "ref": "GGA"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 1 III-VII",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-06T07:23:40.463351964Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A Novel Mutation in the OFD1 Gene in a Family with Oral-Facial-Digital Syndrome Type 1: A Case Report",
+        "id": "PMID:27957444",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27957444"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000180",
+        "label": "Lobulated tongue"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010297",
+        "label": "Bifid tongue"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010296",
+        "label": "Ankyloglossia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000158",
+        "label": "Macroglossia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002282",
+        "label": "Gray matter heterotopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000191",
+        "label": "Accessory oral frenulum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0410030",
+        "label": "Cleft lip"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000113",
+        "label": "Polycystic kidney dysplasia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001274",
+        "label": "Agenesis of corpus callosum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-02452c672c1b",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

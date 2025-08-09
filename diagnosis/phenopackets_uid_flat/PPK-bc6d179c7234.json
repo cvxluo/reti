@@ -1,0 +1,181 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:256500",
+        "label": "Netherton syndrome"
+      }
+    }
+  ],
+  "id": "PMID_11952552_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:256500",
+          "label": "Netherton syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006846.4:c.153del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.148070394del"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SPINK5",
+                  "valueId": "HGNC:15464"
+                },
+                "id": "var_hJjaREfzBsZLfKfLxhGYVXxhm",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "148070388",
+                  "ref": "AT"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-14T10:58:04.048627853Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing",
+        "id": "PMID:11952552",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/11952552"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001019",
+        "label": "Erythroderma"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0040190",
+        "label": "White scaling skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003777",
+        "label": "Pili torti"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025092",
+        "label": "Epidermal acanthosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000656",
+        "label": "Ectropion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012472",
+        "label": "Eclabion"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-bc6d179c7234",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4M"
+      }
+    }
+  }
+}

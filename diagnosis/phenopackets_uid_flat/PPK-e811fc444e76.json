@@ -1,0 +1,194 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:148050",
+        "label": "KBG syndrome"
+      }
+    }
+  ],
+  "id": "PMID_36446582_Low_2016_P16_9",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:148050",
+          "label": "KBG syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Low, 2016_P16 (9)",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_013275.6:c.5274dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.89281272dup"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ANKRD11",
+                  "valueId": "HGNC:21316"
+                },
+                "id": "var_CqJloUTWCZFQYvwGZjCKCklaz",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "AG",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "89281267",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Low, 2016_P16 (9)",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-29T06:49:57.763663053Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Clinical description, molecular delineation and genotype-phenotype correlation in 340 patients with KBG syndrome: addition of 67 new patients",
+        "id": "PMID:36446582",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36446582"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001572",
+        "label": "Macrodontia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001155",
+        "label": "Abnormality of the hand"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002750",
+        "label": "Delayed skeletal maturation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006695",
+        "label": "Atrioventricular canal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001655",
+        "label": "Patent foramen ovale"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001647",
+        "label": "Bicuspid aortic valve"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000410",
+        "label": "Mixed hearing impairment"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-e811fc444e76",
+    "sex": "MALE"
+  }
+}

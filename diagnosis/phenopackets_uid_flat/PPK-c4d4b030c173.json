@@ -1,0 +1,286 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620746",
+        "label": "Neurodevelopmental disorder with hypotonia and characteristic brain abnormalities"
+      }
+    }
+  ],
+  "id": "PMID_38054405_Family_6_individual_P11",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620746",
+          "label": "Neurodevelopmental disorder with hypotonia and characteristic brain abnormalities"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family 6 individual P11",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001178015.2:c.2118G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.161947580G>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SLC4A10",
+                  "valueId": "HGNC:13811"
+                },
+                "id": "var_GsYNgFOsLYJCzlMTftPOubVDZ",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "161947580",
+                  "ref": "G"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Family 6 individual P11",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001178015.2:c.1612C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.161904173C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SLC4A10",
+                  "valueId": "HGNC:13811"
+                },
+                "id": "var_TROkUgiqXqqYirSSOpdhoymql",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "161904173",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Family 6 individual P11",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-13T16:53:05.543359994Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Biallelic variants in SLC4A10 encoding a sodium-dependent bicarbonate transporter lead to a neurodevelopmental disorder",
+        "id": "PMID:38054405",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/38054405"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002072",
+        "label": "Chorea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012389",
+        "label": "Appendicular hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001344",
+        "label": "Absent speech"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002282",
+        "label": "Gray matter heterotopia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0200012",
+        "label": "Short corpus callosum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000400",
+        "label": "Macrotia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000303",
+        "label": "Mandibular prognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000527",
+        "label": "Long eyelashes"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000411",
+        "label": "Protruding ear"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000664",
+        "label": "Synophrys"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100699",
+        "label": "Scarring"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000278",
+        "label": "Retrognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000384",
+        "label": "Preauricular skin tag"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-c4d4b030c173",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    }
+  }
+}

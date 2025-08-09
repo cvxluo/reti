@@ -1,0 +1,170 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P32Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:144200",
+        "label": "Palmoplantar keratoderma, epidermolytic, 1"
+      }
+    }
+  ],
+  "id": "PMID_18477167_III_4",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:144200",
+          "label": "Palmoplantar keratoderma, epidermolytic, 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III:4",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000226.4:c.470T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.41571523A>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "KRT9",
+                  "valueId": "HGNC:6447"
+                },
+                "id": "var_cLkuUjhqkYDKLIlVWyXwLTGDh",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "41571523",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III:4",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-10T16:09:38.569185018Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutation M157R of keratin 9 in a Chinese family with epidermolytic palmoplantar keratoderma",
+        "id": "PMID:18477167",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18477167"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P32Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007559",
+        "label": "Localized epidermolytic hyperkeratosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P32Y"
+        }
+      },
+      "type": {
+        "id": "HP:0010765",
+        "label": "Palmar hyperkeratosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P32Y"
+        }
+      },
+      "type": {
+        "id": "HP:0007556",
+        "label": "Plantar hyperkeratosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001597",
+        "label": "Abnormality of the nail"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-2c182a89abd4",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P32Y"
+      }
+    }
+  }
+}

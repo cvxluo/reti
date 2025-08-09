@@ -1,0 +1,313 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:614800",
+        "label": "Short stature, optic nerve atrophy, and Pelger-Huet anomaly"
+      }
+    }
+  ],
+  "id": "PMID_31889758_child",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:614800",
+          "label": "Short stature, optic nerve atrophy, and Pelger-Huet anomaly"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "child",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015909.4:c.761G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.15511336C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NBAS",
+                  "valueId": "HGNC:15625"
+                },
+                "id": "var_OFWDfcgNPTDVcivHHVogWVeKO",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "15511336",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "child",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-30T05:16:55.113969802Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutation in the Neuroblastoma Amplified Sequence Gene as a Cause of Recurrent Acute Liver Failure, Acute Kidney Injury, and Status Epilepticus",
+        "id": "PMID:31889758",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31889758"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0006554",
+        "label": "Acute hepatic failure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031964",
+        "label": "Elevated circulating alanine aminotransferase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031956",
+        "label": "Elevated circulating aspartate aminotransferase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030948",
+        "label": "Elevated gamma-glutamyltransferase level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003155",
+        "label": "Elevated circulating alkaline phosphatase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001414",
+        "label": "Microvesicular hepatic steatosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000325",
+        "label": "Triangular face"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000490",
+        "label": "Deeply set eye"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000520",
+        "label": "Proptosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000307",
+        "label": "Pointed chin"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000341",
+        "label": "Narrow forehead"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002714",
+        "label": "Downturned corners of mouth"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000601",
+        "label": "Hypotelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000506",
+        "label": "Telecanthus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000527",
+        "label": "Long eyelashes"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000278",
+        "label": "Retrognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000212",
+        "label": "Gingival overgrowth"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000470",
+        "label": "Short neck"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-88c398cef9c9",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P12Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:159550",
+        "label": "Ataxia-pancytopenia syndrome"
+      }
+    }
+  ],
+  "id": "PMID_27259050_III_8",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:159550",
+          "label": "Ataxia-pancytopenia syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III-8",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152703.5:c.2640C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.93133332G>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SAMD9L",
+                  "valueId": "HGNC:1349"
+                },
+                "id": "var_XYLHMGYhcBeORGpUQoteVArbu",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "93133332",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III-8",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-30T17:58:36.844774961Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Ataxia-Pancytopenia Syndrome Is Caused by Missense Mutations in SAMD9L",
+        "id": "PMID:27259050",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27259050"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001875",
+        "label": "Neutropenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002317",
+        "label": "Unsteady gait"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P36Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001310",
+        "label": "Dysmetria"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-ff218d9fc674",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P38Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

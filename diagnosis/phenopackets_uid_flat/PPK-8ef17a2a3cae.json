@@ -1,0 +1,246 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "term": {
+        "id": "OMIM:607330",
+        "label": "Lathosterolosis"
+      }
+    }
+  ],
+  "id": "PMID_12812989_atypical_SLOS_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:607330",
+          "label": "Lathosterolosis"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "atypical SLOS patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006918.5:c.137A>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.121303512A>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SC5D",
+                  "valueId": "HGNC:10547"
+                },
+                "id": "var_OINXKEzgaAUWpovGCpNUiqoJB",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "121303512",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "atypical SLOS patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-24T13:38:19.183562994Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Lathosterolosis: an inborn error of human and murine cholesterol synthesis due to lathosterol 5-desaturase deficiency",
+        "id": "PMID:12812989",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/12812989"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "type": {
+        "id": "HP:0003196",
+        "label": "Short nose"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "type": {
+        "id": "HP:0009085",
+        "label": "Alveolar ridge overgrowth"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "type": {
+        "id": "HP:0000033",
+        "label": "Ambiguous genitalia, male"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      },
+      "type": {
+        "id": "HP:0005709",
+        "label": "2-3 toe cutaneous syndactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001830",
+        "label": "Postaxial foot polydactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000199",
+        "label": "Reduced 3-beta-hydroxysteroid-delta-5-desaturase activity in cultured fibroblasts"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001162",
+        "label": "Postaxial hand polydactyly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0200133",
+        "label": "Lumbosacral meningocele"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005768",
+        "label": "2-4 toe cutaneous syndactyly"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-8ef17a2a3cae",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4M"
+      }
+    }
+  }
+}

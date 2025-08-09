@@ -1,0 +1,180 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P29Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:612653",
+        "label": "Spherocytosis, type 4"
+      }
+    }
+  ],
+  "id": "PMID_36463227_case",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:612653",
+          "label": "Spherocytosis, type 4"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "case",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000342.4:c.1985G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.44254568C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SLC4A1",
+                  "valueId": "HGNC:11027"
+                },
+                "id": "var_rqzwRdwaxaAwHXbGMeJikidFs",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "44254568",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "case",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-27T15:58:29.569244861Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel variant of SLC4A1 for hereditary spherocytosis in a Chinese family: a case report and systematic review",
+        "id": "PMID:36463227",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36463227"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001923",
+        "label": "Reticulocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005502",
+        "label": "Increased red cell osmotic fragility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001081",
+        "label": "Cholelithiasis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003573",
+        "label": "Increased total bilirubin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008282",
+        "label": "Unconjugated hyperbilirubinemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000952",
+        "label": "Jaundice"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004844",
+        "label": "Coombs-positive hemolytic anemia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-f36f4683fcd0",
+    "sex": "MALE"
+  }
+}

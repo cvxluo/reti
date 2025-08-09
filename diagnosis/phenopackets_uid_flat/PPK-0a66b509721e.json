@@ -1,0 +1,229 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P13Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:616907",
+        "label": "Spastic paraplegia 76, autosomal recessive"
+      }
+    }
+  ],
+  "id": "PMID_29678961_proband",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616907",
+          "label": "Spastic paraplegia 76, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005186.4:c.1534C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.65206643C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CAPN1",
+                  "valueId": "HGNC:1476"
+                },
+                "id": "var_JVKIThLqYlWQVtTsVlJkwEVsD",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "65206643",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-09T06:45:55.149198055Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "CAPN1 mutations broadening the hereditary spastic paraplegia/spinocerebellar ataxia phenotype",
+        "id": "PMID:29678961",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29678961"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P13Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002141",
+        "label": "Gait imbalance"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      },
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002395",
+        "label": "Lower limb hyperreflexia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      },
+      "type": {
+        "id": "HP:0034353",
+        "label": "Appendicular spasticity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002505",
+        "label": "Loss of ambulation"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-0a66b509721e",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P33Y"
+      }
+    }
+  }
+}

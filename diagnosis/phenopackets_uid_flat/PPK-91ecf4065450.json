@@ -1,0 +1,477 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301111",
+        "label": "Intellectual developmental disorder, X-linked 112"
+      }
+    }
+  ],
+  "id": "PMID_36586412_Individual_9b",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301111",
+          "label": "Intellectual developmental disorder, X-linked 112"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Individual 9b",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005096.3:c.2193G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.71247466C>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ZMYM3",
+                  "valueId": "HGNC:13054"
+                },
+                "id": "var_VPZkfHopgpjdbwERLFAfxVZDw",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chrX",
+                  "genomeAssembly": "hg38",
+                  "pos": "71247466",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Individual 9b",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-11T04:50:00.099951028Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Deleterious, protein-altering variants in the transcriptional coregulator ZMYM3 in 27 individuals with a neurodevelopmental delay phenotype",
+        "id": "PMID:36586412",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36586412"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000276",
+        "label": "Long face"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009890",
+        "label": "High anterior hairline"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000233",
+        "label": "Thin vermilion border"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000490",
+        "label": "Deeply set eye"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000280",
+        "label": "Coarse facial features"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000325",
+        "label": "Triangular face"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000278",
+        "label": "Retrognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000303",
+        "label": "Mandibular prognathia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000506",
+        "label": "Telecanthus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000637",
+        "label": "Long palpebral fissure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000582",
+        "label": "Upslanted palpebral fissure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009928",
+        "label": "Thick nasal alae"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000378",
+        "label": "Cupped ear"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011220",
+        "label": "Prominent forehead"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000047",
+        "label": "Hypospadias"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002019",
+        "label": "Constipation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002579",
+        "label": "Gastrointestinal dysmotility"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002046",
+        "label": "Heat intolerance"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003067",
+        "label": "Madelung deformity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001627",
+        "label": "Abnormal heart morphology"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001737",
+        "label": "Pancreatic cysts"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000545",
+        "label": "Myopia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000488",
+        "label": "Retinopathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002580",
+        "label": "Volvulus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002751",
+        "label": "Kyphoscoliosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012531",
+        "label": "Pain"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002020",
+        "label": "Gastroesophageal reflux"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000107",
+        "label": "Renal cyst"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000086",
+        "label": "Ectopic kidney"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000062",
+        "label": "Ambiguous genitalia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000805",
+        "label": "Enuresis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000076",
+        "label": "Vesicoureteral reflux"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000126",
+        "label": "Hydronephrosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012330",
+        "label": "Pyelonephritis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-91ecf4065450",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      },
+      "term": {
+        "id": "OMIM:620668",
+        "label": "Immunodeficiency 117, mycobacteriosis, autosomal recessive"
+      }
+    }
+  ],
+  "id": "PMID_36736301_P1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620668",
+          "label": "Immunodeficiency 117, mycobacteriosis, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002198.3:c.385C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.132486824G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "IRF1",
+                  "valueId": "HGNC:6116"
+                },
+                "id": "var_SyApSUMcLItHdIOavQyJfMbgk",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "132486824",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-18T19:42:29.532246112Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Human IRF1 governs macrophagic IFN-γ immunity to mycobacteria",
+        "id": "PMID:36736301",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36736301"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "type": {
+        "id": "HP:0011274",
+        "label": "Recurrent mycobacterial infections"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "type": {
+        "id": "HP:0032256",
+        "label": "Histoplasmosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0020087",
+        "label": "BCGosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0410377",
+        "label": "Decreased proportion of naive CD8 T cells"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0410389",
+        "label": "Decreased proportion of central memory CD8-positive, alpha-beta T cells"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0410395",
+        "label": "Increased proportion of effector memory CD8-positive, alpha-beta T cells"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0005403",
+        "label": "T lymphocytopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0430108",
+        "label": "Positive Mycobacterium avium sputum culture"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000246",
+        "label": "Sinusitis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      },
+      "type": {
+        "id": "HP:0002566",
+        "label": "Intestinal malrotation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040218",
+        "label": "Reduced natural killer cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0500265",
+        "label": "Increased proportion of CD8-positive, alpha-beta TEMRA T cells"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002840",
+        "label": "Lymphadenitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100721",
+        "label": "Mediastinal lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032261",
+        "label": "Nontuberculous mycobacterial pulmonary infection"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002090",
+        "label": "Pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003261",
+        "label": "Increased circulating IgA level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001882",
+        "label": "Leukopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000957",
+        "label": "Cafe-au-lait spot"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032283",
+        "label": "Disseminated nontuberculous mycobacterial infection"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0020086",
+        "label": "BCGitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030381",
+        "label": "Increased proportion of transitional B cells"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0033605",
+        "label": "Pustular rash"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0034752",
+        "label": "Axillary lymphadenopathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-092a168396d5",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y"
+      }
+    }
+  }
+}

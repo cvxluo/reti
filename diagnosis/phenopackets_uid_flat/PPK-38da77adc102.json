@@ -1,0 +1,177 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P49Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620762",
+        "label": "Macular dystrophy with or without cone dysfunction"
+      }
+    }
+  ],
+  "id": "PMID_38272031_Individual_3_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620762",
+          "label": "Macular dystrophy with or without cone dysfunction"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Individual 3-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001304366.2:c.211+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.169921339G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SAMD7",
+                  "valueId": "HGNC:25394"
+                },
+                "id": "var_gQYhzkFLkNmcmHjgCtSMdjYye",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr3",
+                  "genomeAssembly": "hg38",
+                  "pos": "169921339",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Individual 3-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-13T08:57:52.660640001Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutations in SAMD7 cause autosomal-recessive macular dystrophy with or without cone dysfunction",
+        "id": "PMID:38272031",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/38272031"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007754",
+        "label": "Macular dystrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007401",
+        "label": "Macular atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007722",
+        "label": "Retinal pigment epithelial atrophy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012511",
+        "label": "Temporal optic disc pallor"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0025159",
+        "label": "Hypoautofluorescent retinal lesion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000603",
+        "label": "Central scotoma"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-38da77adc102",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P57Y"
+      }
+    }
+  }
+}

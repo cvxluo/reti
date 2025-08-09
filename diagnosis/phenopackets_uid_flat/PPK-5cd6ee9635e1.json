@@ -1,0 +1,277 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:616900",
+        "label": "Hypotonia, infantile, with psychomotor retardation and characteristic facies 3"
+      }
+    }
+  ],
+  "id": "PMID_27040692_C_II_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616900",
+          "label": "Hypotonia, infantile, with psychomotor retardation and characteristic facies 3"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "C-II-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001163435.3:c.1532G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.106233045C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TBCK",
+                  "valueId": "HGNC:28261"
+                },
+                "id": "var_sPwRgpmTEpVXSkMZvXvkRcnsr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr4",
+                  "genomeAssembly": "hg38",
+                  "pos": "106233045",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "C-II-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-14T06:56:30.338225841Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Recessive Inactivating Mutations in TBCK, Encoding a Rab GTPase-Activating Protein, Cause Severe Infantile Syndromic Encephalopathy",
+        "id": "PMID:27040692",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27040692"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000280",
+        "label": "Coarse facial features"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000878",
+        "label": "11 pairs of ribs"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000426",
+        "label": "Prominent nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002263",
+        "label": "Exaggerated cupid's bow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000341",
+        "label": "Narrow forehead"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000565",
+        "label": "Esotropia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033454",
+        "label": "Tube feeding"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012020",
+        "label": "Right aortic arch"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000158",
+        "label": "Macroglossia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000490",
+        "label": "Deeply set eye"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0100704",
+        "label": "Cerebral visual impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000939",
+        "label": "Osteoporosis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-5cd6ee9635e1",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

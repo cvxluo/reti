@@ -1,0 +1,276 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "term": {
+        "id": "OMIM:612840",
+        "label": "Leukocyte adhesion deficiency, type III"
+      }
+    }
+  ],
+  "id": "PMID_31068971_proband",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:612840",
+          "label": "Leukocyte adhesion deficiency, type III"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_031471.6:c.286C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.64210736C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "FERMT3",
+                  "valueId": "HGNC:23151"
+                },
+                "id": "var_OTmUIzNtqkmzPvAVAuweDRWFO",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "64210736",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-13T09:14:36.268412828Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A Novel Nonsense Mutation in FERMT3 Causes LAD-III in a Pakistani Family",
+        "id": "PMID:31068971",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31068971"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0001974",
+        "label": "Leukocytosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0025289",
+        "label": "Cervical lymphadenopathy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      },
+      "type": {
+        "id": "HP:0031864",
+        "label": "Bacteremia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "type": {
+        "id": "HP:0002573",
+        "label": "Hematochezia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "type": {
+        "id": "HP:0000421",
+        "label": "Epistaxis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "type": {
+        "id": "HP:0002718",
+        "label": "Recurrent bacterial infections"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      },
+      "type": {
+        "id": "HP:0001954",
+        "label": "Recurrent fever"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032455",
+        "label": "Reduced granulocyte CD18 level"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010701",
+        "label": "Abnormal immunoglobulin level"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-59c07f1b5e27",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7M"
+      }
+    }
+  }
+}

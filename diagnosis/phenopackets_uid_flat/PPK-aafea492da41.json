@@ -1,0 +1,218 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620367",
+        "label": "Pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related, 8"
+      }
+    }
+  ],
+  "id": "PMID_35420632_Patient_4_IV-4",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620367",
+          "label": "Pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related, 8"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient 4 IV-4",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015450.2:c.776T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.124853065A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "POT1",
+                  "valueId": "HGNC:17284"
+                },
+                "id": "var_SaUyZnVAWGxuZQxLtAmrsHveq",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr7",
+                  "genomeAssembly": "hg38",
+                  "pos": "124853065",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient 4 IV-4",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-24T10:01:22.686267852Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Telomere dysfunction implicates POT1 in patients with idiopathic pulmonary fibrosis",
+        "id": "PMID:35420632",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35420632"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031413",
+        "label": "Short telomere length"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0045051",
+        "label": "Decreased DLCO"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031950",
+        "label": "Usual interstitial pneumonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002206",
+        "label": "Pulmonary fibrosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031996",
+        "label": "Inspiratory crackles"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002875",
+        "label": "Exertional dyspnea"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031246",
+        "label": "Nonproductive cough"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-aafea492da41",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P62Y"
+      }
+    }
+  }
+}

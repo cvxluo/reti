@@ -1,0 +1,313 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:139210",
+        "label": "Myhre syndrome"
+      }
+    }
+  ],
+  "id": "PMID_24715504_patient",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:139210",
+          "label": "Myhre syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005359.6:c.1486C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000018.10:g.51078294C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SMAD4",
+                  "valueId": "HGNC:6770"
+                },
+                "id": "var_pjOsARytUeniiyMsrWRzZdJnr",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr18",
+                  "genomeAssembly": "hg38",
+                  "pos": "51078294",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-31T06:31:52.293949842Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Novel SMAD4 mutation causing Myhre syndrome",
+        "id": "PMID:24715504",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24715504"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000303",
+        "label": "Mandibular prognathia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000527",
+        "label": "Long eyelashes"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000385",
+        "label": "Small earlobe"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004621",
+        "label": "Enlarged vertebral pedicles"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003720",
+        "label": "Generalized muscle hypertrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001276",
+        "label": "Hypertonia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0032152",
+        "label": "Keratosis pilaris"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002808",
+        "label": "Kyphosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002938",
+        "label": "Lumbar hyperlordosis"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0004279",
+        "label": "Short palm"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001387",
+        "label": "Joint stiffness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002684",
+        "label": "Thickened calvaria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009088",
+        "label": "Speech articulation difficulties"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000752",
+        "label": "Hyperactivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000709",
+        "label": "Psychosis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-bd839825d7a1",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P14Y"
+      }
+    }
+  }
+}

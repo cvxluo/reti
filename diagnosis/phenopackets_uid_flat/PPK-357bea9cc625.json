@@ -1,0 +1,138 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:162000",
+        "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
+      }
+    }
+  ],
+  "id": "PMID_27729211_III_7",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:162000",
+          "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III.7",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003361.4:c.358T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.20348943A>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "UMOD",
+                  "valueId": "HGNC:12559"
+                },
+                "id": "var_RtXBQAWrVyNhVfeyzetBkuxzB",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr16",
+                  "genomeAssembly": "hg38",
+                  "pos": "20348943",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III.7",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-08T05:49:17.131312847Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A new missense mutation in UMOD gene leads to severely reduced serum uromodulin concentrations - A tool for the diagnosis of uromodulin-associated kidney disease",
+        "id": "PMID:27729211",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27729211"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012624",
+        "label": "Stage 2 chronic kidney disease"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-357bea9cc625",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P33Y"
+      }
+    }
+  }
+}

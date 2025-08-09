@@ -1,0 +1,280 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0030674",
+          "label": "Antenatal onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:617478",
+        "label": "Structural heart defects and renal anomalies syndrome"
+      }
+    }
+  ],
+  "id": "PMID_34612517_F3-II-3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:617478",
+          "label": "Structural heart defects and renal anomalies syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "F3-II-3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017799.4:c.193-2A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.56585759A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TMEM260",
+                  "valueId": "HGNC:20185"
+                },
+                "id": "var_TxwJtcsuNPpjfNbrswvxTlAvU",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr14",
+                  "genomeAssembly": "hg38",
+                  "pos": "56585759",
+                  "ref": "A"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "F3-II-3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017799.4:c.1744G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.56634918G>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TMEM260",
+                  "valueId": "HGNC:20185"
+                },
+                "id": "var_GvkhtXXICDqhzrxWjzcLrKHfW",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr14",
+                  "genomeAssembly": "hg38",
+                  "pos": "56634918",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "F3-II-3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-22T09:13:47.051733970Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Biallelic TMEM260 variants cause truncus arteriosus, with or without renal defects",
+        "id": "PMID:34612517",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/34612517"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001660",
+        "label": "Truncus arteriosus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000083",
+        "label": "Renal insufficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003259",
+        "label": "Elevated circulating creatinine concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011037",
+        "label": "Decreased urine output"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001195",
+        "label": "Single umbilical artery"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011611",
+        "label": "Interrupted aortic arch"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001636",
+        "label": "Tetralogy of Fallot"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012020",
+        "label": "Right aortic arch"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010773",
+        "label": "Partial anomalous pulmonary venous return"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011662",
+        "label": "Tricuspid atresia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002243",
+        "label": "Protein-losing enteropathy"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000085",
+        "label": "Horseshoe kidney"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000107",
+        "label": "Renal cyst"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001274",
+        "label": "Agenesis of corpus callosum"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-207e03f81397",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3M"
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      },
+      "term": {
+        "id": "OMIM:620816",
+        "label": "MHC class II deficiency 3"
+      }
+    }
+  ],
+  "id": "PMID_30170160_P5",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620816",
+          "label": "MHC class II deficiency 3"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P5",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001025603.2:c.455G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.151344435C>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RFX5",
+                  "valueId": "HGNC:9986"
+                },
+                "id": "var_IxuVUuyjIthmUuwQDDvGfAFyY",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "151344435",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P5",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-19T08:09:54.401900053Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "MHC-II Deficiency Among Egyptians: Novel Mutations and Unique Phenotypes",
+        "id": "PMID:30170160",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30170160"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0009098",
+        "label": "Chronic oral candidiasis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005403",
+        "label": "T lymphocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004385",
+        "label": "Protracted diarrhea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100806",
+        "label": "Sepsis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031390",
+        "label": "Reduced MHC II surface expression"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010976",
+        "label": "B lymphocytopenia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0020087",
+        "label": "BCGosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0020086",
+        "label": "BCGitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a47d4b4fcd39",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y8M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P1Y8M"
+        }
+      }
+    }
+  }
+}

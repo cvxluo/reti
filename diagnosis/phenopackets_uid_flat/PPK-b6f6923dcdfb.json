@@ -1,0 +1,162 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301310",
+        "label": "Anemia, sideroblastic, and spinocerebellar ataxia"
+      }
+    }
+  ],
+  "id": "PMID_26242992_III-17",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301310",
+          "label": "Anemia, sideroblastic, and spinocerebellar ataxia"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III-17",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001271696.3:c.2044G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.75053585C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ABCB7",
+                  "valueId": "HGNC:48"
+                },
+                "id": "var_uWLzOcLzVGDIQmzxPDkwloven",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chrX",
+                  "genomeAssembly": "hg38",
+                  "pos": "75053585",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III-17",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-21T13:55:00.743482112Z",
+    "createdBy": "0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Whole-genome sequencing identifies a novel ABCB7 gene mutation for X-linked congenital cerebellar ataxia in a large family of Mongolian ancestry",
+        "id": "PMID:26242992",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/26242992"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-02-27"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002470",
+        "label": "Nonprogressive cerebellar ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001321",
+        "label": "Cerebellar hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002172",
+        "label": "Postural instability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000602",
+        "label": "Ophthalmoplegia"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-b6f6923dcdfb",
+    "sex": "MALE"
+  }
+}

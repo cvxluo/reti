@@ -1,0 +1,210 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:606574",
+        "label": "Albinism, oculocutaneous, type IV"
+      }
+    }
+  ],
+  "id": "PMID_36553465_P24",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:606574",
+          "label": "Albinism, oculocutaneous, type IV"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P24",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "geneContext": {
+                  "symbol": "SLC45A2",
+                  "valueId": "HGNC:16472"
+                },
+                "id": "var_ojFhvEgJYOkIEFyEKFdsEkxJC",
+                "label": "Deletion exons 1-4",
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "P24",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016180.5:c.1518C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.33944723G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SLC45A2",
+                  "valueId": "HGNC:16472"
+                },
+                "id": "var_CWtWVwTlvaYmIZGAAPpycyDmw",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr5",
+                  "genomeAssembly": "hg38",
+                  "pos": "33944723",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "P24",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-24T18:34:15.950909852Z",
+    "createdBy": "ORCID:0000-0002-5648-2155",
+    "externalReferences": [
+      {
+        "description": "Oculo-Cutaneous Albinism Type 4 (OCA4): Phenotype-Genotype Correlation",
+        "id": "PMID:36553465",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36553465"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012805",
+        "label": "Iris transillumination defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002227",
+        "label": "White eyelashes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002226",
+        "label": "White eyebrow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000540",
+        "label": "Hypermetropia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007730",
+        "label": "Iris hypopigmentation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005599",
+        "label": "Hypopigmentation of hair"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003764",
+        "label": "Nevus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-6126d6544786",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P10Y"
+      }
+    }
+  }
+}

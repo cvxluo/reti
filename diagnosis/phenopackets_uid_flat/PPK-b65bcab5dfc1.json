@@ -1,0 +1,185 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:615120",
+        "label": "Myasthenic syndrome, congenital, 8, with pre- and postsynaptic defects"
+      }
+    }
+  ],
+  "id": "PMID_24951643_Kinship_2_Patient_3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615120",
+          "label": "Myasthenic syndrome, congenital, 8, with pre- and postsynaptic defects"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Kinship 2 Patient 3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_198576.4:c.314A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.1022313A>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "AGRN",
+                  "valueId": "HGNC:329"
+                },
+                "id": "var_GBoEkBLsQfVZnEmDvDECZDkWe",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "1022313",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Kinship 2 Patient 3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-10T11:44:13.111749172Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Agrin mutations lead to a congenital myasthenic syndrome with distal muscle weakness and atrophy",
+        "id": "PMID:24951643",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24951643"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P36Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003693",
+        "label": "Distal amyotrophy"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      },
+      "type": {
+        "id": "HP:0009027",
+        "label": "Foot dorsiflexor weakness"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003388",
+        "label": "Easy fatigability"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      },
+      "type": {
+        "id": "HP:0030237",
+        "label": "Hand muscle weakness"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P30Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-b65bcab5dfc1",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P36Y"
+      }
+    }
+  }
+}

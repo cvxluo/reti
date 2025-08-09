@@ -1,0 +1,270 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:615582",
+        "label": "Loeys-Dietz syndrome 5"
+      }
+    }
+  ],
+  "id": "PMID_25835445_2_II_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615582",
+          "label": "Loeys-Dietz syndrome 5"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "2-II:1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003239.5:c.898C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.75963344G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TGFB3",
+                  "valueId": "HGNC:11769"
+                },
+                "id": "var_wPtcOjupEiaMOzPZAMNUscCrm",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr14",
+                  "genomeAssembly": "hg38",
+                  "pos": "75963344",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "2-II:1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-10-06T11:13:04.851222038Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Mutations in a TGF-β ligand, TGFB3, cause syndromic aortic aneurysms and dissections",
+        "id": "PMID:25835445",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25835445"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004944",
+        "label": "Dilatation of the cerebral artery"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001166",
+        "label": "Arachnodactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031649",
+        "label": "Aortic rupture"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0005112",
+        "label": "Abdominal aortic aneurysm"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004933",
+        "label": "Ascending aortic dissection"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000768",
+        "label": "Pectus carinatum"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010646",
+        "label": "Cervical spine instability"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000891",
+        "label": "Cervical ribs"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000193",
+        "label": "Bifid uvula"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000592",
+        "label": "Blue sclerae"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010648",
+        "label": "Dermal translucency"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-39da3e250715",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P55Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P55Y"
+        }
+      }
+    }
+  }
+}

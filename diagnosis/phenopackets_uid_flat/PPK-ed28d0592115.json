@@ -1,0 +1,246 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:602400",
+        "label": "Ichthyosis, congenital, autosomal recessive 11"
+      }
+    }
+  ],
+  "id": "PMID_17273967_III-1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:602400",
+          "label": "Ichthyosis, congenital, autosomal recessive 11"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_021978.4:c.2479G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.130209734G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "ST14",
+                  "valueId": "HGNC:11344"
+                },
+                "id": "var_ouzdzsbWDWpOKpIdcGQiXTEsc",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "130209734",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-28T06:45:19.798832178Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Autosomal recessive ichthyosis with hypotrichosis caused by a mutation in ST14, encoding type II transmembrane serine protease matriptase",
+        "id": "PMID:17273967",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/17273967"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0008064",
+        "label": "Ichthyosis"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0008070",
+        "label": "Sparse hair"
+      }
+    },
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      },
+      "type": {
+        "id": "HP:0002212",
+        "label": "Curly hair"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031830",
+        "label": "Pinguecula"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003777",
+        "label": "Pili torti"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004779",
+        "label": "Brittle scalp hair"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011359",
+        "label": "Dry hair"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000989",
+        "label": "Pruritus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000498",
+        "label": "Blepharitis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007957",
+        "label": "Corneal opacity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000966",
+        "label": "Hypohidrosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007479",
+        "label": "Congenital nonbullous ichthyosiform erythroderma"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0025724",
+        "label": "Caseous vernix-like desquamation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000698",
+        "label": "Conical tooth"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001597",
+        "label": "Abnormality of the nail"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-ed28d0592115"
+  }
+}

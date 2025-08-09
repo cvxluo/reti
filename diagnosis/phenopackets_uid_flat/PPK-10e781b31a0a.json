@@ -1,0 +1,258 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620427",
+        "label": "Dystonia 37, early-onset, with striatal lesions"
+      }
+    }
+  ],
+  "id": "PMID_36333996_Patient_of_family_B",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620427",
+          "label": "Dystonia 37, early-onset, with striatal lesions"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient of family B",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017426.4:c.1073T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.76124740A>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NUP54",
+                  "valueId": "HGNC:17359"
+                },
+                "id": "var_UrMRhGyfWwRGsXeJMXelPbrWe",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr4",
+                  "genomeAssembly": "hg38",
+                  "pos": "76124740",
+                  "ref": "A"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Patient of family B",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017426.4:c.1126A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.76124687T>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NUP54",
+                  "valueId": "HGNC:17359"
+                },
+                "id": "var_yARzoVjfGHzUpGGqOIAZxZTTh",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr4",
+                  "genomeAssembly": "hg38",
+                  "pos": "76124687",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Patient of family B",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-24T06:20:20.315834999Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Recessive NUP54 Variants Underlie Early-Onset Dystonia with Striatal Lesions",
+        "id": "PMID:36333996",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36333996"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      },
+      "type": {
+        "id": "HP:0031959",
+        "label": "Leg dystonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002072",
+        "label": "Chorea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000657",
+        "label": "Oculomotor apraxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010535",
+        "label": "Sleep apnea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002505",
+        "label": "Loss of ambulation"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007325",
+        "label": "Generalized dystonia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001266",
+        "label": "Choreoathetosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-10e781b31a0a",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y"
+      }
+    }
+  }
+}

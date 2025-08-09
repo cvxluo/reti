@@ -1,0 +1,171 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P67Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620456",
+        "label": "Dystonia 22, adult-onset"
+      }
+    }
+  ],
+  "id": "PMID_33539324_C-II.3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620456",
+          "label": "Dystonia 22, adult-onset"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "C-II.3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004758.4:c.5422G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.58305398C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TSPOAP1",
+                  "valueId": "HGNC:16831"
+                },
+                "id": "var_NywkHMvMSqRIoiqBVZhKYalWL",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "58305398",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "C-II.3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-28T15:57:03.232646942Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Biallelic variants in TSPOAP1, encoding the active-zone protein RIMBP1, cause autosomal recessive dystonia",
+        "id": "PMID:33539324",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33539324"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000473",
+        "label": "Torticollis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001268",
+        "label": "Mental deterioration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007351",
+        "label": "Upper limb postural tremor"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002544",
+        "label": "Retrocollis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-065628c432a6",
+    "sex": "MALE"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:616907",
+        "label": "Spastic paraplegia 76, autosomal recessive"
+      }
+    }
+  ],
+  "id": "PMID_28321562_sister",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616907",
+          "label": "Spastic paraplegia 76, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "sister",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005186.4:c.759+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.65186339G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "CAPN1",
+                  "valueId": "HGNC:1476"
+                },
+                "id": "var_UdKHwhKPEXlKGpywENpXVXoLg",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "65186339",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "sister",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-09T06:45:55.152274847Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "CAPN1 mutations are associated with a syndrome of combined spasticity and ataxia",
+        "id": "PMID:28321562",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28321562"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002141",
+        "label": "Gait imbalance"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P37Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001310",
+        "label": "Dysmetria"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P37Y"
+        }
+      },
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P37Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002395",
+        "label": "Lower limb hyperreflexia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P37Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-1548665f4f7f",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P37Y"
+      }
+    }
+  }
+}

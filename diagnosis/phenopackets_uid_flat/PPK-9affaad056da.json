@@ -1,0 +1,206 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:154400",
+        "label": "Acrofacial dysostosis 1, Nager type"
+      }
+    }
+  ],
+  "id": "PMID_22541558_individual_Q_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:154400",
+          "label": "Acrofacial dysostosis 1, Nager type"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual Q-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005850.4:c.625C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.149926457G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SF3B4",
+                  "valueId": "HGNC:10771"
+                },
+                "id": "var_TRTnXIXRbzrIwIqXPWLaSPtMg",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "149926457",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual Q-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-12T04:10:40.551622867Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Haploinsufficiency of SF3B4, a component of the pre-mRNA spliceosomal complex, causes Nager syndrome.",
+        "id": "PMID:22541558",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/22541558"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000377",
+        "label": "Abnormal pinna morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001634",
+        "label": "Mitral valve prolapse"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002996",
+        "label": "Limited elbow movement"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007776",
+        "label": "Sparse lower eyelashes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009777",
+        "label": "Absent thumb"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009554",
+        "label": "Preauricular hair displacement"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002974",
+        "label": "Radioulnar synostosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0007646",
+        "label": "Absent lower eyelashes"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0009778",
+        "label": "Short thumb"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-9affaad056da",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y"
+      }
+    }
+  }
+}

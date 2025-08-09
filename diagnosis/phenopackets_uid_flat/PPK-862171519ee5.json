@@ -1,0 +1,253 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620681",
+        "label": "Myoclonic epilepsy of Lafora 2"
+      }
+    }
+  ],
+  "id": "PMID_15781812_individual_147_3",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620681",
+          "label": "Myoclonic epilepsy of Lafora 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual 147-3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_198586.3:c.838G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.18121769C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NHLRC1",
+                  "valueId": "HGNC:21576"
+                },
+                "id": "var_emzTWFYGOBVbCkuOycpEXYDqv",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "18121769",
+                  "ref": "C"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "individual 147-3",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_198586.3:c.205C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.18122402G>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "NHLRC1",
+                  "valueId": "HGNC:21576"
+                },
+                "id": "var_rESMaWPCdJmBpvLwdKvdBjBet",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr6",
+                  "genomeAssembly": "hg38",
+                  "pos": "18122402",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "individual 147-3",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-04T08:25:14.725043058Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Lafora disease due to EPM2B mutations: a clinical and genetic study",
+        "id": "PMID:15781812",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/15781812"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
+      },
+      "type": {
+        "id": "HP:0000726",
+        "label": "Dementia"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P13Y"
+        }
+      },
+      "type": {
+        "id": "HP:0032794",
+        "label": "Myoclonic seizure"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
+      },
+      "type": {
+        "id": "HP:0002344",
+        "label": "Progressive neurologic deterioration"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
+      },
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001336",
+        "label": "Myoclonus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0010819",
+        "label": "Atonic seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011147",
+        "label": "Typical absence seizure"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002384",
+        "label": "Focal impaired awareness seizure"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-862171519ee5",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P20Y"
+      }
+    }
+  }
+}

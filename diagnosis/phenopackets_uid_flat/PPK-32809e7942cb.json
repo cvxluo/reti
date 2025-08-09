@@ -1,0 +1,245 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:610168",
+        "label": "Loeys-Dietz syndrome 2"
+      }
+    }
+  ],
+  "id": "PMID_39188477_Case_presentation",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610168",
+          "label": "Loeys-Dietz syndrome 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "Case presentation",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003242.6:c.1561T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.30691456T>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TGFBR2",
+                  "valueId": "HGNC:11773"
+                },
+                "id": "var_myXELtpaoHpdYVHPIIaSbyqmw",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr3",
+                  "genomeAssembly": "hg38",
+                  "pos": "30691456",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "Case presentation",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-07T12:58:10.761439085Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Acute Transverse Myelitis in a Patient With Type 2 Loeys-Dietz Syndrome: A Report of a Rare Case From India",
+        "id": "PMID:39188477",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/39188477"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000278",
+        "label": "Retrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000193",
+        "label": "Bifid uvula"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001166",
+        "label": "Arachnodactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001181",
+        "label": "Adducted thumb"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000520",
+        "label": "Proptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004944",
+        "label": "Dilatation of the cerebral artery"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000939",
+        "label": "Osteoporosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0004933",
+        "label": "Ascending aortic dissection"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0011645",
+        "label": "Dilatation of the sinus of Valsalva"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002616",
+        "label": "Aortic root aneurysm"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030745",
+        "label": "Dilatation of the ductus arteriosus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001647",
+        "label": "Bicuspid aortic valve"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000272",
+        "label": "Malar flattening"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001363",
+        "label": "Craniosynostosis"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002308",
+        "label": "Chiari malformation"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-32809e7942cb",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P17Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    }
+  }
+}

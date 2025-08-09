@@ -1,0 +1,196 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "term": {
+        "id": "OMIM:620815",
+        "label": "MHC class II deficiency 2"
+      }
+    }
+  ],
+  "id": "PMID_11313409_patient_JER",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620815",
+          "label": "MHC class II deficiency 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "patient JER",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003721.4:c.271+1G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.19197047G>C"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "RFXANK",
+                  "valueId": "HGNC:9987"
+                },
+                "id": "var_OsiakIYrseUWqGxBBDnbLQleP",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "C",
+                  "chrom": "chr19",
+                  "genomeAssembly": "hg38",
+                  "pos": "19197047",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "patient JER",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-04T13:55:28.471987009Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Uncoordinated HLA-D gene expression in a RFXANK-defective patient with MHC class II deficiency",
+        "id": "PMID:11313409",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/11313409"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG level"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0005407",
+        "label": "Decreased proportion of CD4-positive helper T cells"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0031402",
+        "label": "Reduced antigen-specific T cell proliferation"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002028",
+        "label": "Chronic diarrhea"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      },
+      "type": {
+        "id": "HP:0002728",
+        "label": "Chronic mucocutaneous candidiasis"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-a1b2e57691db",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7M14D"
+      }
+    }
+  }
+}

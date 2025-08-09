@@ -1,0 +1,183 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:613721",
+        "label": "Developmental and epileptic encephalopathy 11"
+      }
+    }
+  ],
+  "id": "PMID_33731876_fam35",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:613721",
+          "label": "Developmental and epileptic encephalopathy 11"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "fam35",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001040142.2:c.4952T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.165388758T>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "SCN2A",
+                  "valueId": "HGNC:10588"
+                },
+                "id": "var_BEdxxioOevSwERwxMiNzNYLvy",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr2",
+                  "genomeAssembly": "hg38",
+                  "pos": "165388758",
+                  "ref": "T"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "fam35",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-11T07:08:55.734045028Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Computational analysis of 10,860 phenotypic annotations in individuals with SCN2A-related disorders",
+        "id": "PMID:33731876",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33731876"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      },
+      {
+        "id": "mondo",
+        "iriPrefix": "http://purl.obolibrary.org/obo/MONDO_",
+        "name": "Mondo Disease Ontology",
+        "namespacePrefix": "MONDO",
+        "url": "http://purl.obolibrary.org/obo/mondo.obo",
+        "version": "2023-09-12"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002266",
+        "label": "Focal clonic seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Intellectual disability, mild"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010841",
+        "label": "Multifocal epileptiform discharges"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002133",
+        "label": "Status epilepticus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0012443",
+        "label": "Abnormal brain morphology"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000717",
+        "label": "Autism"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-791b0d39bb6d"
+  }
+}

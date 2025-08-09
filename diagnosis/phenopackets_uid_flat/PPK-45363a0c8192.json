@@ -1,0 +1,195 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:162500",
+        "label": "Neuropathy, recurrent, with pressure palsies"
+      }
+    }
+  ],
+  "id": "PMID_29078790_proband",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:162500",
+          "label": "Neuropathy, recurrent, with pressure palsies"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "proband",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000304.4:c.178+2T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.15259092A>G"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PMP22",
+                  "valueId": "HGNC:9118"
+                },
+                "id": "var_lLBRcDffDyefTmRoJFxqjHSPP",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "G",
+                  "chrom": "chr17",
+                  "genomeAssembly": "hg38",
+                  "pos": "15259092",
+                  "ref": "A"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "proband",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-21T09:37:25.211700916Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "Hereditary neuropathy with liability to pressure palsy (HNPP): report of a family with a new point mutation in PMP22 gene",
+        "id": "PMID:29078790",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29078790"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003431",
+        "label": "Decreased motor nerve conduction velocity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      },
+      "type": {
+        "id": "HP:0003448",
+        "label": "Decreased sensory nerve conduction velocity"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      },
+      "type": {
+        "id": "HP:0006937",
+        "label": "Impaired distal tactile sensation"
+      }
+    },
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      },
+      "type": {
+        "id": "HP:0009077",
+        "label": "Weakness of long finger extensor muscles"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001761",
+        "label": "Pes cavus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031810",
+        "label": "Anti-ganglioside antibody positivity"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031826",
+        "label": "Abnormal reflex"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-45363a0c8192",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y"
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:606889",
+        "label": "Alzheimer disease-4"
+      }
+    }
+  ],
+  "id": "PMID_12925374_III_1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:606889",
+          "label": "Alzheimer disease-4"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "III-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000447.3:c.1289C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.226895521C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PSEN2",
+                  "valueId": "HGNC:9509"
+                },
+                "id": "var_BfUxuUPSBYEyzWzDqYjeWUzSG",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr1",
+                  "genomeAssembly": "hg38",
+                  "pos": "226895521",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "III-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-18T05:55:25.932765960Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "A novel mutation in the PSEN2 gene (T430M) associated with variable expression in a family with early-onset Alzheimer disease",
+        "id": "PMID:12925374",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/12925374"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002354",
+        "label": "Memory impairment"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002511",
+        "label": "Alzheimer disease"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000726",
+        "label": "Dementia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0000718",
+        "label": "Aggressive behavior"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0031058",
+        "label": "Impairment of activities of daily living"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001289",
+        "label": "Confusion"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0030784",
+        "label": "Anomic aphasia"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0001336",
+        "label": "Myoclonus"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0002197",
+        "label": "Generalized-onset seizure"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-0198e611e582"
+  }
+}

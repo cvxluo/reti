@@ -1,0 +1,178 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003581",
+          "label": "Adult onset"
+        }
+      },
+      "term": {
+        "id": "OMIM:620714",
+        "label": "Deafness, autosomal recessive 122"
+      }
+    }
+  ],
+  "id": "PMID_37943620_M/25",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620714",
+          "label": "Deafness, autosomal recessive 122"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "M/25",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_032813.5:c.547G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000013.11:g.100662969C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TMTC4",
+                  "valueId": "HGNC:25904"
+                },
+                "id": "var_wChbewLAFUYUSqBNvcfaNJBPU",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr13",
+                  "genomeAssembly": "hg38",
+                  "pos": "100662969",
+                  "ref": "C"
+                }
+              }
+            }
+          },
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "M/25",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_032813.5:c.575C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000013.11:g.100656446G>A"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "TMTC4",
+                  "valueId": "HGNC:25904"
+                },
+                "id": "var_maYMghunwzANGzkyFNamsKAlP",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "A",
+                  "chrom": "chr13",
+                  "genomeAssembly": "hg38",
+                  "pos": "100656446",
+                  "ref": "G"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "M/25",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-26T03:51:13.449095964Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "TMTC4 is a hair cell–specific human deafness gene",
+        "id": "PMID:37943620",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37943620"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003581",
+          "label": "Adult onset"
+        }
+      },
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-8ceac1277db2",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P25Y"
+      }
+    }
+  }
+}

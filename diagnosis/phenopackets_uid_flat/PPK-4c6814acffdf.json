@@ -1,0 +1,157 @@
+{
+  "diseases": [
+    {
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      },
+      "term": {
+        "id": "OMIM:620459",
+        "label": "Birt-Hogg-Dube syndrome 2"
+      }
+    }
+  ],
+  "id": "PMID_36440963_IV-1",
+  "interpretations": [
+    {
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620459",
+          "label": "Birt-Hogg-Dube syndrome 2"
+        },
+        "genomicInterpretations": [
+          {
+            "interpretationStatus": "CAUSATIVE",
+            "subjectOrBiosampleId": "IV-1",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020228.3:c.2030G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.129923264C>T"
+                  }
+                ],
+                "geneContext": {
+                  "symbol": "PRDM10",
+                  "valueId": "HGNC:13995"
+                },
+                "id": "var_AvBnHetUuvmcemeBPyUisIlgo",
+                "moleculeContext": "genomic",
+                "vcfRecord": {
+                  "alt": "T",
+                  "chrom": "chr11",
+                  "genomeAssembly": "hg38",
+                  "pos": "129923264",
+                  "ref": "C"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "id": "IV-1",
+      "progressStatus": "SOLVED"
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-28T16:06:27.413428068Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "externalReferences": [
+      {
+        "description": "PRDM10 directs FLCN expression in a novel disorder overlapping with Birt-Hogg-Dubé syndrome and familial lipomatosis",
+        "id": "PMID:36440963",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36440963"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "geno",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_",
+        "name": "Genotype Ontology",
+        "namespacePrefix": "GENO",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05"
+      },
+      {
+        "id": "hgnc",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/",
+        "name": "HUGO Gene Nomenclature Committee",
+        "namespacePrefix": "HGNC",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23"
+      },
+      {
+        "id": "omim",
+        "iriPrefix": "https://www.omim.org/entry/",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "namespacePrefix": "OMIM",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023"
+      },
+      {
+        "id": "so",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_",
+        "name": "Sequence types and features ontology",
+        "namespacePrefix": "SO",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22"
+      },
+      {
+        "id": "hp",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_",
+        "name": "human phenotype ontology",
+        "namespacePrefix": "HP",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06"
+      }
+    ]
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001012",
+        "label": "Multiple lipomas"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030436",
+        "label": "Fibrofolliculoma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032225",
+        "label": "Perifollicular fibroma"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0032445",
+        "label": "Pulmonary cyst"
+      }
+    },
+    {
+      "excluded": true,
+      "type": {
+        "id": "HP:0006770",
+        "label": "Clear cell renal cell carcinoma"
+      }
+    }
+  ],
+  "subject": {
+    "id": "PPK-4c6814acffdf",
+    "sex": "MALE"
+  }
+}
