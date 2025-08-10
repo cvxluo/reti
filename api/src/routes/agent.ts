@@ -98,19 +98,6 @@ agentRouter.post("/api/agent", async (req, res) => {
         writeData(typeof data === "string" ? data : JSON.stringify(data));
     };
 
-    const fetchWithTimeout = async (
-        url: string,
-        options: any,
-        timeoutMs = 20000
-    ): Promise<Response> => {
-        const ac = new AbortController();
-        const to = setTimeout(() => ac.abort(), timeoutMs);
-        try {
-            return await fetch(url, { ...options, signal: ac.signal } as any);
-        } finally {
-            clearTimeout(to);
-        }
-    };
 
     const inputChain: any[] = [];
     if (Array.isArray(prevMessages)) {
@@ -145,66 +132,52 @@ agentRouter.post("/api/agent", async (req, res) => {
         const output = completion?.output ?? [];
         let executedAnyTool = false;
         for (const item of output) {
-            if (item?.type === "function_call") {
-                executedAnyTool = true;
-                const callId = item.call_id;
-                const name: string | undefined = item.name;
-                let argsStr: string = item.arguments ?? "{}";
-                if (!name) throw new Error("missing tool name");
-                const args = JSON.parse(argsStr || "{}");
-                if (name === "biomni") {
-                    console.log("[biomni] calling tool with prompt");
-                    let output = "";
-                    try {
-                        const response = await fetchWithTimeout(`http://127.0.0.1:5000/go`, {
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({ prompt: args.prompt }),
-                        });
-                        if (response.ok) {
-                            const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
-                            output = typeof data?.final === "string" ? data.final : JSON.stringify(data?.final ?? "");
-                        } else {
-                            console.error("[biomni] non-OK", response.status);
-                        }
-                    } catch (err) {
-                        console.error("[biomni] error", err);
-                    }
-                    inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
-                    inputChain.push({ type: "function_call_output", call_id: callId, output });
-                } else if (name === "phenotype_analyze") {
-                    const raw = await phenotypeAnalyze(args as PhenotypeParams);
-                    let output = raw;
-                    try {
-                        const parsed = JSON.parse(raw);
-                        writeEvent("hpo", parsed.hpo ?? []);
-                        output = JSON.stringify(parsed);
-                    } catch {}
-                    inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
-                    inputChain.push({ type: "function_call_output", call_id: callId, output });
-                } else if (name === "clinvar") {
-                    console.log("[clinvar] calling tool with query");
-                    let out = "";
-                    try {
-                        const response = await fetchWithTimeout(`http://127.0.0.1:5000/clinvar`, {
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({ search_query: args.search_query }),
-                        });
-                        if (response.ok) {
-                            const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
-                            out = typeof data.final === "string" ? data.final : JSON.stringify(data.final);
-                        } else {
-                            console.error("[clinvar] non-OK", response.status);
-                        }
-                    } catch (err) {
-                        console.error("[clinvar] error", err);
-                    }
-                    inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
-                    inputChain.push({ type: "function_call_output", call_id: callId, output: out });
-
-                    console.log("inputChain", inputChain);
+            if (item?.type !== "function_call") {
+                continue;
+            }
+            executedAnyTool = true;
+            const callId = item.call_id;
+            const name: string = item.name;
+            let argsStr: string = item.arguments;
+            const args = JSON.parse(argsStr);
+            if (name === "biomni") {
+                console.log("[biomni] calling tool with prompt");
+                let output = "";
+                const response = await fetch(`http://127.0.0.1:5000/go`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ prompt: args.prompt }),
+                });
+                if (response.ok) {
+                    const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
+                    output = typeof data?.final === "string" ? data.final : JSON.stringify(data?.final ?? "");
+                } else {
+                    console.error("[biomni] non-OK", response.status);
                 }
+                inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
+                inputChain.push({ type: "function_call_output", call_id: callId, output });
+            } else if (name === "phenotype_analyze") {
+                const raw = await phenotypeAnalyze(args as PhenotypeParams);
+                let output = raw;
+                const parsed = JSON.parse(raw);
+                writeEvent("hpo", parsed.hpo ?? []);
+                output = JSON.stringify(parsed);
+                inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
+                inputChain.push({ type: "function_call_output", call_id: callId, output });
+            } else if (name === "clinvar") {
+                console.log("[clinvar] calling tool with query");
+                let out = "";
+                const response = await fetch(`http://127.0.0.1:5000/clinvar`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ search_query: args.search_query }),
+                });
+                const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
+                out = typeof data.final === "string" ? data.final : JSON.stringify(data.final);
+                inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
+                inputChain.push({ type: "function_call_output", call_id: callId, output: out });
+
+                console.log("inputChain", inputChain);
             }
         }
         if (!executedAnyTool) break;
