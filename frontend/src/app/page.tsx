@@ -1,6 +1,7 @@
 "use client";
 import Chat from "@/components/Chat";
 import IGVBrowser from "@/components/IGVBrowser";
+import Chat2 from "@/components/Chat2";
 
 export default function Home() {
   const igvOptions = {
@@ -35,7 +36,7 @@ export default function Home() {
       </header>
 
       <section className="mx-auto max-w-5xl px-4 py-8">
-        <Chat />
+        <Chat2 />
       </section>
       <div className="mx-auto max-w-5xl px-4 pb-10">
         <div className="rounded-lg border border-stone-300/60 bg-white shadow-sm overflow-hidden">
