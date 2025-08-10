@@ -1,7 +1,27 @@
 "use client";
 import Chat from "@/components/Chat";
+import IGVBrowser from "@/components/IGVBrowser";
 
 export default function Home() {
+  const igvOptions = {
+    // Specify the reference genome to use
+    genome: "hg19",
+
+    // Set the initial genomic location to display
+    locus: "chr8:127,736,588-127,739,371",
+
+    // Define the genomic data tracks to load
+    tracks: [
+      {
+        name: "HG00103",
+        url: "https://s3.amazonaws.com/1000genomes/data/HG00103/alignment/HG00103.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram",
+        indexURL:
+          "https://s3.amazonaws.com/1000genomes/data/HG00103/alignment/HG00103.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram.crai",
+        format: "cram",
+        type: "alignment",
+      },
+    ],
+  };
   return (
     <main className="min-h-screen bg-stone-100 text-stone-900">
       <header className="border-b border-stone-300/60 bg-stone-100/80 backdrop-blur">
@@ -17,6 +37,8 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-4 py-8">
         <Chat />
       </section>
+      <h1>My Genomic Viewer</h1>
+      <IGVBrowser options={igvOptions} />
     </main>
   );
 }
