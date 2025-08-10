@@ -5,6 +5,7 @@ import CameraCapture from "./CameraCapture";
 
 type HPO = { id: string; label: string; confidence: number };
 type AgentResp = { text: string; hpo?: HPO[] };
+type PhenotypeResp = { phenotype_text: string; hpo: HPO[] };
 
 type Msg =
   | {
@@ -75,13 +76,13 @@ export default function Chat() {
           hpo: resp.hpo,
         },
       ]);
-    } catch (e: any) {
+    } catch (e: unknown) {
       setMessages((m) => [
         ...m,
         {
           id: crypto.randomUUID(),
           role: "assistant",
-          text: e?.message ?? "Request failed",
+          text: e instanceof Error ? e.message : "Request failed",
         },
       ]);
     } finally {
@@ -115,13 +116,13 @@ export default function Chat() {
           hpo: resp.hpo,
         },
       ]);
-    } catch (e: any) {
+    } catch (e: unknown) {
       setMessages((m) => [
         ...m,
         {
           id: crypto.randomUUID(),
           role: "assistant",
-          text: e?.message ?? "Image analysis failed",
+          text: e instanceof Error ? e.message : "Image analysis failed",
         },
       ]);
     } finally {
@@ -131,7 +132,7 @@ export default function Chat() {
     }
   }
 
-  // click once to start, click again to stop → send to agent
+  // click once to start, click again to stop → transcribe → phenotype
   async function recordAudio() {
     if (isRecording && mediaRecorder) {
       try {
@@ -162,34 +163,32 @@ export default function Chat() {
           { id: crypto.randomUUID(), role: "user", audioUrl: objectUrl },
         ]);
 
-        // turn into data URL for agent
-        const audioDataUrl = await blobToDataUrl(blob);
-
+        // transcribe → phenotype
         setBusy(true);
         try {
-          const resp = await callAgent({
-            userRequest:
-              "Transcribe this audio and analyze phenotype with HPO.",
-            audioDataUrl,
+          const fd = new FormData();
+          fd.append(
+            "file",
+            new File([blob], "audio.webm", { type: blob.type })
+          );
+          const tr = await fetch(`${API_BASE}/api/transcribe`, {
+            method: "POST",
+            body: fd,
           });
-          setMessages((m) => [
-            ...m,
-            {
-              id: crypto.randomUUID(),
-              role: "assistant",
-              text: resp.text,
-              hpo: resp.hpo,
-            },
-          ]);
-        } catch (e: any) {
-          setMessages((m) => [
-            ...m,
-            {
-              id: crypto.randomUUID(),
-              role: "assistant",
-              text: e?.message ?? "Audio analysis failed",
-            },
-          ]);
+          const tj = (await tr.json()) as { transcript?: string };
+          if (tj.transcript) {
+            await runPhenotypeFromText(tj.transcript);
+          } else {
+            addAssistant({
+              phenotype_text: "No transcript produced.",
+              hpo: [],
+            });
+          }
+        } catch {
+          addAssistant({
+            phenotype_text: "Sorry—transcription failed.",
+            hpo: [],
+          });
         } finally {
           setBusy(false);
           setTimeout(() => URL.revokeObjectURL(objectUrl), 30000);
@@ -202,6 +201,35 @@ export default function Chat() {
     } catch {
       alert("Microphone permission denied");
     }
+  }
+
+  async function runPhenotypeFromText(text: string) {
+    setBusy(true);
+    try {
+      const r = await fetch(`${API_BASE}/api/phenotype`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ mode: "text", text }),
+      });
+      const json = (await r.json()) as PhenotypeResp;
+      addAssistant(json);
+    } catch (e: unknown) {
+      addAssistant({ phenotype_text: "Sorry—text analysis failed.", hpo: [] });
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  function addAssistant(p: PhenotypeResp) {
+    setMessages((m) => [
+      ...m,
+      {
+        id: crypto.randomUUID(),
+        role: "assistant",
+        text: p.phenotype_text,
+        hpo: p.hpo,
+      },
+    ]);
   }
 
   function openCamera() {

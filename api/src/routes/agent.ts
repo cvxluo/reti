@@ -58,7 +58,8 @@ You have access to the following tools:
 
 agentRouter.post("/api/agent", async (req, res) => {
   try {
-    const { messages, userRequest, imageDataUrl, audioDataUrl } = req.body ?? {};
+    const { messages, userRequest, imageDataUrl, audioDataUrl } =
+      req.body ?? {};
     console.log("received request", userRequest);
 
     console.log("messages", messages);
