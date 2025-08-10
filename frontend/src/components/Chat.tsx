@@ -30,16 +30,15 @@ export default function Chat() {
   const [isRecording, setIsRecording] = useState(false);
   const [showCamera, setShowCamera] = useState(false);
 
-  useEffect(() => {
-    listRef.current?.lastElementChild?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
 
-  async function callAgent(payload: {
+  async function callAgentStream(payload: {
     userRequest: string;
     imageDataUrl?: string;
     audioDataUrl?: string;
-  }): Promise<AgentResp> {
-    const r = await fetch(`${API_BASE}/api/agent`, {
+    onChunk: (text: string) => void;
+    onHpo?: (hpo: HPO[]) => void;
+  }): Promise<void> {
+    const r = await fetch(`${API_BASE}/api/agent?stream=1`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -49,11 +48,42 @@ export default function Chat() {
         audioDataUrl: payload.audioDataUrl,
       }),
     });
-    if (!r.ok) {
+    if (!r.ok || !r.body) {
       const msg = await r.text().catch(() => "");
       throw new Error(msg || `${r.status} ${r.statusText}`);
     }
-    return (await r.json()) as AgentResp;
+    const reader = r.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      // Parse SSE lines
+      const parts = buffer.split(/\n\n/);
+      buffer = parts.pop() ?? "";
+      for (const frame of parts) {
+        const lines = frame.split("\n");
+        let event: string | null = null;
+        let data = "";
+        for (const ln of lines) {
+          if (ln.startsWith("event:")) event = ln.slice(6).trim();
+          else if (ln.startsWith("data:")) {
+            // Preserve leading spaces in token deltas
+            const raw = ln.startsWith("data: ") ? ln.slice(6) : ln.slice(5);
+            data += (data ? "\n" : "") + raw;
+          }
+        }
+        if (event === "hpo" && payload.onHpo) {
+          try {
+            payload.onHpo(JSON.parse(data));
+          } catch {}
+          continue;
+        }
+        if (event === "done") continue;
+        if (data) payload.onChunk(data);
+      }
+    }
   }
 
   async function sendText() {
@@ -66,16 +96,27 @@ export default function Chat() {
     setBusy(true);
 
     try {
-      const resp = await callAgent({ userRequest: text });
-      setMessages((m) => [
-        ...m,
-        {
-          id: crypto.randomUUID(),
-          role: "assistant",
-          text: resp.text,
-          hpo: resp.hpo,
+      const asstId = crypto.randomUUID();
+      setMessages((m) => [...m, { id: asstId, role: "assistant", text: "" }]);
+      let acc = "";
+      let hpoAcc: HPO[] | undefined;
+      await callAgentStream({
+        userRequest: text,
+        onChunk: (t) => {
+          acc += t;
+          setMessages((m) =>
+            m.map((msg) =>
+              msg.id === asstId ? { ...msg, text: acc, hpo: hpoAcc } : msg
+            )
+          );
         },
-      ]);
+        onHpo: (h) => {
+          hpoAcc = h;
+          setMessages((m) =>
+            m.map((msg) => (msg.id === asstId ? { ...msg, hpo: h } : msg))
+          );
+        },
+      });
     } catch (e: unknown) {
       setMessages((m) => [
         ...m,

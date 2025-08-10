@@ -78,88 +78,156 @@ You have access to the following tools:
 `;
 
 agentRouter.post("/api/agent", async (req, res) => {
-    const { messages, userRequest, imageDataUrl, audioDataUrl } =
-        req.body ?? {};
+    const { userRequest, imageDataUrl, audioDataUrl, messages: prevMessages } = req.body ?? {};
     console.log("received request", userRequest);
 
-    console.log("messages", messages);
+    res.setHeader("Content-Type", "text/event-stream");
+    res.setHeader("Cache-Control", "no-cache");
+    res.setHeader("Connection", "keep-alive");
+    res.setHeader("X-Accel-Buffering", "no");
 
-    const completion = await openai.responses.create({
-        model: "gpt-5-2025-08-07",
-        instructions: systemMessage,
-        input: [
-        {
-            role: "user",
-            content: [
-            { type: "input_text", text: userRequest },
-            imageDataUrl && { type: "input_image", image_url: imageDataUrl },
-            audioDataUrl && { type: "input_audio", audio_url: audioDataUrl }, // if your SDK supports input_audio
-            ].filter(Boolean),
-        },
-        ],
-
-        text: { verbosity: "low" },
-        tools: [biomniTool, phenotypeTool, clinvarTool],
-        tool_choice: "auto",
-        parallel_tool_calls: false,
-    });
-
-    for (const tool_call of completion.output) {
-        if (tool_call.type !== "function_call") continue;
-
-        console.log("tool call id", tool_call.id);
-        console.log("tool call name", tool_call.name);
-        console.log("tool call arguments", tool_call.arguments);
-
-        if (tool_call.name === "biomni") {
-        const args =
-            typeof tool_call.arguments === "string"
-            ? JSON.parse(tool_call.arguments)
-            : tool_call.arguments;
-        const response = await fetch(`http://127.0.0.1:5000/go`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ prompt: args.prompt }),
-        });
-
-        console.log("biomni raw response", response.status);
-        const data = await response.json();
-        console.log("biomni response", data);
-        return res.json({ text: data.final });
+    const writeData = (text: string) => {
+        for (const line of String(text).split(/\r?\n/)) {
+            res.write(`data: ${line}\n`);
         }
+        res.write(`\n`);
+    };
 
-        if (tool_call.name === "phenotype_analyze") {
-        const args =
-            typeof tool_call.arguments === "string"
-            ? JSON.parse(tool_call.arguments)
-            : tool_call.arguments;
-        const raw = await phenotypeAnalyze(args as PhenotypeParams);
-        console.log("phenotype_analyze raw output", raw);
+    const writeEvent = (event: string, data: unknown) => {
+        res.write(`event: ${event}\n`);
+        writeData(typeof data === "string" ? data : JSON.stringify(data));
+    };
+
+    const fetchWithTimeout = async (
+        url: string,
+        options: any,
+        timeoutMs = 20000
+    ): Promise<Response> => {
+        const ac = new AbortController();
+        const to = setTimeout(() => ac.abort(), timeoutMs);
         try {
-            const parsed = JSON.parse(raw);
-            console.log("phenotype_analyze parsed output", parsed);
-            return res.json(parsed);
-        } catch {
-            console.warn("phenotype_analyze output was not valid JSON");
+            return await fetch(url, { ...options, signal: ac.signal } as any);
+        } finally {
+            clearTimeout(to);
         }
-        }
+    };
 
-        if (tool_call.name === "clinvar") {
-        const args =
-            typeof tool_call.arguments === "string"
-            ? JSON.parse(tool_call.arguments)
-            : tool_call.arguments;
-        const response = await fetch(`http://127.0.0.1:5000/clinvar`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ search_query: args.search_query }),
-        });
-        const data = await response.json();
-        console.log("clinvar response", data);
-        return res.json({ text: JSON.stringify(data.final) });
+    const inputChain: any[] = [];
+    if (Array.isArray(prevMessages)) {
+        for (const m of prevMessages) {
+            if (m?.role === "user" && typeof m?.text === "string") inputChain.push({ role: "user", content: m.text });
+            else if (m?.role === "assistant" && typeof m?.text === "string") inputChain.push({ role: "assistant", content: m.text });
         }
     }
+    inputChain.push({
+        role: "user",
+        content: [
+            { type: "input_text", text: userRequest },
+            imageDataUrl && { type: "input_image", image_url: imageDataUrl },
+            audioDataUrl && { type: "input_audio", audio_url: audioDataUrl },
+        ].filter(Boolean),
+    });
 
-    const text = (completion as any).output_text ?? "";
-    res.json({ text });
+    // Orchestrate tools non-streaming, then stream the final assistant answer
+    const tools = [biomniTool, phenotypeTool, clinvarTool];
+    let toolPasses = 0;
+    const maxToolPasses = 3;
+    while (toolPasses < maxToolPasses) {
+        const completion: any = await (openai as any).responses.create({
+            model: "gpt-5-2025-08-07",
+            instructions: systemMessage,
+            input: inputChain,
+            text: { verbosity: "low" },
+            tools,
+            tool_choice: "auto",
+            parallel_tool_calls: false,
+        });
+        const output = completion?.output ?? [];
+        let executedAnyTool = false;
+        for (const item of output) {
+            if (item?.type === "function_call") {
+                executedAnyTool = true;
+                const callId = item.call_id;
+                const name: string | undefined = item.name;
+                let argsStr: string = item.arguments ?? "{}";
+                if (!name) throw new Error("missing tool name");
+                const args = JSON.parse(argsStr || "{}");
+                if (name === "biomni") {
+                    console.log("[biomni] calling tool with prompt");
+                    let output = "";
+                    try {
+                        const response = await fetchWithTimeout(`http://127.0.0.1:5000/go`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ prompt: args.prompt }),
+                        });
+                        if (response.ok) {
+                            const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
+                            output = typeof data?.final === "string" ? data.final : JSON.stringify(data?.final ?? "");
+                        } else {
+                            console.error("[biomni] non-OK", response.status);
+                        }
+                    } catch (err) {
+                        console.error("[biomni] error", err);
+                    }
+                    inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
+                    inputChain.push({ type: "function_call_output", call_id: callId, output });
+                } else if (name === "phenotype_analyze") {
+                    const raw = await phenotypeAnalyze(args as PhenotypeParams);
+                    let output = raw;
+                    try {
+                        const parsed = JSON.parse(raw);
+                        writeEvent("hpo", parsed.hpo ?? []);
+                        output = JSON.stringify(parsed);
+                    } catch {}
+                    inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
+                    inputChain.push({ type: "function_call_output", call_id: callId, output });
+                } else if (name === "clinvar") {
+                    console.log("[clinvar] calling tool with query");
+                    let out = "";
+                    try {
+                        const response = await fetchWithTimeout(`http://127.0.0.1:5000/clinvar`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ search_query: args.search_query }),
+                        });
+                        if (response.ok) {
+                            const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
+                            out = typeof data.final === "string" ? data.final : JSON.stringify(data.final);
+                        } else {
+                            console.error("[clinvar] non-OK", response.status);
+                        }
+                    } catch (err) {
+                        console.error("[clinvar] error", err);
+                    }
+                    inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
+                    inputChain.push({ type: "function_call_output", call_id: callId, output: out });
+
+                    console.log("inputChain", inputChain);
+                }
+            }
+        }
+        if (!executedAnyTool) break;
+        toolPasses++;
+    }
+
+    // Final: stream the assistant's answer based on the updated message chain
+    const finalStream: any = await (openai as any).responses.stream({
+        model: "gpt-5-2025-08-07",
+        instructions: systemMessage,
+        input: inputChain,
+        text: { verbosity: "low" },
+        tool_choice: "none",
+    });
+    finalStream.on("response.output_text.delta", (e: any) => {
+        if (e?.delta) writeData(e.delta);
+    });
+    finalStream.on("response.error", (e: any) => {
+        writeEvent("error", e?.error?.message || "stream_error");
+        try { res.end(); } catch {}
+    });
+    finalStream.on("response.completed", () => {
+        writeEvent("done", "[DONE]");
+        try { res.end(); } catch {}
+    });
 });
