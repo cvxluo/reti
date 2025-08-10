@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import CameraCapture from "./CameraCapture";
+import ThinkingIndicator from "./ThinkingIndicator";
 
 type HPO = { id: string; label: string; confidence: number };
 type AgentResp = { text: string; hpo?: HPO[] };
@@ -19,8 +20,18 @@ type Msg =
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:4001";
 
-export default function Chat() {
-  const [messages, setMessages] = useState<Msg[]>([]);
+export default function Chat({
+  onMessageSent,
+}: {
+  onMessageSent?: () => void;
+}) {
+  const [messages, setMessages] = useState<Msg[]>([
+    {
+      id: "intro-message",
+      role: "assistant",
+      text: "Hello! I'm Reti, your AI-powered genetic analysis assistant. I can help you analyze symptoms, images, and audio descriptions to identify potential genetic conditions using HPO (Human Phenotype Ontology) terms. Feel free to describe symptoms, upload photos, or record audio - I'm here to assist with your genetic analysis needs.",
+    },
+  ]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
@@ -29,7 +40,6 @@ export default function Chat() {
   );
   const [isRecording, setIsRecording] = useState(false);
   const [showCamera, setShowCamera] = useState(false);
-
 
   async function callAgentStream(payload: {
     userRequest: string;
@@ -95,6 +105,9 @@ export default function Chat() {
     setInput("");
     setBusy(true);
 
+    // Notify parent that a message was sent
+    onMessageSent?.();
+
     try {
       const asstId = crypto.randomUUID();
       setMessages((m) => [...m, { id: asstId, role: "assistant", text: "" }]);
@@ -140,6 +153,9 @@ export default function Chat() {
     ]);
 
     setBusy(true);
+
+    // Notify parent that a message was sent
+    onMessageSent?.();
     try {
       // Use direct phenotype upload instead of agent for image analysis
       const fd = new FormData();
@@ -212,6 +228,9 @@ export default function Chat() {
           { id: crypto.randomUUID(), role: "user", audioUrl: objectUrl },
         ]);
 
+        // Notify parent that a message was sent
+        onMessageSent?.();
+
         // transcribe → phenotype
         setBusy(true);
         try {
@@ -229,7 +248,11 @@ export default function Chat() {
             // Add the transcript as a user message so user can see what was transcribed
             setMessages((m) => [
               ...m,
-              { id: crypto.randomUUID(), role: "user", text: tj.transcript },
+              {
+                id: crypto.randomUUID(),
+                role: "user",
+                text: `Audio Transcription: ${tj.transcript}`,
+              },
             ]);
             await runPhenotypeFromText(tj.transcript);
           } else {
@@ -294,13 +317,13 @@ export default function Chat() {
   }
 
   return (
-    <div className="mx-auto max-w-5xl h-[calc(100vh-120px)] rounded-2xl border border-stone-300/70 bg-stone-50 shadow-sm flex flex-col">
+    <div className="h-full rounded-2xl border border-stone-300/70 bg-stone-50 shadow-sm flex flex-col">
       <div
         ref={listRef}
         className="flex-1 overflow-y-auto p-4 space-y-4 relative"
       >
-        {/* Background "reti" text when no messages */}
-        {messages.length === 0 && (
+        {/* Background "reti" text when only intro message exists */}
+        {messages.length === 1 && messages[0]?.id === "intro-message" && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="text-[15vw] font-bold text-stone-500/40 select-none">
               reti
@@ -311,7 +334,7 @@ export default function Chat() {
         {messages.map((m) => (
           <MessageBubble key={m.id} msg={m} />
         ))}
-        {busy && <div className="text-xs text-stone-500 px-2">Thinking…</div>}
+        {busy && <ThinkingIndicator />}
       </div>
 
       <div className="border-t border-stone-300/70 p-3">

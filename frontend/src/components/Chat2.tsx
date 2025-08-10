@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import ThinkingIndicator from "./ThinkingIndicator";
 
 type Message =
   | { role: "user"; content: string }
@@ -77,7 +78,7 @@ export default function Chat() {
         {messages.map((message, i) => (
           <MessageBubble key={i} message={message} />
         ))}
-        {busy && <div className="text-xs text-stone-500 px-2">Thinking…</div>}
+        {busy && <ThinkingIndicator />}
       </div>
       <div className="border-t border-stone-300/70 p-3">
         <div className="flex items-end gap-2">
