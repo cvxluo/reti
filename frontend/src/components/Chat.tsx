@@ -41,7 +41,12 @@ export default function Chat() {
     const r = await fetch(`${API_BASE}/api/agent`, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify(payload),
+      body: JSON.stringify({
+        messages: messages,
+        userRequest: payload.userRequest,
+        imageDataUrl: payload.imageDataUrl,
+        audioDataUrl: payload.audioDataUrl,
+      }),
     });
     if (!r.ok) {
       const msg = await r.text().catch(() => "");

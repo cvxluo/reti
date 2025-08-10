@@ -51,15 +51,17 @@ const phenotypeTool = {
   },
 };
 
-agentRouter.post("/api/agent", async (req, res) => {
-  try {
-    const { userRequest, imageDataUrl, audioDataUrl } = req.body ?? {};
-    console.log("received request", userRequest);
-
-    const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
+const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
 You have access to the following tools:
 - use Biomni, a subagent that has access to detailed medical databases and research papers, to get a detailed investigation
 - use phenotype_analyze to generate a phenotype narrative and HPO array from provided text or image`;
+
+agentRouter.post("/api/agent", async (req, res) => {
+  try {
+    const { messages, userRequest, imageDataUrl, audioDataUrl } = req.body ?? {};
+    console.log("received request", userRequest);
+
+    console.log("messages", messages);
 
     const completion = await openai.responses.create({
       model: "gpt-5-2025-08-07",
@@ -102,6 +104,7 @@ You have access to the following tools:
         console.log("biomni raw response", response.status);
         const data = await response.json();
         console.log("biomni response", data);
+        return res.json({ text: data.final });
       }
 
       if (tool_call.name === "phenotype_analyze") {
@@ -114,6 +117,7 @@ You have access to the following tools:
         try {
           const parsed = JSON.parse(raw);
           console.log("phenotype_analyze parsed output", parsed);
+          return res.json(parsed);
         } catch {
           console.warn("phenotype_analyze output was not valid JSON");
         }
