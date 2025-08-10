@@ -69,7 +69,8 @@ def clinvar() -> Any:
             return jsonify({"error": "Missing 'search_query'"}), 400
 
         with agent_lock:
-            final = query_clinvar(prompt=search_query, model="gpt-5-2025-08-07")
+            # final = query_clinvar(prompt=search_query, model="gpt-5-2025-08-07")
+            final = query_clinvar(prompt=search_query, model="gpt-5-nano-2025-08-07")
 
         response: dict[str, Any] = {"final": final}
         return jsonify(response)

@@ -69,7 +69,7 @@ def _query_llm_for_api(prompt, schema, system_template, api_key=None, model="cla
         ]
 
         # Query the LLM
-        response = llm.invoke(messages)
+        response = llm.invoke(messages, reasoning_effort="low", verbosity="low")
         llm_text = response.content.strip()
 
         # Find JSON boundaries (in case LLM adds explanations)
