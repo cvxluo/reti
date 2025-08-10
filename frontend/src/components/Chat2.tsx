@@ -16,7 +16,6 @@ type Message =
     }
   | { type: "function_call_output"; call_id: string; output: string };
 
-
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:4001";
 
 const callAgent = async (messages: Message[]) => {
@@ -26,7 +25,12 @@ const callAgent = async (messages: Message[]) => {
     body: JSON.stringify({ messages }),
   });
   if (!response.ok) {
-    return { messages: [...messages, { role: "assistant" as const, content: "Error calling agent" }] };
+    return {
+      messages: [
+        ...messages,
+        { role: "assistant" as const, content: "Error calling agent" },
+      ],
+    };
   }
   return (await response.json()) as { messages: Message[] };
 };
@@ -57,11 +61,19 @@ export default function Chat() {
     const response = await callAgent(new_messages);
     setMessages(response.messages);
     setBusy(false);
-  }
+  };
 
   return (
     <div className="mx-auto max-w-5xl h-[calc(100vh-120px)] rounded-2xl border border-stone-300/70 bg-stone-50 shadow-sm flex flex-col">
       <div className="flex-1 overflow-y-auto p-4 space-y-4" ref={listRef}>
+        {/* Background "reti" text when no messages */}
+        {messages.length === 0 && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="text-[15vw] font-bold text-stone-500/40 select-none">
+              reti
+            </div>
+          </div>
+        )}
         {messages.map((message, i) => (
           <MessageBubble key={i} message={message} />
         ))}

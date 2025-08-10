@@ -17,7 +17,7 @@ export default function Home() {
       </header>
 
       <section className="mx-auto max-w-5xl px-4 py-8">
-        <Chat2 />
+        <Chat />
       </section>
       <div className="mx-auto max-w-5xl px-4 pb-10">
         <div className="rounded-lg border border-stone-300/60 bg-white shadow-sm overflow-hidden">

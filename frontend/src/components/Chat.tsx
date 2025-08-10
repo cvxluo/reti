@@ -213,7 +213,19 @@ export default function Chat() {
 
   return (
     <div className="mx-auto max-w-5xl h-[calc(100vh-120px)] rounded-2xl border border-stone-300/70 bg-stone-50 shadow-sm flex flex-col">
-      <div ref={listRef} className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div
+        ref={listRef}
+        className="flex-1 overflow-y-auto p-4 space-y-4 relative"
+      >
+        {/* Background "reti" text when no messages */}
+        {messages.length === 0 && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="text-[15vw] font-bold text-stone-500/40 select-none">
+              reti
+            </div>
+          </div>
+        )}
+
         {messages.map((m) => (
           <MessageBubble key={m.id} msg={m} />
         ))}
