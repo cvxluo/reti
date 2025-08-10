@@ -5,8 +5,7 @@ import path from "path";
 export const igvRouter = Router();
 
 // Absolute path to phenopackets directory in this repo
-const PHENOPACKET_DIR =
-  "/Users/sharmvin/VisualStudio/2025Summer/gpt-startup-hackathon/reti/diagnosis/phenopackets_uid_flat";
+const PHENOPACKET_DIR = "../diagnosis/phenopackets_uid_flat";
 
 type PhenopacketVariant = {
   chrom: string;
