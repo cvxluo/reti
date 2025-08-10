@@ -7,6 +7,7 @@ from flask import Flask, jsonify, request
 from biomni.agent import A1
 
 from biomni.tool.database import query_clinvar
+from biomni.tool.literature import query_pubmed
 
 # Load environment variables from .env if present
 load_dotenv()
@@ -15,7 +16,7 @@ load_dotenv()
 def create_agent() -> Any:
     data_path = os.getenv("BIOMNI_DATA_PATH", "./data")
     # Model selection: can be set via BIOMNI_MODEL (e.g., "claude-sonnet-4-20250514" or "azure-gpt-4o")
-    model_name = os.getenv("BIOMNI_MODEL", "gpt-5-2025-08-07")
+    model_name = os.getenv("BIOMNI_MODEL", "gpt-5-mini-2025-08-07")
     # LLM source auto-detected by biomni.llm.get_llm; can override with LLM_SOURCE
     source = "OpenAI"
     api_key = os.getenv("OPENAI_API_KEY")
@@ -47,6 +48,7 @@ def go() -> Any:
     try:
         payload: dict[str, Any] = request.get_json(force=True)
         prompt = payload.get("prompt")
+        prompt += "In addition, make sure to make a short plan and emphasize speed. Use less than 3 steps."
         if not prompt:
             return jsonify({"error": "Missing 'prompt'"}), 400
 
@@ -71,6 +73,26 @@ def clinvar() -> Any:
         with agent_lock:
             # final = query_clinvar(prompt=search_query, model="gpt-5-2025-08-07")
             final = query_clinvar(prompt=search_query, model="gpt-5-nano-2025-08-07")
+
+        response: dict[str, Any] = {"final": final}
+        return jsonify(response)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.post("/pubmed")
+def pubmed() -> Any:
+    print("recieved request", request)
+    try:
+        payload: dict[str, Any] = request.get_json(force=True)
+        print("payload", payload)
+        search_query = payload.get("search_query")
+        print("search_query", search_query)
+        if not search_query:
+            return jsonify({"error": "Missing 'search_query'"}), 400
+
+        with agent_lock:
+            final = query_pubmed(query=search_query)
 
         response: dict[str, Any] = {"final": final}
         return jsonify(response)
