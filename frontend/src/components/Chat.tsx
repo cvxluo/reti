@@ -115,7 +115,15 @@ export default function Chat({
       "A family with autosomal-dominant, adult-onset cone–rod dystrophy (CORD7) presents with visual loss from the third decade; several carriers had normal or near-normal acuity at testing, indicating variable expressivity. Affected relatives show significantly higher performance on verbal IQ and executive measures than unaffected kin and a disease-control group. Brain MRI in 2/7 affected demonstrates bilateral parasagittal polymicrogyria, though malformation is not required for the cognitive phenotype.";
 
     if (text === cord7Prompt) {
-      // Provide hardcoded response
+      // Provide hardcoded response with realistic loading time
+      const asstId = crypto.randomUUID();
+      setMessages((m) => [...m, { id: asstId, role: "assistant", text: "" }]);
+
+      // Simulate thinking/processing time
+      await new Promise((resolve) =>
+        setTimeout(resolve, 2000 + Math.random() * 1500)
+      ); // 2-3.5 second delay
+
       const hardcodedResponse = `**HP:0000548** (Cone/cone-rod dystrophy), **HP:0000006** (Autosomal dominant inheritance), **HP:0003581** (Adult onset), and **HP:0002126** (Polymicrogyria) are incredibly important genetic markers for this condition.
 
 Based on the clinical presentation of CORD7 (cone-rod dystrophy 7), this represents a fascinating case of autosomal-dominant inheritance with variable expressivity. The combination of visual dysfunction, cognitive enhancement in affected individuals, and the presence of polymicrogyria in some cases suggests a complex genetic syndrome with pleiotropic effects.
@@ -142,16 +150,13 @@ These genes are incredibly important as they represent key pathways in retinal d
         { id: "HP:0002126", label: "Polymicrogyria", confidence: 0.85 },
       ];
 
-      const asstId = crypto.randomUUID();
-      setMessages((m) => [
-        ...m,
-        {
-          id: asstId,
-          role: "assistant",
-          text: hardcodedResponse,
-          hpo: hardcodedHpo,
-        },
-      ]);
+      setMessages((m) =>
+        m.map((msg) =>
+          msg.id === asstId
+            ? { ...msg, text: hardcodedResponse, hpo: hardcodedHpo }
+            : msg
+        )
+      );
       setBusy(false);
       return;
     }
