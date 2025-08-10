@@ -104,7 +104,7 @@ agent2Router.post("/api/agent2", async (req, res) => {
             console.log("biomni response", data);
             const biomni_response = {
                 type: "function_call_output",
-                call_id: tool_call.id,
+                call_id: tool_call.call_id,
                 output: data.final,
             }
             messages.push(biomni_response);
