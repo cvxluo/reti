@@ -98,22 +98,30 @@ export default function Chat() {
       { id: crypto.randomUUID(), role: "user", imageUrl: objectUrl },
     ]);
 
-    // convert to data URL so agent can pass it to the model/tool
-    const imageDataUrl = await fileToDataUrl(file);
-
     setBusy(true);
     try {
-      const resp = await callAgent({
-        userRequest: "Analyze this clinical image and return phenotype + HPO.",
-        imageDataUrl,
+      // Use direct phenotype upload instead of agent for image analysis
+      const fd = new FormData();
+      fd.append("image", file);
+
+      const r = await fetch(`${API_BASE}/api/phenotype/upload-image`, {
+        method: "POST",
+        body: fd,
       });
+
+      if (!r.ok) {
+        const msg = await r.text();
+        throw new Error(`${r.status} ${r.statusText}: ${msg}`);
+      }
+
+      const json = (await r.json()) as PhenotypeResp;
       setMessages((m) => [
         ...m,
         {
           id: crypto.randomUUID(),
           role: "assistant",
-          text: resp.text,
-          hpo: resp.hpo,
+          text: json.phenotype_text,
+          hpo: json.hpo,
         },
       ]);
     } catch (e: unknown) {
@@ -177,6 +185,11 @@ export default function Chat() {
           });
           const tj = (await tr.json()) as { transcript?: string };
           if (tj.transcript) {
+            // Add the transcript as a user message so user can see what was transcribed
+            setMessages((m) => [
+              ...m,
+              { id: crypto.randomUUID(), role: "user", text: tj.transcript },
+            ]);
             await runPhenotypeFromText(tj.transcript);
           } else {
             addAssistant({
