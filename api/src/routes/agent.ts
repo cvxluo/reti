@@ -9,7 +9,7 @@ const biomniTool = {
   name: "biomni",
   description:
     "Use Biomni, a subagent that has access to detailed medical databases and research papers, to return an investigation",
-  strict: true,
+  strict: false,
   parameters: {
     type: "object",
     properties: {
@@ -28,7 +28,7 @@ const phenotypeTool = {
   name: "phenotype_analyze",
   description:
     "Generate phenotype narrative and HPO array from text or image URL",
-  strict: true,
+  strict: false,
   parameters: {
     type: "object",
     properties: {
@@ -53,7 +53,7 @@ const phenotypeTool = {
 
 agentRouter.post("/api/agent", async (req, res) => {
   try {
-    const { userRequest } = req.body ?? {};
+    const { userRequest, imageDataUrl, audioDataUrl } = req.body ?? {};
     console.log("received request", userRequest);
 
     const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
@@ -67,9 +67,15 @@ You have access to the following tools:
       input: [
         {
           role: "user",
-          content: [{ type: "input_text", text: userRequest }],
+          content: [
+            { type: "input_text", text: userRequest },
+            imageDataUrl && { type: "input_image", image_url: imageDataUrl },
+            audioDataUrl && { type: "input_audio", audio_url: audioDataUrl }, // if your SDK supports input_audio
+          ].filter(Boolean),
         },
       ],
+
+      text: { verbosity: "low" },
       tools: [biomniTool, phenotypeTool],
       tool_choice: "auto",
       parallel_tool_calls: false,

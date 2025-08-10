@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import CameraCapture from "./CameraCapture";
 
 type HPO = { id: string; label: string; confidence: number };
-type PhenotypeResp = { phenotype_text: string; hpo?: HPO[] };
+type AgentResp = { text: string; hpo?: HPO[] };
 
 type Msg =
   | {
@@ -33,37 +33,42 @@ export default function Chat() {
     listRef.current?.lastElementChild?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+  async function callAgent(payload: {
+    userRequest: string;
+    imageDataUrl?: string;
+    audioDataUrl?: string;
+  }): Promise<AgentResp> {
+    const r = await fetch(`${API_BASE}/api/agent`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (!r.ok) {
+      const msg = await r.text().catch(() => "");
+      throw new Error(msg || `${r.status} ${r.statusText}`);
+    }
+    return (await r.json()) as AgentResp;
+  }
+
   async function sendText() {
     const text = input.trim();
     if (!text || busy) return;
 
-    // 1) render the user bubble immediately
     const uid = crypto.randomUUID();
-    // show user's message immediately
     setMessages((m) => [...m, { id: uid, role: "user", text }]);
-    setInput(""); // clear input box
+    setInput("");
     setBusy(true);
 
     try {
-      // 2) call your agent
-      const r = await fetch(`${API_BASE}/api/agent`, {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ userRequest: text }),
-      });
-
-      // 3) append assistant bubble (even on non-200, show something)
-      let reply = "Sorry — request failed.";
-      if (r.ok) {
-        const json = await r.json().catch(() => ({}));
-        reply = (json?.text ?? json?.message ?? "").toString().trim() || "…";
-      } else {
-        const errText = await r.text().catch(() => "");
-        reply = errText || `${r.status} ${r.statusText}`;
-      }
+      const resp = await callAgent({ userRequest: text });
       setMessages((m) => [
         ...m,
-        { id: crypto.randomUUID(), role: "assistant", text: reply },
+        {
+          id: crypto.randomUUID(),
+          role: "assistant",
+          text: resp.text,
+          hpo: resp.hpo,
+        },
       ]);
     } catch (e: any) {
       setMessages((m) => [
@@ -71,7 +76,7 @@ export default function Chat() {
         {
           id: crypto.randomUUID(),
           role: "assistant",
-          text: e?.message ?? "Network error",
+          text: e?.message ?? "Request failed",
         },
       ]);
     } finally {
@@ -79,61 +84,50 @@ export default function Chat() {
     }
   }
 
-  async function runPhenotypeFromText(text: string) {
-    setBusy(true);
-    try {
-      const r = await fetch(`${API_BASE}/api/phenotype`, {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ mode: "text", text }),
-      });
-      const json = (await r.json()) as PhenotypeResp;
-      addAssistant(json);
-    } catch (e: unknown) {
-      addAssistant({ phenotype_text: "Sorry—text analysis failed.", hpo: [] });
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  function addAssistant(p: PhenotypeResp) {
-    setMessages((m) => [
-      ...m,
-      {
-        id: crypto.randomUUID(),
-        role: "assistant",
-        text: p.phenotype_text,
-        hpo: p.hpo,
-      },
-    ]);
-  }
-
   async function onPickImage(file: File) {
-    const url = URL.createObjectURL(file);
+    // show user bubble with preview immediately
+    const objectUrl = URL.createObjectURL(file);
     setMessages((m) => [
       ...m,
-      { id: crypto.randomUUID(), role: "user", imageUrl: url },
+      { id: crypto.randomUUID(), role: "user", imageUrl: objectUrl },
     ]);
+
+    // convert to data URL so agent can pass it to the model/tool
+    const imageDataUrl = await fileToDataUrl(file);
+
     setBusy(true);
     try {
-      const fd = new FormData();
-      fd.append("image", file);
-      const r = await fetch(`${API_BASE}/api/phenotype/upload-image`, {
-        method: "POST",
-        body: fd,
+      const resp = await callAgent({
+        userRequest: "Analyze this clinical image and return phenotype + HPO.",
+        imageDataUrl,
       });
-      const json = (await r.json()) as PhenotypeResp;
-      addAssistant(json);
-    } catch {
-      addAssistant({ phenotype_text: "Sorry—image analysis failed.", hpo: [] });
+      setMessages((m) => [
+        ...m,
+        {
+          id: crypto.randomUUID(),
+          role: "assistant",
+          text: resp.text,
+          hpo: resp.hpo,
+        },
+      ]);
+    } catch (e: any) {
+      setMessages((m) => [
+        ...m,
+        {
+          id: crypto.randomUUID(),
+          role: "assistant",
+          text: e?.message ?? "Image analysis failed",
+        },
+      ]);
     } finally {
       setBusy(false);
-      setTimeout(() => URL.revokeObjectURL(url), 30000);
+      // free preview blob url
+      setTimeout(() => URL.revokeObjectURL(objectUrl), 30000);
     }
   }
 
+  // click once to start, click again to stop → send to agent
   async function recordAudio() {
-    // If already recording → stop
     if (isRecording && mediaRecorder) {
       try {
         mediaRecorder.stop();
@@ -149,74 +143,71 @@ export default function Chat() {
       });
       const chunks: BlobPart[] = [];
 
-      mr.ondataavailable = (e) => {
-        if (e.data && e.data.size > 0) chunks.push(e.data);
-      };
-
+      mr.ondataavailable = (e) =>
+        e.data && e.data.size > 0 && chunks.push(e.data);
       mr.onstop = async () => {
-        // cleanup mic
         stream.getTracks().forEach((t) => t.stop());
         setIsRecording(false);
         setMediaRecorder(null);
 
-        // assemble blob
         const blob = new Blob(chunks, { type: mr.mimeType });
-        const url = URL.createObjectURL(blob);
+        const objectUrl = URL.createObjectURL(blob);
         setMessages((m) => [
           ...m,
-          { id: crypto.randomUUID(), role: "user", audioUrl: url },
+          { id: crypto.randomUUID(), role: "user", audioUrl: objectUrl },
         ]);
 
-        // transcribe → phenotype
+        // turn into data URL for agent
+        const audioDataUrl = await blobToDataUrl(blob);
+
         setBusy(true);
         try {
-          const fd = new FormData();
-          fd.append(
-            "file",
-            new File([blob], "audio.webm", { type: blob.type })
-          );
-          const tr = await fetch(`${API_BASE}/api/transcribe`, {
-            method: "POST",
-            body: fd,
+          const resp = await callAgent({
+            userRequest:
+              "Transcribe this audio and analyze phenotype with HPO.",
+            audioDataUrl,
           });
-          const tj = (await tr.json()) as { transcript?: string };
-          if (tj.transcript) {
-            await runPhenotypeFromText(tj.transcript);
-          } else {
-            addAssistant({
-              phenotype_text: "No transcript produced.",
-              hpo: [],
-            });
-          }
-        } catch {
-          addAssistant({
-            phenotype_text: "Sorry—transcription failed.",
-            hpo: [],
-          });
+          setMessages((m) => [
+            ...m,
+            {
+              id: crypto.randomUUID(),
+              role: "assistant",
+              text: resp.text,
+              hpo: resp.hpo,
+            },
+          ]);
+        } catch (e: any) {
+          setMessages((m) => [
+            ...m,
+            {
+              id: crypto.randomUUID(),
+              role: "assistant",
+              text: e?.message ?? "Audio analysis failed",
+            },
+          ]);
         } finally {
           setBusy(false);
-          setTimeout(() => URL.revokeObjectURL(url), 30000);
+          setTimeout(() => URL.revokeObjectURL(objectUrl), 30000);
         }
       };
 
-      mr.start(); // begin recording
+      mr.start();
       setMediaRecorder(mr);
       setIsRecording(true);
     } catch {
       alert("Microphone permission denied");
     }
   }
+
   function openCamera() {
     setShowCamera(true);
   }
-
   function closeCamera() {
     setShowCamera(false);
   }
 
   return (
     <div className="mx-auto max-w-5xl h-[calc(100vh-120px)] rounded-2xl border border-stone-300/70 bg-stone-50 shadow-sm flex flex-col">
-      {/* conversation */}
       <div ref={listRef} className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.map((m) => (
           <MessageBubble key={m.id} msg={m} />
@@ -224,7 +215,6 @@ export default function Chat() {
         {busy && <div className="text-xs text-stone-500 px-2">Thinking…</div>}
       </div>
 
-      {/* input bar */}
       <div className="border-t border-stone-300/70 p-3">
         <div className="flex items-end gap-2">
           <textarea
@@ -335,4 +325,23 @@ function MessageBubble({ msg }: { msg: Msg }) {
       </div>
     </div>
   );
+}
+
+/* helpers */
+async function fileToDataUrl(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = () => reject(new Error("read failed"));
+    reader.onload = () => resolve(String(reader.result));
+    reader.readAsDataURL(file);
+  });
+}
+
+async function blobToDataUrl(blob: Blob): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = () => reject(new Error("read failed"));
+    reader.onload = () => resolve(String(reader.result));
+    reader.readAsDataURL(blob);
+  });
 }
