@@ -51,10 +51,31 @@ const phenotypeTool = {
   },
 };
 
+const clinvarTool = {
+    type: "function" as const,
+    name: "clinvar",
+    description: "Use Clinvar to search for variants",
+    strict: false,
+    parameters: {
+      type: "object",
+      properties: {
+        search_query: {
+          type: "string",
+          description: "The search query to send to Clinvar",
+        },
+      },
+    },
+    required: ["search_query"],
+    additionalProperties: false,
+  };
+  
+
 const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
 You have access to the following tools:
 - use Biomni, a subagent that has access to detailed medical databases and research papers, to get a detailed investigation
-- use phenotype_analyze to generate a phenotype narrative and HPO array from provided text or image`;
+- use phenotype_analyze to generate a phenotype narrative and HPO array from provided text or image
+- use Clinvar, a subagent that has access to the Clinvar database, to search for variants
+`;
 
 agentRouter.post("/api/agent", async (req, res) => {
   try {
@@ -79,7 +100,7 @@ agentRouter.post("/api/agent", async (req, res) => {
       ],
 
       text: { verbosity: "low" },
-      tools: [biomniTool, phenotypeTool],
+      tools: [biomniTool, phenotypeTool, clinvarTool],
       tool_choice: "auto",
       parallel_tool_calls: false,
     });
@@ -122,6 +143,21 @@ agentRouter.post("/api/agent", async (req, res) => {
         } catch {
           console.warn("phenotype_analyze output was not valid JSON");
         }
+      }
+
+      if (tool_call.name === "clinvar") {
+        const args =
+          typeof tool_call.arguments === "string"
+            ? JSON.parse(tool_call.arguments)
+            : tool_call.arguments;
+        const response = await fetch(`http://127.0.0.1:5000/clinvar`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ search_query: args.search_query }),
+        });
+        const data = await response.json();
+        console.log("clinvar response", data);
+        return res.json({ text: JSON.stringify(data.final) });
       }
     }
 
