@@ -78,93 +78,88 @@ You have access to the following tools:
 `;
 
 agentRouter.post("/api/agent", async (req, res) => {
-  try {
     const { messages, userRequest, imageDataUrl, audioDataUrl } =
-      req.body ?? {};
+        req.body ?? {};
     console.log("received request", userRequest);
 
     console.log("messages", messages);
 
     const completion = await openai.responses.create({
-      model: "gpt-5-2025-08-07",
-      instructions: systemMessage,
-      input: [
+        model: "gpt-5-2025-08-07",
+        instructions: systemMessage,
+        input: [
         {
-          role: "user",
-          content: [
+            role: "user",
+            content: [
             { type: "input_text", text: userRequest },
             imageDataUrl && { type: "input_image", image_url: imageDataUrl },
             audioDataUrl && { type: "input_audio", audio_url: audioDataUrl }, // if your SDK supports input_audio
-          ].filter(Boolean),
+            ].filter(Boolean),
         },
-      ],
+        ],
 
-      text: { verbosity: "low" },
-      tools: [biomniTool, phenotypeTool, clinvarTool],
-      tool_choice: "auto",
-      parallel_tool_calls: false,
+        text: { verbosity: "low" },
+        tools: [biomniTool, phenotypeTool, clinvarTool],
+        tool_choice: "auto",
+        parallel_tool_calls: false,
     });
 
     for (const tool_call of completion.output) {
-      if (tool_call.type !== "function_call") continue;
+        if (tool_call.type !== "function_call") continue;
 
-      console.log("tool call id", tool_call.id);
-      console.log("tool call name", tool_call.name);
-      console.log("tool call arguments", tool_call.arguments);
+        console.log("tool call id", tool_call.id);
+        console.log("tool call name", tool_call.name);
+        console.log("tool call arguments", tool_call.arguments);
 
-      if (tool_call.name === "biomni") {
+        if (tool_call.name === "biomni") {
         const args =
-          typeof tool_call.arguments === "string"
+            typeof tool_call.arguments === "string"
             ? JSON.parse(tool_call.arguments)
             : tool_call.arguments;
         const response = await fetch(`http://127.0.0.1:5000/go`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ prompt: args.prompt }),
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ prompt: args.prompt }),
         });
 
         console.log("biomni raw response", response.status);
         const data = await response.json();
         console.log("biomni response", data);
         return res.json({ text: data.final });
-      }
+        }
 
-      if (tool_call.name === "phenotype_analyze") {
+        if (tool_call.name === "phenotype_analyze") {
         const args =
-          typeof tool_call.arguments === "string"
+            typeof tool_call.arguments === "string"
             ? JSON.parse(tool_call.arguments)
             : tool_call.arguments;
         const raw = await phenotypeAnalyze(args as PhenotypeParams);
         console.log("phenotype_analyze raw output", raw);
         try {
-          const parsed = JSON.parse(raw);
-          console.log("phenotype_analyze parsed output", parsed);
-          return res.json(parsed);
+            const parsed = JSON.parse(raw);
+            console.log("phenotype_analyze parsed output", parsed);
+            return res.json(parsed);
         } catch {
-          console.warn("phenotype_analyze output was not valid JSON");
+            console.warn("phenotype_analyze output was not valid JSON");
         }
-      }
+        }
 
-      if (tool_call.name === "clinvar") {
+        if (tool_call.name === "clinvar") {
         const args =
-          typeof tool_call.arguments === "string"
+            typeof tool_call.arguments === "string"
             ? JSON.parse(tool_call.arguments)
             : tool_call.arguments;
         const response = await fetch(`http://127.0.0.1:5000/clinvar`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ search_query: args.search_query }),
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ search_query: args.search_query }),
         });
         const data = await response.json();
         console.log("clinvar response", data);
         return res.json({ text: JSON.stringify(data.final) });
-      }
+        }
     }
 
     const text = (completion as any).output_text ?? "";
     res.json({ text });
-  } catch (err: any) {
-    console.error("[/api/agent]", err);
-    res.status(500).json({ error: "agent_failed", message: err?.message });
-  }
 });
