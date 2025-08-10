@@ -255,7 +255,6 @@ agentRouter.post("/api/agent", async (req, res) => {
       } else if (name === "rank_genes_from_hpo") {
         const raw = await rankGenesTool(args as RankGenesParams);
         const parsed = JSON.parse(raw);
-
         writeEvent("genes", parsed.candidates);
 
         // Provide tool output back to model
