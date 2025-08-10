@@ -90,11 +90,11 @@ const rankGenesToolSchema = {
 };
 
 const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
-You have access to the following tools:
-- ask Biomni, a subagent that has access to detailed medical databases and research papers, to get a detailed investigation
-- use phenotype_analyze to generate a phenotype narrative and HPO array from provided text or image
-- query Clinvar, a subagent that has access to the Clinvar database, to search for variants
-- use rank_genes_from_hpo to rank candidate genes from a list of HPO IDs
+- For text symptoms, call phenotype_analyze.
+- For images, call phenotype_analyze.
+- After phenotype_analyze returns HPO, call rank_genes_from_hpo with those HPO IDs.
+- For literature-backed investigation, call biomni.
+- For variant lookups, call clinvar.
 `;
 
 agentRouter.post("/api/agent", async (req, res) => {
@@ -137,24 +137,22 @@ agentRouter.post("/api/agent", async (req, res) => {
     content: [
       { type: "input_text", text: userRequest },
       imageDataUrl && { type: "input_image", image_url: imageDataUrl },
-      audioDataUrl && { type: "input_audio", audio_url: audioDataUrl },
     ].filter(Boolean),
   });
 
   // Orchestrate tools non-streaming, then stream the final assistant answer
   const tools = [biomniTool, phenotypeTool, clinvarTool, rankGenesToolSchema];
   let toolPasses = 0;
-  const maxToolPasses = 3;
-  console.log("tools");
+  const maxToolPasses = 4;
   while (toolPasses < maxToolPasses) {
     const completion: any = await (openai as any).responses.create({
-      model: "gpt-5-2025-08-07",
+      model: "gpt-5-nano-2025-08-07",
       instructions: systemMessage,
       input: inputChain,
       text: { verbosity: "low" },
       tools,
       tool_choice: "auto",
-      parallel_tool_calls: false,
+      parallel_tool_calls: true,
     });
     const output = completion?.output ?? [];
     let executedAnyTool = false;
@@ -198,17 +196,24 @@ agentRouter.post("/api/agent", async (req, res) => {
           output,
         });
       } else if (name === "phenotype_analyze") {
-        console.log("[phenotype_analyze] calling tool with args", args);
+        if (args.mode === "image" && req.body.imageDataUrl) {
+          console.log(
+            "[phenotype_analyze] replacing image_url with real request body URL"
+          );
+          args.image_url = req.body.imageDataUrl; // inject real base64 or HTTP URL
+        }
+
         const raw = await phenotypeAnalyze(args as PhenotypeParams);
         let output = raw;
         const parsed = JSON.parse(raw);
         writeEvent("hpo", parsed.hpo ?? []);
         output = JSON.stringify(parsed);
+
         inputChain.push({
           type: "function_call",
           name,
           call_id: callId,
-          arguments: argsStr,
+          arguments: JSON.stringify(args),
         });
         inputChain.push({
           type: "function_call_output",

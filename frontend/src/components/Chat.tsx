@@ -131,9 +131,7 @@ export default function Chat() {
       setBusy(false);
     }
   }
-
   async function onPickImage(file: File) {
-    // show user bubble with preview immediately
     const objectUrl = URL.createObjectURL(file);
     setMessages((m) => [
       ...m,
@@ -142,30 +140,32 @@ export default function Chat() {
 
     setBusy(true);
     try {
-      // Use direct phenotype upload instead of agent for image analysis
-      const fd = new FormData();
-      fd.append("image", file);
+      const imageDataUrl = await fileToDataUrl(file);
 
-      const r = await fetch(`${API_BASE}/api/phenotype/upload-image`, {
-        method: "POST",
-        body: fd,
-      });
+      const asstId = crypto.randomUUID();
+      setMessages((m) => [...m, { id: asstId, role: "assistant", text: "" }]);
 
-      if (!r.ok) {
-        const msg = await r.text();
-        throw new Error(`${r.status} ${r.statusText}: ${msg}`);
-      }
+      let acc = "";
+      let hpoAcc: HPO[] | undefined;
 
-      const json = (await r.json()) as PhenotypeResp;
-      setMessages((m) => [
-        ...m,
-        {
-          id: crypto.randomUUID(),
-          role: "assistant",
-          text: json.phenotype_text,
-          hpo: json.hpo,
+      await callAgentStream({
+        userRequest: "Analyze this image",
+        imageDataUrl,
+        onChunk: (t) => {
+          acc += t;
+          setMessages((m) =>
+            m.map((msg) =>
+              msg.id === asstId ? { ...msg, text: acc, hpo: hpoAcc } : msg
+            )
+          );
         },
-      ]);
+        onHpo: (h) => {
+          hpoAcc = h;
+          setMessages((m) =>
+            m.map((msg) => (msg.id === asstId ? { ...msg, hpo: h } : msg))
+          );
+        },
+      });
     } catch (e: unknown) {
       setMessages((m) => [
         ...m,
@@ -177,7 +177,6 @@ export default function Chat() {
       ]);
     } finally {
       setBusy(false);
-      // free preview blob url
       setTimeout(() => URL.revokeObjectURL(objectUrl), 30000);
     }
   }
