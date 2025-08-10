@@ -4,7 +4,8 @@ import { transcribeRouter } from "./routes/transcribe.js";
 import { phenotypeRouter } from "./routes/phenotype.js";
 import { agentRouter } from "./routes/agent.js";
 import { igvRouter } from "./routes/igv.js";
-import { agent2Router } from "./routes/agent2.js";
+// import { agent2Router } from "./routes/agent2.js";
+import { loadHpoGeneIndex } from "./lib/hpo_gene_index.js";
 
 const app = express();
 app.use(cors({ origin: true }));
@@ -15,7 +16,9 @@ app.use(transcribeRouter);
 app.use(phenotypeRouter);
 app.use(agentRouter);
 app.use(igvRouter);
-app.use(agent2Router);
+// app.use(agent2Router);
+``;
 
 const PORT = process.env.PORT || 4001;
 app.listen(PORT, () => console.log(`api on http://localhost:${PORT}`));
+loadHpoGeneIndex();

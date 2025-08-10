@@ -17,7 +17,7 @@ type Msg =
     }
   | { id: string; role: "assistant"; text: string; hpo?: HPO[] };
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:4001";
+const API_BASE = "http://localhost:4001";
 
 export default function Chat() {
   const [messages, setMessages] = useState<Msg[]>([]);
@@ -30,7 +30,6 @@ export default function Chat() {
   const [isRecording, setIsRecording] = useState(false);
   const [showCamera, setShowCamera] = useState(false);
 
-
   async function callAgentStream(payload: {
     userRequest: string;
     imageDataUrl?: string;
@@ -38,7 +37,9 @@ export default function Chat() {
     onChunk: (text: string) => void;
     onHpo?: (hpo: HPO[]) => void;
   }): Promise<void> {
-    const r = await fetch(`${API_BASE}/api/agent?stream=1`, {
+    console.log("calling agent @", `${API_BASE}/api/agent`);
+
+    const r = await fetch(`${API_BASE}/api/agent`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
