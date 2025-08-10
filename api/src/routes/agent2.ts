@@ -23,6 +23,24 @@ const biomniTool = {
   },
 };
 
+const clinvarTool = {
+  type: "function" as const,
+  name: "clinvar",
+  description: "Use Clinvar to search for variants",
+  strict: false,
+  parameters: {
+    type: "object",
+    properties: {
+      search_query: {
+        type: "string",
+        description: "The search query to send to Clinvar",
+      },
+    },
+  },
+  required: ["search_query"],
+  additionalProperties: false,
+};
+
 /*
 const phenotypeTool = {
   type: "function" as const,
@@ -56,6 +74,7 @@ const phenotypeTool = {
 const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
 You have access to the following tools:
 - use Biomni, a subagent that has access to detailed medical databases and research papers, to get a detailed investigation
+- use Clinvar, a subagent that has access to the Clinvar database, to search for variants
 `;
 
 type Message = {
@@ -84,15 +103,32 @@ agent2Router.post("/api/agent2", async (req, res) => {
             const data = await response.json();
             console.log("biomni response", data);
             const biomni_response = {
-                role: "function_call_output",
+                type: "function_call_output",
                 call_id: tool_call.id,
                 output: data.final,
             }
             messages.push(biomni_response);
-
-            const final_response = await respondToMessages(messages);
-            messages.push(final_response);
         }
+
+        else if (tool_call.name === "clinvar") {
+            const response = await fetch(`http://127.0.0.1:5000/clinvar`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ search_query: JSON.parse(tool_call.arguments).search_query }),
+            });
+            const data = await response.json();
+            console.log("clinvar response", data);
+            const clinvar_response = {
+                type: "function_call_output",
+                call_id: tool_call.call_id,
+                output: JSON.stringify(data.final),
+            }
+            messages.push(clinvar_response);
+        }
+
+        console.log("messages", messages);
+        const final_response = await respondToMessages(messages);
+        messages.push(...final_response);
     }
 
     return res.json({ messages: messages });
@@ -105,7 +141,7 @@ const respondToMessages = async (messages: Message[]) => {
         instructions: systemMessage,
         input: messages,
         text: { verbosity: "low" },
-        tools: [biomniTool],
+        tools: [biomniTool, clinvarTool],
         tool_choice: "auto",
         parallel_tool_calls: false,
     });

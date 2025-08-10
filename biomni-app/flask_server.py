@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 from flask import Flask, jsonify, request
 from biomni.agent import A1
 
+from biomni.tool.database import query_clinvar
+
 # Load environment variables from .env if present
 load_dotenv()
 
@@ -50,6 +52,24 @@ def go() -> Any:
 
         with agent_lock:
             log, final = agent.go(str(prompt))
+
+        response: dict[str, Any] = {"final": final}
+        return jsonify(response)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.post("/clinvar")
+def clinvar() -> Any:
+    print("recieved request", request)
+    try:
+        payload: dict[str, Any] = request.get_json(force=True)
+        search_query = payload.get("search_query")
+        if not search_query:
+            return jsonify({"error": "Missing 'search_query'"}), 400
+
+        with agent_lock:
+            final = query_clinvar(prompt=search_query, model="gpt-5-2025-08-07")
 
         response: dict[str, Any] = {"final": final}
         return jsonify(response)
