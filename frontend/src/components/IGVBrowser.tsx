@@ -4,8 +4,29 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import Script from "next/script";
 
 interface IGVBrowserProps {
-  options: IgvBrowserOptions;
+  options?: IgvBrowserOptions;
 }
+
+// Default IGV options
+const defaultIgvOptions: IgvBrowserOptions = {
+  // Use a reference compatible with the CRAM (GRCh38)
+  genome: "hg38",
+
+  // Set the initial genomic location to display
+  locus: "chr8:127,736,588-127,739,371",
+
+  // Define the genomic data tracks to load
+  tracks: [
+    {
+      name: "HG00103",
+      url: "https://s3.amazonaws.com/1000genomes/data/HG00103/alignment/HG00103.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram",
+      indexURL:
+        "https://s3.amazonaws.com/1000genomes/data/HG00103/alignment/HG00103.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram.crai",
+      format: "cram",
+      type: "alignment",
+    },
+  ],
+};
 
 function createVcfDataUri(params: {
   chrom: string;
@@ -95,8 +116,11 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
       .map((f) => f.variant)
       .filter(Boolean);
 
+    // Use provided options or default options
+    const baseOptions = options || defaultIgvOptions;
+
     // Calculate optimal locus based on all selected variants
-    let locus = (options as any)?.locus ?? "chr8:127,736,588-127,739,371";
+    let locus = baseOptions.locus ?? "chr8:127,736,588-127,739,371";
 
     if (selectedVariants.length > 0) {
       const positions = selectedVariants.map((v) => Number(v.pos));
@@ -111,7 +135,9 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
       console.log("Selected variants:", selectedVariants);
     }
 
-    const baseTracks = (options as any)?.tracks ?? [];
+    const baseTracks = Array.isArray(baseOptions.tracks)
+      ? baseOptions.tracks
+      : [];
 
     // Create variant tracks for each selected file
     const variantTracks = files
@@ -142,7 +168,7 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
       });
 
     return {
-      ...(options as any),
+      ...baseOptions,
       locus,
       tracks: [...baseTracks, ...variantTracks],
     } as any;

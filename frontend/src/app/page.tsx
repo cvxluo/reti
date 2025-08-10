@@ -4,25 +4,6 @@ import IGVBrowser from "@/components/IGVBrowser";
 import Chat2 from "@/components/Chat2";
 
 export default function Home() {
-  const igvOptions = {
-    // Use a reference compatible with the CRAM (GRCh38)
-    genome: "hg38",
-
-    // Set the initial genomic location to display
-    locus: "chr8:127,736,588-127,739,371",
-
-    // Define the genomic data tracks to load
-    tracks: [
-      {
-        name: "HG00103",
-        url: "https://s3.amazonaws.com/1000genomes/data/HG00103/alignment/HG00103.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram",
-        indexURL:
-          "https://s3.amazonaws.com/1000genomes/data/HG00103/alignment/HG00103.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram.crai",
-        format: "cram",
-        type: "alignment",
-      },
-    ],
-  };
   return (
     <main className="min-h-screen bg-stone-100 text-stone-900">
       <header className="border-b border-stone-300/60 bg-stone-100/80 backdrop-blur">
@@ -46,7 +27,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="p-2">
-            <IGVBrowser options={igvOptions} />
+            <IGVBrowser />
           </div>
         </div>
       </div>
