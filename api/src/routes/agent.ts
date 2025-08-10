@@ -52,41 +52,40 @@ const phenotypeTool = {
 };
 
 const clinvarTool = {
-    type: "function" as const,
-    name: "clinvar",
-    description: "Use Clinvar to search for variants",
-    strict: false,
-    parameters: {
-      type: "object",
-      properties: {
-        search_query: {
-          type: "string",
-          description: "The search query to send to Clinvar",
-        },
+  type: "function" as const,
+  name: "clinvar",
+  description: "Use Clinvar to search for variants",
+  strict: false,
+  parameters: {
+    type: "object",
+    properties: {
+      search_query: {
+        type: "string",
+        description: "The search query to send to Clinvar",
       },
     },
-    required: ["search_query"],
-    additionalProperties: false,
-  };
-  
+  },
+  required: ["search_query"],
+  additionalProperties: false,
+};
 
-  const pubmedTool = {
-    type: "function" as const,
-    name: "pubmed",
-    description: "Use Pubmed to search for research papers",
-    strict: false,
-    parameters: {
-      type: "object",
-      properties: {
-        search_query: {
-          type: "string",
-          description: "The search query to send to Pubmed",
-        },
+const pubmedTool = {
+  type: "function" as const,
+  name: "pubmed",
+  description: "Use Pubmed to search for research papers",
+  strict: false,
+  parameters: {
+    type: "object",
+    properties: {
+      search_query: {
+        type: "string",
+        description: "The search query to send to Pubmed",
       },
     },
-    required: ["search_query"],
-    additionalProperties: false,
-  };
+  },
+  required: ["search_query"],
+  additionalProperties: false,
+};
 
 const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
 You have access to the following tools:
@@ -104,151 +103,234 @@ For tool calls:
 After you make your tool call, please summarize what you did and why in addition to responding to the user's request.
 
 When analyzing phenotypes from a case, make sure to respond with an analysis on how specific phenotypes help differentially identify which genes are responsible for the disease. Also consider the mechanism of action. Respond in a way that is structured well for a geneticist.
+- Once phenotype_analyze returns, always call rank_genes_from_hpo with the returned HPO IDs before giving any final answer.
+- If rank_genes_from_hpo returns JSON, produce a plain-language summary explaining the gene list, mentioning possible disease associations and the match to the given HPO terms. Avoid inventing unrelated case reports.
+- After calling phenotype_analyze, don't call rank_genes_from_hpo if HPO IDs is empty.
+
 `;
 
 agentRouter.post("/api/agent", async (req, res) => {
-    const { userRequest, imageDataUrl, audioDataUrl, messages: prevMessages } = req.body ?? {};
-    console.log("received request", userRequest);
+  const {
+    userRequest,
+    imageDataUrl,
+    audioDataUrl,
+    messages: prevMessages,
+  } = req.body ?? {};
+  console.log("received request", userRequest);
 
-    res.setHeader("Content-Type", "text/event-stream");
-    res.setHeader("Cache-Control", "no-cache");
-    res.setHeader("Connection", "keep-alive");
-    res.setHeader("X-Accel-Buffering", "no");
+  res.setHeader("Content-Type", "text/event-stream");
+  res.setHeader("Cache-Control", "no-cache");
+  res.setHeader("Connection", "keep-alive");
+  res.setHeader("X-Accel-Buffering", "no");
 
-    const writeData = (text: string) => {
-        for (const line of String(text).split(/\r?\n/)) {
-            res.write(`data: ${line}\n`);
-        }
-        res.write(`\n`);
-    };
-
-    const writeEvent = (event: string, data: unknown) => {
-        res.write(`event: ${event}\n`);
-        writeData(typeof data === "string" ? data : JSON.stringify(data));
-    };
-
-
-    const inputChain: any[] = [];
-    if (Array.isArray(prevMessages)) {
-        for (const m of prevMessages) {
-            if (m?.role === "user" && typeof m?.text === "string") inputChain.push({ role: "user", content: m.text });
-            else if (m?.role === "assistant" && typeof m?.text === "string") inputChain.push({ role: "assistant", content: m.text });
-        }
+  const writeData = (text: string) => {
+    for (const line of String(text).split(/\r?\n/)) {
+      res.write(`data: ${line}\n`);
     }
-    inputChain.push({
-        role: "user",
-        content: [
-            { type: "input_text", text: userRequest },
-            imageDataUrl && { type: "input_image", image_url: imageDataUrl },
-            audioDataUrl && { type: "input_audio", audio_url: audioDataUrl },
-        ].filter(Boolean),
-    });
+    res.write(`\n`);
+  };
 
-    // Orchestrate tools non-streaming, then stream the final assistant answer
-    const tools = [biomniTool, phenotypeTool, clinvarTool, pubmedTool];
-    const completion: any = await (openai as any).responses.create({
-        model: "gpt-5-nano-2025-08-07",
-        instructions: systemMessage,
-        input: inputChain,
-        text: { verbosity: "low" },
-        tools,
-        tool_choice: "auto",
-        parallel_tool_calls: false,
-    });
-    const output = completion?.output ?? [];
-    let executedAnyTool = false;
-    for (const item of output) {
-        if (item?.type !== "function_call") {
-            continue;
-        }
-        executedAnyTool = true;
-        const callId = item.call_id;
-        const name: string = item.name;
-        let argsStr: string = item.arguments;
-        const args = JSON.parse(argsStr);
-        if (name === "biomni") {
-            try { writeEvent("tool", { status: "start", name, call_id: callId }); } catch {}
-            console.log("[biomni] calling tool with prompt");
-            let output = "";
-            const response = await fetch(`http://127.0.0.1:5000/go`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ prompt: args.prompt }),
-            });
-            if (response.ok) {
-                const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
-                output = typeof data?.final === "string" ? data.final : JSON.stringify(data?.final ?? "");
-            } else {
-                console.error("[biomni] non-OK", response.status);
-            }
-            inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
-            inputChain.push({ type: "function_call_output", call_id: callId, output });
-            try { writeEvent("tool", { status: "end", name, call_id: callId }); } catch {}
-        } else if (name === "phenotype_analyze") {
-            try { writeEvent("tool", { status: "start", name, call_id: callId }); } catch {}
-            const raw = await phenotypeAnalyze(args as PhenotypeParams);
-            let output = raw;
-            const parsed = JSON.parse(raw);
-            writeEvent("hpo", parsed.hpo ?? []);
-            output = JSON.stringify(parsed);
-            inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
-            inputChain.push({ type: "function_call_output", call_id: callId, output });
+  const writeEvent = (event: string, data: unknown) => {
+    res.write(`event: ${event}\n`);
+    writeData(typeof data === "string" ? data : JSON.stringify(data));
+  };
 
-            console.log("inputChain", inputChain);
-            try { writeEvent("tool", { status: "end", name, call_id: callId }); } catch {}
-        } else if (name === "clinvar") {
-            try { writeEvent("tool", { status: "start", name, call_id: callId }); } catch {}
-            console.log("[clinvar] calling tool with query");
-            let out = "";
-            const response = await fetch(`http://127.0.0.1:5000/clinvar`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ search_query: args.search_query }),
-            });
-            const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
-            out = typeof data.final === "string" ? data.final : JSON.stringify(data.final);
-            inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
-            inputChain.push({ type: "function_call_output", call_id: callId, output: out });
-
-            console.log("inputChain", inputChain);
-            try { writeEvent("tool", { status: "end", name, call_id: callId }); } catch {}
-        } else if (name === "pubmed") {
-            try { writeEvent("tool", { status: "start", name, call_id: callId }); } catch {}
-            console.log("[pubmed] calling tool with query");
-            let out = "";
-            const response = await fetch(`http://127.0.0.1:5000/pubmed`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ search_query: args.search_query }),
-            });
-            const data = await response.json().catch(async () => ({ final: await response.text().catch(() => "") }));
-            out = typeof data.final === "string" ? data.final : JSON.stringify(data.final);
-            inputChain.push({ type: "function_call", name, call_id: callId, arguments: argsStr });
-            inputChain.push({ type: "function_call_output", call_id: callId, output: out });
-
-            console.log("inputChain", inputChain);
-            try { writeEvent("tool", { status: "end", name, call_id: callId }); } catch {}
-        }
+  const inputChain: any[] = [];
+  if (Array.isArray(prevMessages)) {
+    for (const m of prevMessages) {
+      if (m?.role === "user" && typeof m?.text === "string")
+        inputChain.push({ role: "user", content: m.text });
+      else if (m?.role === "assistant" && typeof m?.text === "string")
+        inputChain.push({ role: "assistant", content: m.text });
     }
+  }
+  inputChain.push({
+    role: "user",
+    content: [
+      { type: "input_text", text: userRequest },
+      imageDataUrl && { type: "input_image", image_url: imageDataUrl },
+      audioDataUrl && { type: "input_audio", audio_url: audioDataUrl },
+    ].filter(Boolean),
+  });
 
-    console.log("end inputChain", inputChain);
-    // Final: stream the assistant's answer based on the updated message chain
-    const finalStream: any = await (openai as any).responses.stream({
-        model: "gpt-5-2025-08-07",
-        instructions: systemMessage,
-        input: inputChain,
-        // text: { verbosity: "low" },
-        tool_choice: "none",
-    });
-    finalStream.on("response.output_text.delta", (e: any) => {
-        if (e?.delta) writeData(e.delta);
-    });
-    finalStream.on("response.error", (e: any) => {
-        writeEvent("error", e?.error?.message || "stream_error");
-        try { res.end(); } catch {}
-    });
-    finalStream.on("response.completed", () => {
-        writeEvent("done", "[DONE]");
-        try { res.end(); } catch {}
-    });
+  // Orchestrate tools non-streaming, then stream the final assistant answer
+  const tools = [biomniTool, phenotypeTool, clinvarTool, pubmedTool];
+  const completion: any = await (openai as any).responses.create({
+    model: "gpt-5-nano-2025-08-07",
+    instructions: systemMessage,
+    input: inputChain,
+    text: { verbosity: "low" },
+    tools,
+    tool_choice: "auto",
+    parallel_tool_calls: false,
+  });
+  const output = completion?.output ?? [];
+  let executedAnyTool = false;
+  for (const item of output) {
+    if (item?.type !== "function_call") {
+      continue;
+    }
+    executedAnyTool = true;
+    const callId = item.call_id;
+    const name: string = item.name;
+    let argsStr: string = item.arguments;
+    const args = JSON.parse(argsStr);
+    if (name === "biomni") {
+      try {
+        writeEvent("tool", { status: "start", name, call_id: callId });
+      } catch {}
+      console.log("[biomni] calling tool with prompt");
+      let output = "";
+      const response = await fetch(`http://127.0.0.1:5000/go`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt: args.prompt }),
+      });
+      if (response.ok) {
+        const data = await response
+          .json()
+          .catch(async () => ({
+            final: await response.text().catch(() => ""),
+          }));
+        output =
+          typeof data?.final === "string"
+            ? data.final
+            : JSON.stringify(data?.final ?? "");
+      } else {
+        console.error("[biomni] non-OK", response.status);
+      }
+      inputChain.push({
+        type: "function_call",
+        name,
+        call_id: callId,
+        arguments: argsStr,
+      });
+      inputChain.push({
+        type: "function_call_output",
+        call_id: callId,
+        output,
+      });
+      try {
+        writeEvent("tool", { status: "end", name, call_id: callId });
+      } catch {}
+    } else if (name === "phenotype_analyze") {
+      try {
+        writeEvent("tool", { status: "start", name, call_id: callId });
+      } catch {}
+      const raw = await phenotypeAnalyze(args as PhenotypeParams);
+      let output = raw;
+      const parsed = JSON.parse(raw);
+      writeEvent("hpo", parsed.hpo ?? []);
+      output = JSON.stringify(parsed);
+      inputChain.push({
+        type: "function_call",
+        name,
+        call_id: callId,
+        arguments: argsStr,
+      });
+      inputChain.push({
+        type: "function_call_output",
+        call_id: callId,
+        output,
+      });
+
+      console.log("inputChain", inputChain);
+      try {
+        writeEvent("tool", { status: "end", name, call_id: callId });
+      } catch {}
+    } else if (name === "clinvar") {
+      try {
+        writeEvent("tool", { status: "start", name, call_id: callId });
+      } catch {}
+      console.log("[clinvar] calling tool with query");
+      let out = "";
+      const response = await fetch(`http://127.0.0.1:5000/clinvar`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ search_query: args.search_query }),
+      });
+      const data = await response
+        .json()
+        .catch(async () => ({ final: await response.text().catch(() => "") }));
+      out =
+        typeof data.final === "string"
+          ? data.final
+          : JSON.stringify(data.final);
+      inputChain.push({
+        type: "function_call",
+        name,
+        call_id: callId,
+        arguments: argsStr,
+      });
+      inputChain.push({
+        type: "function_call_output",
+        call_id: callId,
+        output: out,
+      });
+
+      console.log("inputChain", inputChain);
+      try {
+        writeEvent("tool", { status: "end", name, call_id: callId });
+      } catch {}
+    } else if (name === "pubmed") {
+      try {
+        writeEvent("tool", { status: "start", name, call_id: callId });
+      } catch {}
+      console.log("[pubmed] calling tool with query");
+      let out = "";
+      const response = await fetch(`http://127.0.0.1:5000/pubmed`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ search_query: args.search_query }),
+      });
+      const data = await response
+        .json()
+        .catch(async () => ({ final: await response.text().catch(() => "") }));
+      out =
+        typeof data.final === "string"
+          ? data.final
+          : JSON.stringify(data.final);
+      inputChain.push({
+        type: "function_call",
+        name,
+        call_id: callId,
+        arguments: argsStr,
+      });
+      inputChain.push({
+        type: "function_call_output",
+        call_id: callId,
+        output: out,
+      });
+
+      console.log("inputChain", inputChain);
+      try {
+        writeEvent("tool", { status: "end", name, call_id: callId });
+      } catch {}
+    }
+  }
+
+  console.log("end inputChain", inputChain);
+  // Final: stream the assistant's answer based on the updated message chain
+  const finalStream: any = await (openai as any).responses.stream({
+    model: "gpt-5-2025-08-07",
+    instructions: systemMessage,
+    input: inputChain,
+    // text: { verbosity: "low" },
+    tool_choice: "none",
+  });
+  finalStream.on("response.output_text.delta", (e: any) => {
+    if (e?.delta) writeData(e.delta);
+  });
+  finalStream.on("response.error", (e: any) => {
+    writeEvent("error", e?.error?.message || "stream_error");
+    try {
+      res.end();
+    } catch {}
+  });
+  finalStream.on("response.completed", () => {
+    writeEvent("done", "[DONE]");
+    try {
+      res.end();
+    } catch {}
+  });
 });
