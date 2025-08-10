@@ -1,4 +1,4 @@
-"use client"; // This is a client component
+"use client";
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Script from "next/script";
@@ -27,6 +27,7 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
     Array<{ file: string; id: string | null; variant: any | null }>
   >([]);
   const [selected, setSelected] = useState<string | null>(null);
+  const [selectedFiles, setSelectedFiles] = useState<Set<string>>(new Set());
   const browserRef = useRef<any | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -42,6 +43,13 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
         const data = await resp.json();
         setFiles(data.files ?? []);
         if (data.files?.[0]) setSelected(data.files[0].file);
+        // Auto-select first 3 files by default
+        if (data.files?.length > 0) {
+          const firstThree = new Set<string>(
+            data.files.slice(0, 3).map((f: any) => f.file)
+          );
+          setSelectedFiles(firstThree);
+        }
       } catch (e) {
         console.error("Failed to fetch phenopackets", e);
         setError("Backend unavailable or no phenopackets found");
@@ -51,48 +59,94 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
     load();
   }, []);
 
+  // Handle file selection changes
+  const handleFileToggle = (file: string) => {
+    const newSelected = new Set(selectedFiles);
+    if (newSelected.has(file)) {
+      newSelected.delete(file);
+    } else {
+      newSelected.add(file);
+    }
+    setSelectedFiles(newSelected);
+  };
+
+  // Generate consistent colors for tracks
+  const getTrackColor = (file: string) => {
+    const colors = [
+      "#1f77b4",
+      "#ff7f0e",
+      "#2ca02c",
+      "#d62728",
+      "#9467bd",
+      "#8c564b",
+      "#e377c2",
+      "#7f7f7f",
+      "#bcbd22",
+      "#17becf",
+    ];
+    const index = files.findIndex((f) => f.file === file) % colors.length;
+    return colors[index];
+  };
+
   // Merge base options with a variant VCF track derived from selected file
   const mergedOptions = useMemo(() => {
-    const chosen = files.find((f) => f.file === selected);
-    const v = chosen?.variant ?? null;
-    const defaultLocus =
-      (options as any)?.locus ?? "chr8:127,736,588-127,739,371";
-    const locus = v
-      ? `${v.chrom}:${Number(v.pos) - 100}-${Number(v.pos) + 100}`
-      : defaultLocus;
-    const info = v
-      ? [v.gene ? `GENE=${v.gene}` : null, v.hgvs ? `HGVS=${v.hgvs}` : null]
-          .filter(Boolean)
-          .join(";")
-      : "";
-    const vcfDataUri = v
-      ? createVcfDataUri({
-          chrom: v.chrom,
-          pos: v.pos,
-          ref: v.ref,
-          alt: v.alt,
-          info,
-        })
-      : null;
+    const selectedVariants = files
+      .filter((f) => selectedFiles.has(f.file))
+      .map((f) => f.variant)
+      .filter(Boolean);
+
+    // Calculate optimal locus based on all selected variants
+    let locus = (options as any)?.locus ?? "chr8:127,736,588-127,739,371";
+
+    if (selectedVariants.length > 0) {
+      const positions = selectedVariants.map((v) => Number(v.pos));
+      const minPos = Math.min(...positions);
+      const maxPos = Math.max(...positions);
+      const chrom = selectedVariants[0].chrom;
+      const padding = Math.max(1000, (maxPos - minPos) * 0.2);
+      locus = `${chrom}:${minPos - padding}-${maxPos + padding}`;
+
+      // Debug: Log the calculated locus
+      console.log("Calculated locus for variants:", locus);
+      console.log("Selected variants:", selectedVariants);
+    }
 
     const baseTracks = (options as any)?.tracks ?? [];
-    const variantTrack = vcfDataUri
-      ? [
-          {
-            name: `Patient Variant (${chosen?.id ?? chosen?.file})`,
-            type: "variant",
-            format: "vcf",
-            url: vcfDataUri,
-          },
+
+    // Create variant tracks for each selected file
+    const variantTracks = files
+      .filter((f) => selectedFiles.has(f.file) && f.variant)
+      .map((f) => {
+        const v = f.variant;
+        const info = [
+          v.gene ? `GENE=${v.gene}` : null,
+          v.hgvs ? `HGVS=${v.hgvs}` : null,
         ]
-      : [];
+          .filter(Boolean)
+          .join(";");
+
+        return {
+          name: `${f.id || f.file} - ${v.gene || "Unknown Gene"}`,
+          type: "variant",
+          format: "vcf",
+          url: createVcfDataUri({
+            chrom: v.chrom,
+            pos: v.pos,
+            ref: v.ref,
+            alt: v.alt,
+            info,
+          }),
+          height: 60,
+          color: getTrackColor(f.file),
+        };
+      });
 
     return {
       ...(options as any),
       locus,
-      tracks: [...baseTracks, ...variantTrack],
+      tracks: [...baseTracks, ...variantTracks],
     } as any;
-  }, [files, selected, options]);
+  }, [files, selectedFiles, options]);
 
   useEffect(() => {
     let isCancelled = false;
@@ -105,7 +159,17 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
           .createBrowser(igvDiv, mergedOptions)
           .then((browser: any) => {
             browserRef.current = browser ?? null;
-            console.log("Created IGV browser");
+            console.log(
+              "Created IGV browser with",
+              mergedOptions.tracks.length,
+              "tracks"
+            );
+
+            // Force navigation to the calculated locus if it's different from default
+            if (mergedOptions.locus !== (options as any)?.locus) {
+              console.log("Navigating to variant locus:", mergedOptions.locus);
+              browser.search(mergedOptions.locus);
+            }
           })
           .catch((error: unknown) => {
             console.error("Error creating IGV browser:", error);
@@ -132,6 +196,60 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
 
   return (
     <>
+      {/* File Upload Section */}
+      <div
+        style={{
+          marginBottom: 16,
+          padding: "12px",
+          border: "2px dashed #d1d5db",
+          borderRadius: 8,
+          background: "#f9fafb",
+          cursor: "pointer",
+          transition: "all 0.2s ease",
+        }}
+        onClick={() => document.getElementById("file-upload")?.click()}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.borderColor = "#9ca3af";
+          e.currentTarget.style.background = "#f3f4f6";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.borderColor = "#d1d5db";
+          e.currentTarget.style.background = "#f9fafb";
+        }}
+      >
+        <input
+          id="file-upload"
+          type="file"
+          accept=".vcf,.bam,.cram,.bed,.gff,.gtf,.txt,.csv"
+          style={{ display: "none" }}
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            if (file) {
+              console.log(
+                "File selected:",
+                file.name,
+                "Size:",
+                file.size,
+                "bytes"
+              );
+              // File is selected but not processed - just log it
+              e.target.value = ""; // Reset input
+            }
+          }}
+        />
+        <div style={{ textAlign: "center", color: "#6b7280", fontSize: 14 }}>
+          <div style={{ marginBottom: 8 }}>
+            <span style={{ fontSize: 18 }}>📁</span>
+          </div>
+          <div style={{ fontWeight: 500, marginBottom: 4 }}>
+            Upload Custom File
+          </div>
+          <div style={{ fontSize: 12, opacity: 0.8 }}>
+            Drag & drop or click to upload VCF, BAM, or other genomic files
+          </div>
+        </div>
+      </div>
+
       <div
         style={{
           display: "flex",
@@ -140,43 +258,92 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
           marginBottom: 8,
         }}
       >
-        <label style={{ fontSize: 12, color: "#4b5563" }}>Phenopacket:</label>
-        <select
-          value={selected ?? ""}
-          onChange={(e) => setSelected(e.target.value)}
-          style={{
-            padding: 6,
-            borderRadius: 6,
-            border: "1px solid #d6d3d1",
-            background: "#fff",
-            minWidth: 260,
-          }}
-          disabled={loading || !!error || files.length === 0}
-        >
-          <option value="" disabled>
-            {loading
-              ? "Loading phenopackets..."
-              : error
-              ? "Backend unavailable"
-              : files.length === 0
-              ? "No phenopackets found"
-              : "Select a phenopacket"}
-          </option>
-          {files.map((f) => (
-            <option key={f.file} value={f.file}>
-              {f.id ?? f.file}
-            </option>
-          ))}
-        </select>
+        <label style={{ fontSize: 12, color: "#4b5563" }}>Phenopackets:</label>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+          {files.map((f) => {
+            const isSelected = selectedFiles.has(f.file);
+            const hasVariant = !!f.variant;
+            return (
+              <label
+                key={f.file}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 6,
+                  padding: "8px 12px",
+                  borderRadius: 6,
+                  border: `2px solid ${
+                    isSelected ? getTrackColor(f.file) : "#d1d5db"
+                  }`,
+                  background: isSelected
+                    ? `${getTrackColor(f.file)}10`
+                    : "#f9fafb",
+                  cursor: hasVariant ? "pointer" : "not-allowed",
+                  opacity: hasVariant ? 1 : 0.5,
+                  fontSize: 12,
+                  fontWeight: 500,
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={isSelected}
+                  onChange={() => handleFileToggle(f.file)}
+                  disabled={!hasVariant}
+                  style={{ margin: 0 }}
+                />
+                <span style={{ color: isSelected ? "#374151" : "#6b7280" }}>
+                  {f.id ?? f.file}
+                </span>
+                {f.variant && (
+                  <span
+                    style={{
+                      fontSize: 10,
+                      color: "#6b7280",
+                      fontFamily: "monospace",
+                    }}
+                  >
+                    {f.variant.chrom}:{f.variant.pos} {f.variant.ref}→
+                    {f.variant.alt}
+                  </span>
+                )}
+              </label>
+            );
+          })}
+        </div>
         {error && (
           <span style={{ fontSize: 12, color: "#b91c1c" }}>{error}</span>
         )}
       </div>
+
+      {/* Track Summary */}
+      {selectedFiles.size > 0 && (
+        <div
+          style={{
+            marginBottom: 12,
+            padding: "8px",
+            background: "#f8fafc",
+            borderRadius: 4,
+            fontSize: 11,
+            color: "#64748b",
+          }}
+        >
+          <strong>Active Tracks:</strong> Alignment, Genes,{" "}
+          {Array.from(selectedFiles)
+            .map((file) => {
+              const f = files.find((f) => f.file === file);
+              return f?.variant
+                ? `${f.id || f.file} (${f.variant.gene || "Unknown"})`
+                : null;
+            })
+            .filter(Boolean)
+            .join(", ")}
+        </div>
+      )}
       <Script
         src="https://cdn.jsdelivr.net/npm/igv@2.15.9/dist/igv.min.js"
         strategy="afterInteractive"
       />
-      <div id="igv-div" style={{ width: "100%", height: "500px" }} />
+      <div id="igv-div" style={{ width: "100%", height: "600px" }} />
     </>
   );
 };
