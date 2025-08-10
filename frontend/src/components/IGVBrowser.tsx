@@ -221,7 +221,7 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
   }, [mergedOptions]);
 
   return (
-    <>
+    <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       {/* File Upload Section */}
       <div
         style={{
@@ -369,8 +369,11 @@ const IGVBrowser: React.FC<IGVBrowserProps> = ({ options }) => {
         src="https://cdn.jsdelivr.net/npm/igv@2.15.9/dist/igv.min.js"
         strategy="afterInteractive"
       />
-      <div id="igv-div" style={{ width: "100%", height: "600px" }} />
-    </>
+      <div
+        id="igv-div"
+        style={{ width: "100%", flex: "1", minHeight: "400px" }}
+      />
+    </div>
   );
 };
 

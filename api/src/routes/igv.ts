@@ -49,7 +49,7 @@ igvRouter.get("/api/phenopackets", async (_req, res) => {
     const jsonFiles = all
       .filter((f) => f.endsWith(".json"))
       .sort()
-      .slice(0, 10); // CHANGE THIS NUMBER (3) TO GET MORE/LESS PHENOPACKETS
+      .slice(0, 3); // CHANGE THIS NUMBER (3) TO GET MORE/LESS PHENOPACKETS
     const results: Array<{
       file: string;
       id: string | null;
