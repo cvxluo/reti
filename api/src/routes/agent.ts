@@ -158,7 +158,6 @@ agentRouter.post("/api/agent", async (req, res) => {
     });
     const output = completion?.output ?? [];
     let executedAnyTool = false;
-    console.log("output", output);
     for (const item of output) {
       if (item?.type !== "function_call") {
         continue;
@@ -199,6 +198,7 @@ agentRouter.post("/api/agent", async (req, res) => {
           output,
         });
       } else if (name === "phenotype_analyze") {
+        console.log("[phenotype_analyze] calling tool with args", args);
         const raw = await phenotypeAnalyze(args as PhenotypeParams);
         let output = raw;
         const parsed = JSON.parse(raw);
