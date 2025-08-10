@@ -4,8 +4,8 @@ import IGVBrowser from "@/components/IGVBrowser";
 
 export default function Home() {
   const igvOptions = {
-    // Specify the reference genome to use
-    genome: "hg19",
+    // Use a reference compatible with the CRAM (GRCh38)
+    genome: "hg38",
 
     // Set the initial genomic location to display
     locus: "chr8:127,736,588-127,739,371",
@@ -37,8 +37,18 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-4 py-8">
         <Chat />
       </section>
-      <h1>My Genomic Viewer</h1>
-      <IGVBrowser options={igvOptions} />
+      <div className="mx-auto max-w-5xl px-4 pb-10">
+        <div className="rounded-lg border border-stone-300/60 bg-white shadow-sm overflow-hidden">
+          <div className="px-4 py-3 border-b border-stone-200">
+            <h2 className="text-base font-semibold tracking-tight">
+              Genomic Viewer
+            </h2>
+          </div>
+          <div className="p-2">
+            <IGVBrowser options={igvOptions} />
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
