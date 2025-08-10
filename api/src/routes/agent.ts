@@ -95,6 +95,10 @@ const systemMessage = `You are an expert medical assistant. You're attempting to
 - After phenotype_analyze returns HPO, call rank_genes_from_hpo with those HPO IDs.
 - For literature-backed investigation, call biomni.
 - For variant lookups, call clinvar.
+- Once phenotype_analyze returns, always call rank_genes_from_hpo with the returned HPO IDs before giving any final answer.
+- If rank_genes_from_hpo returns JSON, produce a plain-language summary explaining the gene list, mentioning possible disease associations and the match to the given HPO terms. Avoid inventing unrelated case reports.
+- After calling phenotype_analyze, don't call rank_genes_from_hpo if HPO IDs is empty.
+
 `;
 
 agentRouter.post("/api/agent", async (req, res) => {
@@ -186,7 +190,7 @@ agentRouter.post("/api/agent", async (req, res) => {
         }
         inputChain.push({
           type: "function_call",
-          name,
+          name: "biomni",
           call_id: callId,
           arguments: argsStr,
         });
@@ -211,7 +215,7 @@ agentRouter.post("/api/agent", async (req, res) => {
 
         inputChain.push({
           type: "function_call",
-          name,
+          name: "phenotype_analyze",
           call_id: callId,
           arguments: JSON.stringify(args),
         });
@@ -237,7 +241,7 @@ agentRouter.post("/api/agent", async (req, res) => {
             : JSON.stringify(data.final);
         inputChain.push({
           type: "function_call",
-          name,
+          name: "clinvar",
           call_id: callId,
           arguments: argsStr,
         });
@@ -249,34 +253,37 @@ agentRouter.post("/api/agent", async (req, res) => {
 
         console.log("inputChain", inputChain);
       } else if (name === "rank_genes_from_hpo") {
-        console.log("[rank_genes_from_hpo] calling tool with HPO IDs");
-        let output = "";
-        try {
-          // Call your rankGenesTool implementation
-          output = await rankGenesTool(args as RankGenesParams); // returns stringified JSON
-          const parsed = JSON.parse(output);
+        const raw = await rankGenesTool(args as RankGenesParams);
+        const parsed = JSON.parse(raw);
 
-          // If candidates exist, stream them to the client
-          if (Array.isArray(parsed?.candidates)) {
-            writeEvent("genes", parsed.candidates.slice(0, 20)); // SSE event
-          }
-        } catch (err) {
-          console.error("[rank_genes_from_hpo] failed", err);
-          output = JSON.stringify({ error: String(err) });
-        }
+        writeEvent("genes", parsed.candidates);
 
-        // Append the function call and its output to inputChain so the model can continue
+        // Provide tool output back to model
         inputChain.push({
-          type: "function_call",
-          name,
-          call_id: callId, // use callId from this loop
-          arguments: argsStr,
+          role: "assistant",
+          content: [{ type: "output_text", text: raw }],
         });
+
+        // Ask model to summarize
         inputChain.push({
-          type: "function_call_output",
-          call_id: callId,
-          output,
+          role: "user",
+          content: [
+            {
+              type: "input_text",
+              text: "Summarize the above gene list in plain language. Explain the top candidate genes and why they match the HPO terms.",
+            },
+          ],
         });
+
+        const summarization = await openai.responses.create({
+          model: "gpt-5-nano-2025-08-07",
+          input: inputChain,
+          text: { verbosity: "low" },
+          tool_choice: "none",
+        });
+
+        const summaryText = summarization.output_text?.trim() ?? "";
+        writeEvent("summary", summaryText);
       }
     }
 
