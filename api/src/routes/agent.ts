@@ -91,9 +91,9 @@ const rankGenesToolSchema = {
 
 const systemMessage = `You are an expert medical assistant. You're attempting to help a patient fulfill their request.
 You have access to the following tools:
-- use Biomni, a subagent that has access to detailed medical databases and research papers, to get a detailed investigation
+- ask Biomni, a subagent that has access to detailed medical databases and research papers, to get a detailed investigation
 - use phenotype_analyze to generate a phenotype narrative and HPO array from provided text or image
-- use Clinvar, a subagent that has access to the Clinvar database, to search for variants
+- query Clinvar, a subagent that has access to the Clinvar database, to search for variants
 - use rank_genes_from_hpo to rank candidate genes from a list of HPO IDs
 `;
 
@@ -281,7 +281,7 @@ agentRouter.post("/api/agent", async (req, res) => {
 
   // Final: stream the assistant's answer based on the updated message chain
   const finalStream: any = await (openai as any).responses.stream({
-    model: "gpt-5-2025-08-07",
+    model: "gpt-5-nano-2025-08-07",
     instructions: systemMessage,
     input: inputChain,
     text: { verbosity: "low" },
